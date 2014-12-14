@@ -2,3 +2,9 @@ node_modules
 .sass-cache
 dist
 .tmp
+
+app/.htaccess
+app/dbconf.php
+app/images/original-photos
+app/images/template
+app/images/venuelogos

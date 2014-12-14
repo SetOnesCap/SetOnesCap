@@ -105,7 +105,7 @@ nav.bg-white li:hover {
     background-color: #fff;
 }
 .bg-noise, .bg-noise:hover, .bg-noise li:hover {
-    background-image: url(../img/template/noise.png);
+    background-image: url(../images/template/noise.png);
     background-repeat: repeat;
 }
 .bg-green {

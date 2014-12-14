@@ -1,0 +1,1 @@
+<div class=' bg-black fg-white bg-noise text-center border'><?php echo $siteName; ?> - Admin backend v.1.0</div>

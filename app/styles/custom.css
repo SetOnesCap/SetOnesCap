@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/template/noise.png);
+    background-image: url(../images/template/noise.png);
     background-repeat: repeat;
 }
 
@@ -46,7 +46,7 @@ a.soundcloud:hover{
 }
 
 section.comingsoon{
-    background-image: url(../img/template/setonescap-logo-bg.jpg);
+    background-image: url(../images/template/setonescap-logo-bg.jpg);
     background-position: 50%;
     width: 100%;
     background-repeat: no-repeat;
@@ -158,7 +158,7 @@ aside.bg-black li a {
 aside.bg-black li a:hover {
     border-top: 1px solid #222;
     border-bottom: 1px solid #444;
-    background-image: url(../img/template/noise.png);
+    background-image: url(../images/template/noise.png);
     background-repeat: repeat;
 }
 
@@ -170,7 +170,7 @@ header {
     width: 100%;
 }
 .header-home {
-    background: url('../img/template/confusion-header.jpg') 50% 0 fixed;
+    background: url('../images/template/confusion-header.jpg') 50% 0 fixed;
     min-height: 550px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,22 +206,22 @@ header {
     overflow: hidden;
 }
 #Videos .box-nav-hover {
-    background-image: url('../img/template/videos-thumb.jpg');
+    background-image: url('../images/template/videos-thumb.jpg');
 }
 #Concerts .box-nav-hover{
-    background-image: url('../img/template/concerts-thumb.jpg');
+    background-image: url('../images/template/concerts-thumb.jpg');
 }
 #Info .box-nav-hover {
-    background-image: url('../img/template/videos-thumb.jpg');
+    background-image: url('../images/template/videos-thumb.jpg');
 }
 #Photos .box-nav-hover{
-    background-image: url('../img/template/concerts-thumb.jpg');
+    background-image: url('../images/template/concerts-thumb.jpg');
 }
 #Booking .box-nav-hover {
-    background-image: url('../img/template/videos-thumb.jpg');
+    background-image: url('../images/template/videos-thumb.jpg');
 }
 #Music .box-nav-hover{
-    background-image: url('../img/template/concerts-thumb.jpg');
+    background-image: url('../images/template/concerts-thumb.jpg');
 }
 .box-nav-hover {
 
