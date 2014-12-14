@@ -1,0 +1,302 @@
+body {
+    background-image: url(../img/template/noise.png);
+    background-repeat: repeat;
+}
+
+body.comingsoon-body {
+    padding: 40px;
+
+}
+
+.coming-soon-socialbar{
+    background-color:rgba(253, 253, 229, 0.7);
+}
+
+a.facebook:hover{
+    color: #3b5998;
+}
+
+a.twitter:hover{
+    color: #00aced;
+}
+
+a.youtube:hover{
+    color: #bb0000;
+}
+
+a.instagram:hover{
+    color: #517fa4;
+}
+
+a.soundcloud:hover{
+    color:#FF4800;
+}
+
+
+
+
+@media only screen and (max-width:960px){
+    body.comingsoon-body{
+        padding: 0;
+    }
+    section.comingsoon{
+        position: absolute;
+        height: 100%;
+    }
+}
+
+section.comingsoon{
+    background-image: url(../img/template/setonescap-logo-bg.jpg);
+    background-position: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color: #fdfbe4;
+    min-height: 600px;
+    padding: 0;
+    max-width: 1300px;
+    margin: auto;
+    box-shadow: 0px 0px 30px -10px #000;
+}
+
+
+.comingsoon-header {
+    min-height: 250px;
+    text-align: center;
+    text-shadow: 0px 0px 40px #FFF;
+    color: #000;
+    text-transform: uppercase;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.comingsoon-header h1{
+    font-size: 5em;
+    margin-bottom: 0;
+}
+.comingsoon-header h1 span{
+    font-size: 0.3em;
+    display: block;
+    text-transform: inherit;
+}
+.comingsoon-header h1 span:before{
+    content: close-quote;
+    display: block;
+    border: 4px solid black;
+    max-width: 650px;
+    margin: auto;
+    box-shadow: 0 0 40px 0 #FFF;
+}
+
+.comingsoon-header a{
+    text-decoration: none;
+
+}
+
+
+.content {
+    padding: 0;
+    max-width: 1300px;
+    margin: auto;
+    box-shadow: 0px 0px 30px -10px #000;
+}
+nav {
+    font-size: 1.3em;
+}
+
+aside .fa {
+    margin-right: 5px;
+}
+
+aside.bg-noise li:hover {
+    background-image: none;
+}
+
+aside ul li:hover{
+
+}
+
+aside ul li a:hover{
+    color: #fff;
+    background-color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #DDD;
+    width: 100%;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 7px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #DDD;
+}
+
+table tr:nth-child(even) {
+    background-color: #CCC;
+}
+
+table tr:nth-child(odd):hover {
+    background-color: #EEE;
+}
+
+table tr:nth-child(even):hover {
+    background-color: #EEE;
+}
+
+table tr:first-child:hover{
+    background-color: #DDD;
+}
+
+aside.bg-black li a {
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #333;
+}
+
+aside.bg-black li a:hover {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #444;
+    background-image: url(../img/template/noise.png);
+    background-repeat: repeat;
+}
+
+
+
+header {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+.header-home {
+    background: url('../img/template/confusion-header.jpg') 50% 0 fixed;
+    min-height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-shadow: 0px 0px 40px #FFF;
+    color: #000;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+.header-home h1{
+    font-size: 6em;
+}
+.header-home h1 span{
+    font-size: 0.3em;
+    display: block;
+    text-transform: inherit;
+}
+.header-home h1 span:before{
+    content: close-quote;
+    display: block;
+    border: 4px solid black;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 0 40px 0 #FFF;
+
+}
+.box-nav {
+    padding: 0;
+}
+.box-nav-item {
+    height: 250px;
+    padding: 0;
+    overflow: hidden;
+}
+#Videos .box-nav-hover {
+    background-image: url('../img/template/videos-thumb.jpg');
+}
+#Concerts .box-nav-hover{
+    background-image: url('../img/template/concerts-thumb.jpg');
+}
+#Info .box-nav-hover {
+    background-image: url('../img/template/videos-thumb.jpg');
+}
+#Photos .box-nav-hover{
+    background-image: url('../img/template/concerts-thumb.jpg');
+}
+#Booking .box-nav-hover {
+    background-image: url('../img/template/videos-thumb.jpg');
+}
+#Music .box-nav-hover{
+    background-image: url('../img/template/concerts-thumb.jpg');
+}
+.box-nav-hover {
+
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    height: 250px;
+    opacity: 1;
+    -webkit-transition: height .2s ease, -webkit-filter .2s ease, opacity .7s; /* For Safari 3.1 to 6.0 */
+}
+.box-nav-item:hover .box-nav-hover{
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: url(#blur-effect-1);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
+    zoom: 1;
+    position: relative;
+    width: 100%;
+    height: 290px;
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    opacity: .3;
+}
+.box-nav-link{
+    z-index: 12;
+    position: absolute;
+    text-transform: lowercase;
+}
+.box-nav-link h2{
+    font-size: 3em;
+    text-shadow: 2px 2px 10px #000;
+    line-height: 0;
+}
+.box-nav-link span{
+    opacity: 0;
+    font-size: 1.3em;
+    width: 0px;
+    display: block;
+    -webkit-transition: all .2s linear; /* For Safari 3.1 to 6.0 */
+    transition: all .2s linear;
+    margin: -12px 0 0 23px;
+}
+.box-nav-link span:before {
+    border: 2px solid #FFF;
+    content: close-quote;
+    display: block;
+    margin: 0px 0 -2px -20px;
+    overflow: hidden;
+}
+.box-nav-item:hover .box-nav-link span {
+    opacity: 1;
+    width: 300px;
+}
+#introduction p {
+    font-size: 1.2em;
+}
+
+#picturebox img {
+    max-height: 800px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#picturebox .buttons {
+    text-align: center;
+
+}
+
+#picturebox button {
+    border: inherit;
+
+}
