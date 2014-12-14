@@ -23,6 +23,13 @@ $i = 0;
     </div>
 </div>
 <main>
+    <div>
+        <?php
+        include_once('./services/soundcloud.php');
+       ?>
+    </div>
+    <script src="http://connect.soundcloud.com/sdk.js"></script>
+
     <div class="col-12 bg-noise bg-black fg-white box-nav">
         <?php foreach ($nyheter as $n => $nyhet) {
 
