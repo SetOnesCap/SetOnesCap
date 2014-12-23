@@ -3,7 +3,6 @@ $nyheter = array("Concerts","Info","Videos","Photos","Booking","Music");
 $farge = array("red", "yellow", "blue", "cyan", "magenta", "green");
 $i = 0;
 
-
 ?>
 
 
@@ -25,7 +24,10 @@ $i = 0;
 <main>
     <div>
         <?php
+        echo "<h4> SoundCloud:</h4>";
         include_once('./services/soundcloud.php');
+        echo "<h4>YouTube</h4>";
+        include_once('./services/youtube.php');
        ?>
     </div>
     <script src="http://connect.soundcloud.com/sdk.js"></script>
@@ -37,16 +39,12 @@ $i = 0;
             <a href="#">
                 <div class="col-4 bg-noise bg-<?php echo $farge[$i]; ?> box-nav-item" id="<?php echo $nyhet; ?>">
                     <div class="box-nav-link">
-                        <h2><?php echo $nyhet ?></h2>
-                        <span>read more about <?php echo $nyhet ?> here</span></div>
+                        <h2><?php echo $nyhet; ?></h2>
+                        <span>read more about <?php echo $nyhet; ?> here</span></div>
                     <div class="box-nav-hover"></div>
-                </div></a>
+                </div>
+            </a>
 
             <?php $i+=1; } ?>
     </div>
-
-
-
-
-
 </main>
