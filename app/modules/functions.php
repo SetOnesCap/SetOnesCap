@@ -49,6 +49,25 @@ function __getPageList(){
 //$db->close();
 }
 
+function __getPageFile($pageId) {
+    $db = new DataBase();
+    $resultTitle = "";
+    $sql = "SELECT " . $db::PAGE_TITLECOL . " FROM " . $db::PAGE_TABLENAME . " WHERE " . $db::PAGE_IDCOL  . " = " . $pageId;
+    $result = $db->query($sql);
+
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            $resultTitle =  $row[$db::PAGE_TITLECOL];
+        }
+    } else {
+        echo "0 results";
+    }
+    $pageFileName = strtolower(str_replace(array('  ', ' '), '-', preg_replace('/[^a-zA-Z0-9 s]/', '', trim($resultTitle)))) . ".php";
+    return $pageFileName;
+
+
+}
+
 
 
 function __getContent($pageId){
@@ -220,35 +239,6 @@ function __getPhoto($albumId, $photoNo){
 }
 
 ?>
-
-<script>
-    function showPhoto(albumId, photoCount, photoNo)
-    {
-        if (albumId=="")
-        {
-            document.getElementById("picturebox").innerHTML="no photoalbum";
-            return;
-        }
-        if (window.XMLHttpRequest)
-        {// code for IE7+, Firefox, Chrome, Opera, Safari
-            xmlhttp=new XMLHttpRequest();
-        }
-        else
-        {// code for IE6, IE5
-            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        xmlhttp.onreadystatechange=function()
-        {
-            if (xmlhttp.readyState==4 && xmlhttp.status==200)
-            {
-                document.getElementById("picturebox").innerHTML=xmlhttp.responseText;
-            }
-        }
-        xmlhttp.open("GET","/modules/getPhoto.php?albumId="+albumId+"&photoCount="+photoCount+"&photoNo="+photoNo,true);
-        xmlhttp.send();
-    }
-</script>
-
 
 
 
