@@ -9,3 +9,4 @@ app/images/original-photos
 app/images/template
 app/images/venuelogos
 app/services/soundcloud.php
+app/services/youtube.php

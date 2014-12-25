@@ -99,7 +99,7 @@ function __getTitle($pageId){
 
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo "- Title: " . $row["title"];
+            echo $row["title"];
         }
     } else {
         echo "0 results";
@@ -119,9 +119,9 @@ function __getLinkList(){
             $title = $row[$db::PAGE_TITLECOL];
             $URLtitle = strtolower(str_replace(array('  ', ' '), '-', preg_replace('/[^a-zA-Z0-9 s]/', '', trim($row[$db::PAGE_TITLECOL]))));
             if($row[$db::PAGE_TITLECOL] == "Home"){
-                echo "<li><a href='/" . $db::ROOTURL . "'>" . $title . "</a><li>";
+                echo "<li><a href='/" . $db::ROOTURL . "'>" . $title . "</a></li>";
             }else{
-                echo "<li><a href='" . $db::ROOTURL . "/" . $URLtitle . "'>" . $title . "</a><li>";
+                echo "<li><a href='" . $db::ROOTURL . "/" . $URLtitle . "/'>" . $title . "</a></li>";
             }
         }
     } else {
