@@ -44,21 +44,28 @@
 
 <div class="content">
     <header>
-        <nav class="fg-white">
-            <ul>
+        <nav class="fg-black bg-white shadow-bottom fixed">
+            <img src="/images/template/bird-nav.png"/>
+            <ul class="float-right">
                 <?php
                 __getLinkList($rootURL);
                 ?>
             </ul>
         </nav>
     </header>
+    <section class="col-12 fg-black header" data-speed="1.7" data-type="background">
+        <div class="header-text bg-white">
+            <h1><?php __getTitle($pageId); ?></h1>
+
+        </div>
+        <!--    <h1>Set One's Cap<span> Official Website</span></h1>-->
 
 
-
+    </section>
+<main>
 <?php include("content/" . $pageFile); ?>
-
-
-    <div class="col-12 bg-noise bg-white fg-black">
+</main>
+    <div class="col-12 bg-noise bg-black fg-white">
         <div class="col-3">
             <h2>Booking:</h2>
         </div>
