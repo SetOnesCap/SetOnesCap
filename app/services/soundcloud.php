@@ -1,7 +1,7 @@
 <?php
 
-$clientid = "8904a1447d517c7e16851108d76d6386"; // Your API Client ID
-$userid = "120992491"; // ID of the user you are fetching the information for
+$clientid = $SoundCloudClientid; // Your API Client ID
+$userid = $SoundCloudUserid; // ID of the user you are fetching the information for
 
 
 $soundcloud_url = "http://api.soundcloud.com/users/" . $userid . "/tracks.json?client_id=" . $clientid . "";

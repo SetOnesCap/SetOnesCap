@@ -1,8 +1,8 @@
 <?php
 
 $maxResults = "10";
-$playlistId = "UUcJrQBmA6Z2-CkSPHkgF9Ww";
-$key = "AIzaSyCM1ItcVlL-yFpDjU6q1ImyLLZ7Qx87bGI";
+$playlistId = $YoutTubePlaylistId;
+$key = $YouTubeKey;
 
 
 
