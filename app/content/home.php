@@ -8,6 +8,9 @@ $i = 0;
 <div class="col-12 bg-white fg-black">
     <p><?php __getContent($pageId); ?></p>
 </div>
+<div class="col-12">
+    <?php include_once('./services/facebook.php'); ?>
+</div>
 <div class="col-12 bg-noise bg-black fg-white box-nav">
     <?php foreach ($nyheter as $n => $nyhet) {
         ?>
