@@ -35,8 +35,8 @@ body {
 .fixed-bottom{
     position: fixed;
     bottom: 0;
-    left: 0%;
     width: 100%;
+    z-index: 9000;
 }
 main {
     padding: 0!important;
@@ -381,4 +381,5 @@ a.fg-white:hover, .fg-white a:hover {
     border-left: none;
     border-right: none;
 }
+
 

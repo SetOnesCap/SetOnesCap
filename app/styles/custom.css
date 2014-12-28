@@ -1,12 +1,19 @@
 
 
 body {
-    background-image: url(../images/template/noise.png);
-    background-repeat: repeat;
+    background-color: #FFF;
+}
+
+a {
+    text-decoration: none;
 }
 
 .fixed {
     position: fixed;
+}
+
+.no-padding {
+    padding: 0;
 }
 
 .coming-soon-socialbar{
@@ -33,12 +40,16 @@ a.soundcloud:hover{
     color:#FF4800;
 }
 
+a.google-plus:hover {
+    color: #D73D32;
+}
+
 
 .content {
     padding: 0;
-    max-width: 1300px;
+    max-width: 1100px;
     margin: auto;
-    box-shadow: 0px 0px 30px -10px #000;
+   /* box-shadow: 0px 0px 30px -10px #000;*/
 }
 
 nav {
@@ -48,7 +59,7 @@ nav {
 
 nav.fixed {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1100px;
 }
 
 header nav ul {
@@ -60,7 +71,7 @@ nav ul li a{
 }
 
 nav ul li a:hover, nav ul li a.active{
-    border-bottom: 8px solid #F56F47;
+    border-bottom: 8px solid #EA5124;
 }
 
 header nav img {
@@ -73,7 +84,7 @@ header nav img {
 }
 
 .bg-setonescap-red {
-    background-color: #F56F47;
+    background-color: #EA5124;
 }
 
 aside .fa {
@@ -160,7 +171,7 @@ header {
 
 .header-text h1 {
     margin: 0;
-    color: #F56F47;
+    color: #EA5124;
     font-size: 4em;
 }
 
@@ -268,3 +279,39 @@ header {
     border: inherit;
 
 }
+
+.fixed-bottom{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.fb-thumb {
+    overflow: hidden;
+}
+
+.fb-thumb img {
+    width: 100%;
+}
+
+.bottom-col {
+    padding-bottom: 130px;
+}
+
+.masonry-brick {padding: 10px; float: left;
+    overflow: hidden;  }
+#masonryContainer { width: 0 auto; padding: 0; }
+
+p.fb-date {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 0;
+}
+
+.event-item {
+
+}
+
+.event-item h2, h3 {
+    margin: 15px 0px -2px 0px;
+}
+
