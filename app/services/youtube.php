@@ -1,8 +1,8 @@
 <?php
 
 $maxResults = "10";
-$playlistId = $YoutTubePlaylistId;
-$key = $YouTubeKey;
+$playlistId = $youtTubePlaylistId;
+$key = $youTubeKey;
 
 
 
@@ -12,8 +12,7 @@ $videos_json = file_get_contents($youtube_url);
 $videos = json_decode($videos_json);
 
 foreach ($videos->items as $video) {
-    echo $video->snippet->title;
-    echo $video->snippet->resourceId->videoId;
+    echo "<p>" . $video->snippet->title . "</p>";
     echo "<iframe width='560' height='315' src='//www.youtube.com/embed/" . $video->snippet->resourceId->videoId . "?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen></iframe>";
 }
 
