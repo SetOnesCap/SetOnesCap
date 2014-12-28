@@ -40,11 +40,35 @@
     <base target="_self" />
     <link rel="canonical" href="http://www.setonescap.com/$pageTitle">
 </head>
-<body>
+<body class="bg-white">
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '1526040134335346',
+            xfbml      : true,
+            version    : 'v2.2'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- <div
+    class="fb-like"
+    data-share="true"
+    data-width="450"
+    data-show-faces="true">
+</div> -->
 
 <div class="content">
     <header>
-        <nav class="fg-black bg-white shadow-bottom fixed">
+        <nav class="fg-black bg-white fixed">
             <img src="/images/template/bird-nav.png"/>
             <ul class="float-right">
                 <?php
@@ -62,10 +86,10 @@
 
 
     </section>
-<main>
-<?php include("content/" . $pageFile); ?>
-</main>
-    <div class="col-12 bg-noise bg-black fg-white">
+    <main>
+        <?php include("content/" . $pageFile); ?>
+    </main>
+    <div class="col-12 bg-noise bg-black fg-white bottom-col">
         <div class="col-3">
             <h2>Booking:</h2>
         </div>
@@ -76,9 +100,92 @@
             <h2>Booking:</h2>
         </div>
         <div class="col-3">
-            <img src="/images/template/logo-bird.jpg" alt="Set One's Cap Logo" class="center text-center" />
+            <h2><Addres/h2>
         </div>
+        <div class="col-12 text-center">
+            <a href="https://www.facebook.com/setonescap" class="facebook" title="Check out Set One's Cap at Facebook">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="https://twitter.com/setonescap" class="twitter" title="Check out Set One's Cap at Twitter">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="http://instagram.com/setonescap" class="instagram" title="Check out Set One's Cap at Instagram">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="https://www.youtube.com/user/setonescap" class="youtube" title="Check out Set One's Cap at YouTube">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-youtube fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="https://soundcloud.com/setonescap" class="soundcloud" title="Check out Set One's Cap at SoundCloud">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-soundcloud fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="https://plus.google.com/111095056778547378720" rel="publisher" class="google-plus" title="Check out Set One's Cap at Google Plus">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x"></i>
+                </span>
+            </a>
+
+        </div>
+
     </div>
+    <footer class="fixed-bottom bg-white fg-black">
+        <div class="col-4">Copyright © 2014 <a href="http://www.setonescap.com" target="_blank">Set One's Cap</a></div>
+        <div class="col-4 text-center"></div>
+        <div class="col-4 text-right">
+            <a href="https://www.facebook.com/setonescap" class="facebook" title="Check out Set One's Cap at Facebook">
+                <span class="fa-stack fa-1x">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="https://twitter.com/setonescap" class="twitter" title="Check out Set One's Cap at Twitter">
+                <span class="fa-stack fa-1x">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="http://instagram.com/setonescap" class="instagram" title="Check out Set One's Cap at Instagram">
+                <span class="fa-stack fa-1x">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="https://www.youtube.com/user/setonescap" class="youtube" title="Check out Set One's Cap at YouTube">
+                <span class="fa-stack fa-1x">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-youtube fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="https://soundcloud.com/setonescap" class="soundcloud" title="Check out Set One's Cap at SoundCloud">
+                <span class="fa-stack fa-1x">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-soundcloud fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="https://plus.google.com/111095056778547378720" rel="publisher" class="google-plus" title="Check out Set One's Cap at Google Plus">
+                <span class="fa-stack fa-1x">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x"></i>
+                </span>
+            </a>
+
+        </div>
+    </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/scripts/showPhoto.js"></script>
