@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
     <meta name="description" content="The norwegian pop-rock band Set One's Cap's Official Website">
     <meta name="keywords" content="band, norwegian, pop, rock, pop-rock, music, concerts, photos, videos, info, biography">
     <meta name="author" content="Benjamin Dehli">
@@ -66,6 +67,8 @@
     data-show-faces="true">
 </div> -->
 
+
+
 <div class="content">
     <header>
         <nav class="fg-black bg-white fixed">
@@ -77,7 +80,7 @@
             </ul>
         </nav>
     </header>
-    <section class="col-12 fg-black header" data-speed="1.7" data-type="background">
+    <section class="col-12 fg-black header <?php echo $pageTitle; ?>" data-speed="1.4" data-type="background">
         <div class="header-text bg-white">
             <h1><?php __getTitle($pageId); ?></h1>
 
@@ -90,19 +93,8 @@
         <?php include("content/" . $pageFile); ?>
     </main>
     <div class="col-12 bg-noise bg-black fg-white bottom-col">
-        <div class="col-3">
-            <h2>Booking:</h2>
-        </div>
-        <div class="col-3">
-            <h2>Booking:</h2>
-        </div>
-        <div class="col-3">
-            <h2>Booking:</h2>
-        </div>
-        <div class="col-3">
-            <h2><Addres/h2>
-        </div>
         <div class="col-12 text-center">
+            <h2>Get in touch</h2>
             <a href="https://www.facebook.com/setonescap" class="facebook" title="Check out Set One's Cap at Facebook">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-square-o fa-stack-2x"></i>
@@ -141,11 +133,34 @@
             </a>
 
         </div>
+        <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-6">
+            <h3>Web:</h3>
+            <p><span itemprop="name">Benjamin Dehli</span></p>
+            <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+                <p><span itemprop="street-address">Nustadringen 3</span></p>
+                <p><span itemprop="postal-code">3970</span> <span itemprop="locality">Langesund</span></p>
+                <p><span itemprop="country-name">Norway</span></p>
+            </span>
+            <p>Phone: +47 92 29 27 19</p>
+            <p>E-mail: post@confusion-band.com</p>
+        </div>
+        <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-6">
+            <h3>Booking:</h3>
+            <p><span itemprop="name">Carl-Viktor Guttormsen</span></p>
+            <p>Parkveien 1</p>
+            <p>3970 Langesund</p>
+            <p>Norway</p>
+            <p>Phone: +47 90 26 21 60</p>
+            <p>E-mail: ConfusionNorway@gmail.com</p>
+        </div>
+
 
     </div>
     <footer class="fixed-bottom bg-white fg-black">
         <div class="col-4">Copyright © 2014 <a href="http://www.setonescap.com" target="_blank">Set One's Cap</a></div>
-        <div class="col-4 text-center"></div>
+        <div class="col-4 text-center">
+            Website by: Benjamin Dehli
+        </div>
         <div class="col-4 text-right">
             <a href="https://www.facebook.com/setonescap" class="facebook" title="Check out Set One's Cap at Facebook">
                 <span class="fa-stack fa-1x">
@@ -187,11 +202,13 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="/scripts/showPhoto.js"></script>
-    <script type="text/javascript" src="/scripts/parallax.js"></script>
+
     <div class="clearfix"></div>
 </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/scripts/showPhoto.js"></script>
+<script type="text/javascript" src="/scripts/parallax.js"></script>
+<script type="text/javascript" src="/scripts/activeLinks.js"></script>
 </body>
 </html>
 

@@ -68,6 +68,9 @@ header nav ul {
 
 nav ul li a{
     padding: 19px 16px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-transform-style: preserve-3d;
 }
 
 nav ul li a:hover, nav ul li a.active{
@@ -78,6 +81,15 @@ header nav img {
     display: inline;
     float: left;
 }
+.button {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-transform-style: preserve-3d;
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
 
 .bg-white {
     background-color: #ffffff;
@@ -86,6 +98,19 @@ header nav img {
 .bg-setonescap-red {
     background-color: #EA5124;
 }
+
+.button.bg-setonescap-red {
+    background-color: inherit;
+    border: 1px solid #EA5124;
+    color: #333;
+}
+
+.button.bg-setonescap-red:hover {
+    background-color: #EA5124;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 
 aside .fa {
     margin-right: 5px;
@@ -155,14 +180,12 @@ header {
     width: 100%;
 }
 .header {
-    background: url('../images/template/confusion-header.jpg') 50% 0 fixed;
     min-height: 450px;
     background-size: cover;
     background-repeat: no-repeat;
     color: #000;
     padding: 0px;
 }
-
 
 .header-text {
     position: absolute;
@@ -173,6 +196,14 @@ header {
     margin: 0;
     color: #EA5124;
     font-size: 4em;
+}
+
+.header.home {
+    background: url('../images/headers/home.jpg') 50% 0 fixed;
+}
+
+.header.concerts {
+    background: url('../images/headers/concerts.jpg') 50% 0 fixed;
 }
 
 
@@ -296,6 +327,7 @@ header {
 
 .bottom-col {
     padding-bottom: 130px;
+    line-height: .5em;
 }
 
 #news-posts {
@@ -324,4 +356,5 @@ p.fb-date {
 .event-item h2, h3 {
     margin: 15px 0px -2px 0px;
 }
+
 

@@ -4,14 +4,9 @@
     var container = document.querySelector('#news-posts');
     var msnry = new Masonry( container, {
         // options
-
         itemSelector: '.news-post'
     });
 </script>
-
-<!--
-,
-columnWidth: 300-->
 
 <?php include("./service-variables.php"); ?>
 <?php
@@ -37,7 +32,7 @@ $result = json_decode($data);
 
 
 ?>
-<h2>News</h2>
+<h2>Latest news</h2>
 <div id='news-posts' class='js-masonry' data-masonry-options='{ "itemSelector": ".news-post" }'>
     <?php
 	for ($i=0; $i < 30; $i++) {
@@ -71,24 +66,16 @@ $result = json_decode($data);
                 ?>
                 <div class=''>
                     <p class="fb-date"><?php echo $postDate; ?></p>
-                    <p><?php echo $tittel[0] ?>
-
-                        <a href="#" onclick="return false" class='prettydate' title='<?php echo $latest_post_date ?>'></a>
-                    </p>
+                    <p><?php echo $tittel[0] ?></p>
                     <?php
                     if ($latest_post_link != '' && $latest_post_link != null) {
-                        echo "<a href='" . $latest_post_link . "' class='button bg-setonescap-red fg-white'>Read more...</a>";
+                        echo "<a target='_blank' href='" . $latest_post_link . "' class='button bg-setonescap-red fg-white'>Read more</a>";
                     }
                     ?>
                 </div>
-
-
-
-
                 <div class="clearfix"></div>
                 </div>
             </div>
-
 
             <?php
              }
