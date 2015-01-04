@@ -1,3 +1,18 @@
+<script src="./scripts/masonry.pkgd.js"></script>
+
+<script>
+    var container = document.querySelector('#news-posts');
+    var msnry = new Masonry( container, {
+        // options
+
+        itemSelector: '.news-post'
+    });
+</script>
+
+<!--
+,
+columnWidth: 300-->
+
 <?php include("./service-variables.php"); ?>
 <?php
 /* gets the data from a URL */
@@ -21,21 +36,17 @@ $data = get_data("https://graph.facebook.com/" . $pageId . "/promotable_posts?ac
 $result = json_decode($data);
 
 
-
-echo "<div id='masonryContainer'>";
+?>
+<h2>News</h2>
+<div id='news-posts' class='js-masonry' data-masonry-options='{ "itemSelector": ".news-post" }'>
+    <?php
 	for ($i=0; $i < 30; $i++) {
-
         $latest_post =  $result->data[$i];
         $latest_post_text = $latest_post->message;
-
         $latest_post_linktitle = (strlen($latest_post_text) > 83) ? substr($latest_post_text,0,80).'...' : $latest_post_text;
-        //$latest_post_title = (strlen($latest_post_text) > 53) ? substr($latest_post_text,0,50).'...' : $latest_post_text;
         preg_match('/^([^.!?]*[\.!?]+){0,1}/', strip_tags($latest_post_text), $tittel);
-
-
         $latest_post_link = $latest_post->link;
         $latest_post_picture = $latest_post->picture;
-
         $latest_post_date = strtotime($latest_post->created_time);
         $postDate = date("j M", $latest_post_date);
 
@@ -44,7 +55,7 @@ echo "<div id='masonryContainer'>";
 
             ?>
 
-            <div class="col-3 masonry-brick">
+            <div class="col-4 news-post">
                 <div class="panel bg-noise bg-white fg-black no-padding">
 
                 <?php
@@ -86,16 +97,6 @@ echo "<div id='masonryContainer'>";
 echo "</div>";
 ?>
 
-<script src="/scripts/masonry.pkgd.js"></script>
 
-
-<script>
-$(window).load(function(){
-$('#masonryContainer').masonry({
-itemSelector: '.masonry-brick',
-columnWidth: 247
-});
-});
-</script>
 
 

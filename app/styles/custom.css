@@ -287,6 +287,7 @@ header {
 
 .fb-thumb {
     overflow: hidden;
+    max-height: 300px;
 }
 
 .fb-thumb img {
@@ -297,9 +298,18 @@ header {
     padding-bottom: 130px;
 }
 
-.masonry-brick {padding: 10px; float: left;
-    overflow: hidden;  }
-#masonryContainer { width: 0 auto; padding: 0; }
+#news-posts {
+    width: 0 auto;
+    padding: 0;
+    margin: auto;
+}
+
+.news-post {
+    padding: 10px;
+    float: left;
+    overflow: hidden;
+}
+
 
 p.fb-date {
     margin: 0;
