@@ -204,6 +204,14 @@ header {
     background: url('../images/headers/concerts.jpg') 50% 0 fixed;
 }
 
+.header.videos {
+    background: url('../images/headers/videos.jpg') 50% 0 fixed;
+}
+
+.header.photos {
+    background: url('../images/headers/photos.jpg') 50% 0 fixed;
+}
+
 
 .box-nav {
     padding: 0;
@@ -404,4 +412,19 @@ p.fb-date {
     margin: 15px 0px -2px 0px;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
