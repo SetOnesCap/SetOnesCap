@@ -179,7 +179,10 @@ function __getAdminLinkList(){
 function __getPhotoAlbum($albumId){
     $db = new DataBase();
     $albumTitle = __getSingleValue($db::PHOTOALBUMS_TITLECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
-    //$albumDate = __getSingleValue($db::PHOTOALBUMS_DATECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
+    $albumDate = __getSingleValue($db::PHOTOALBUMS_DATECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
+    $albumDescription = __getSingleValue($db::PHOTOALBUMS_DESCRIPTIONCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
+    $photographer = __getSingleValue($db::PHOTOALBUMS_PHOTOGRAPHERCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
+    $photographerStripped = strtolower(str_replace(array('  ', ' '), '-', preg_replace('/[^a-zA-Z0-9 s]/', '', trim($photographer))));
 
     $sql = "SELECT * FROM " . $db::PHOTOS_TABLENAME . " WHERE " . $db::PHOTOS_ALBUMIDCOL . " = " . $albumId;
 
@@ -187,16 +190,34 @@ function __getPhotoAlbum($albumId){
 
     if ($result->num_rows > 0) {
         $photoCount = $result->num_rows;
-        echo "<a onclick='showPhoto($albumId, $photoCount, 1)'> $albumTitle </a>";
+        echo "<div class='col-4 photoalbum-link'>";
+            echo "<div class='panel bg-noise bg-white fg-black no-padding'>";
+                echo "<div class='no-padding album-thumb'>";
+                    echo "<img src='/images/photoalbums/" . $albumTitle . "-" . $albumDate . "-" . $photographerStripped . ".jpg' alt='" . $albumTitle . "' class='' />";
+                echo "</div>";
+                echo "<div>";
+                    echo "<h3>" .  $albumTitle . "</h3>";
+                    echo "<p class='album-date'>" . $albumDate . "</p>";
+                    echo "<p>" . $photographer . "</p>";
+                    echo "<p>" . $albumDescription . "</p>";
+                    echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum' class='button bg-setonescap-red'> Watch photos</a>";
+                echo "</div>";
+            echo "</div>";
+
+        echo "</div>";
+
     } else {
         echo "0 results albun";
     }
     //$db->close();
 }
 
-function __getPhotoAlbums(){
+function __getPhotoAlbums($band){
     $db = new DataBase();
-    $sql = "SELECT DISTINCT ". $db::PHOTOALBUMS_TITLECOL .", " . $db::PHOTOALBUMS_IDCOL . ", " . $db::PHOTOALBUMS_DATECOL . " FROM " . $db::PHOTOALBUMS_TABLENAME;
+    $sql = "SELECT DISTINCT ". $db::PHOTOALBUMS_TITLECOL .", " . $db::PHOTOALBUMS_IDCOL . ", " . $db::PHOTOALBUMS_DATECOL .
+           " FROM " . $db::PHOTOALBUMS_TABLENAME .
+           " WHERE " . $db::PHOTOALBUMS_BANDCOL . " LIKE '" . $band .
+           "' ORDER BY " . $db::PHOTOALBUMS_DATECOL . " DESC";
 
     $result = $db->query($sql);
     $photoCount = $result->num_rows;
@@ -217,6 +238,9 @@ function __getPhoto($albumId, $photoNo){
 
     $albumTitle = __getSingleValue($db::PHOTOALBUMS_TITLECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
     $albumDate = __getSingleValue($db::PHOTOALBUMS_DATECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
+    $band = __getSingleValue($db::PHOTOALBUMS_BANDCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
+    $photographer = __getSingleValue($db::PHOTOALBUMS_PHOTOGRAPHERCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
+    $photographerStripped = strtolower(str_replace(array('  ', ' '), '-', preg_replace('/[^a-zA-Z0-9 s]/', '', trim($photographer))));
 
     $sql = "SELECT * FROM " . $db::PHOTOS_TABLENAME . " WHERE " . $db::PHOTOS_ALBUMIDCOL . " = " . $albumId . " AND " . $db::PHOTOS_NOCOL . " = " . $photoNo;
     $result = $db->query($sql);
@@ -225,18 +249,33 @@ function __getPhoto($albumId, $photoNo){
     if ($result->num_rows > 0) {
 
         while($row = $result->fetch_assoc()) {
+            echo "<span class='helper'></span>";
             if ($photoNo < 10) {
-                echo "<img src='" . $db::PHOTOS_ROOTURL . "/confusion-" . $albumTitle . "-" . $albumDate . "-0" . $photoNo . ".jpg'/>";
+                echo "<img src='" . $db::PHOTOS_ROOTURL . "/" . $photographerStripped . "/" . $band . "-" . $albumTitle . "-" . $albumDate . "-0" . $photoNo . ".jpg'/>";
             }else{
-                echo "<img src='" . $db::PHOTOS_ROOTURL . "/confusion-" . $albumTitle . "-" . $albumDate . "-" . $photoNo . ".jpg'/>";
+                echo "<img src='" . $db::PHOTOS_ROOTURL . "/" . $photographerStripped . "/" . $band . "-" . $albumTitle . "-" . $albumDate . "-" . $photoNo . ".jpg'/>";
             }
-            echo "<p>" . $row[$db::PHOTOS_DESCRIPTIONCOL] . "</p>";
         }
     } else {
         echo "0 photos";
     }
-//$db->close();
 }
+
+function __getPhotoDescription($albumId, $photoNo){
+    $db = new DataBase();
+
+    $albumTitle = __getSingleValue($db::PHOTOALBUMS_TITLECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
+    $albumDate = __getSingleValue($db::PHOTOALBUMS_DATECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
+
+    $sql = "SELECT * FROM " . $db::PHOTOS_TABLENAME . " WHERE " . $db::PHOTOS_ALBUMIDCOL . " = " . $albumId . " AND " . $db::PHOTOS_NOCOL . " = " . $photoNo;
+    $result = $db->query($sql);
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            return $row[$db::PHOTOS_DESCRIPTIONCOL];
+        }
+    }
+}
+
 
 ?>
 

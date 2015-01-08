@@ -1,44 +1,38 @@
-<?php
-$nyheter = array("Concerts","Info","Videos","Photos","Booking","Music");
-$farge = array("red", "yellow", "blue", "cyan", "magenta", "green");
-$i = 0;
-
-
-?>
-
-
-
 <div class="col-12 bg-white fg-black">
 
-    <p><?php __getContent($pageId); ?></p>
-
+        <p><?php __getContent($pageId); ?></p>
+    </div>
 
     <form>
-        <?php __getPhotoAlbums() ?>
 
+        <div class="col-12 bg-white fg-black">
+            <h2>Photos of Set One's Cap</h2>
 
+            <?php __getPhotoAlbums('setonescap') ?>
 
+            <div class='clear'></div>
+            </div>
+
+        <div class="col-12 bg-white fg-black">
+            <h2>Photos of Confusion</h2>
+
+            <?php __getPhotoAlbums('confusion') ?>
+
+            <div class='clear'></div>
+        </div>
     </form>
 
 
-</div>
-<main>
-
-
-    <div class="bg-noise bg-black fg-white border">
-
-
-        <div id="picturebox">
-
-        </div>
+<div class='clear'></div>
 
 
 
-        <div class='clear'></div>
 
+
+<div id="photoalbum" class="photoalbumDialog">
+    <div id="preview">
+        <a href='#close' title='Close' class='close'>X</a>
 
     </div>
 
-
-
-</main>
+</div>

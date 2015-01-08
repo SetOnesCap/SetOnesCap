@@ -2,7 +2,7 @@ function showPhoto(albumId, photoCount, photoNo)
 {
     if (albumId=="")
     {
-        document.getElementById("picturebox").innerHTML="no photoalbum";
+        document.getElementById("preview").innerHTML="no photoalbum";
         return;
     }
     if (window.XMLHttpRequest)
@@ -17,7 +17,7 @@ function showPhoto(albumId, photoCount, photoNo)
     {
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
-            document.getElementById("picturebox").innerHTML=xmlhttp.responseText;
+            document.getElementById("preview").innerHTML=xmlhttp.responseText;
         }
     }
     xmlhttp.open("GET","/modules/getPhoto.php?albumId="+albumId+"&photoCount="+photoCount+"&photoNo="+photoNo,true);
