@@ -16,9 +16,7 @@ a {
     padding: 0;
 }
 
-.coming-soon-socialbar{
-    background-color:rgba(253, 253, 229, 0.7);
-}
+
 
 a.facebook:hover{
     color: #3b5998;
@@ -294,11 +292,60 @@ header {
     font-size: 1.2em;
 }
 
-#picturebox img {
-    max-height: 800px;
+.photoalbumDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 99999;
+    opacity:0;
+
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.photoalbumDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.photoalbumDialog > div {
+    height: 600px;
+    max-height: 100%;
+    max-width: 1100px;
+    position: relative;
+    margin: 0px auto;
+    padding: 0;
+    background: #fff;
+}
+
+.photoalbumDialog > div img {
+
     max-width: 100%;
-    display: block;
-    margin: auto;
+    max-height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.photoalbumDialog > div > div{
+    height: 100%;
+}
+
+
+.photoalbumDialog .close {
+    position: absolute;
+    right: 5px;
+    top: 3px;
 }
 
 #picturebox .buttons {
@@ -306,22 +353,18 @@ header {
 
 }
 
-#picturebox button {
-    border: inherit;
-
-}
 
 .fixed-bottom{
     max-width: 1100px;
     margin: auto;
 }
 
-.fb-thumb {
+.fb-thumb, .album-thumb {
     overflow: hidden;
     max-height: 300px;
 }
 
-.fb-thumb img {
+.fb-thumb img, .album-thumb img {
     width: 100%;
 }
 
@@ -330,16 +373,20 @@ header {
     line-height: .5em;
 }
 
-#news-posts {
+#news-posts, #photoalbums-link {
     width: 0 auto;
     padding: 0;
     margin: auto;
 }
 
-.news-post {
+.news-post, .photoalbum-link {
     padding: 10px;
     float: left;
     overflow: hidden;
+}
+
+.photoalbum-link h3{
+    line-height: 0;
 }
 
 
