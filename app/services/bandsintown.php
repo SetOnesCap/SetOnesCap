@@ -5,7 +5,7 @@ $id = $bandsintownId;
 $appId = $bandsintownAppId;
 
 
-$bandsintown_url = "http://api.bandsintown.com/artists/" . $id . "/events.json?api_version=2.0&app_id=" . $appId;
+$bandsintown_url = "http://api.bandsintown.com/artists/" . $id . "/events.json?api_version=2.0&app_id=" . $appId. "&date=all";
 
 $events_json = file_get_contents($bandsintown_url);
 $events = json_decode($events_json);
