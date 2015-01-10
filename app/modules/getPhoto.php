@@ -30,7 +30,8 @@ echo "<h2>" . $albumTitle . "</h2>";
 echo "<p>" . $photographer . "</p>";
 echo "<p>" . $albumDescription . "</p>";
 echo "<p>" . $albumDate . "</p>";
-echo "<p>" . __getPhotoDescription($albumId, $photoNo) . "</p>";
+echo $photoNo . " of " . $photoCount;
+//echo "<p>" . __getPhotoDescription($albumId, $photoNo) . "</p>";
 if ($photoNo<10) {
     echo "<a href='/photos/" . $albumTitle . "/" . $albumDate . "/" . $photographerStripped . "/0" . $photoNo . "/'> Watch full screen</a>";
 }else {
