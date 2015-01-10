@@ -43,7 +43,7 @@ $result = json_decode($data);
         $latest_post_link = $latest_post->link;
         $latest_post_picture = $latest_post->picture;
         $latest_post_date = strtotime($latest_post->created_time);
-        $postDate = date("j M", $latest_post_date);
+        $postDate = date("M j. Y", $latest_post_date);
 
 
         if($latest_post_text !='' && ($latest_post->name != 'Live Photos')){

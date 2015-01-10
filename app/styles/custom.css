@@ -393,15 +393,10 @@ header {
     overflow: hidden;
 }
 
-.photoalbum-link h3{
-    line-height: 0;
-}
 
-
-p.fb-date {
+p.fb-date, p.album-date {
     margin: 0;
     font-size: 0.8em;
-    line-height: 0;
 }
 
 .event-item {
@@ -409,7 +404,7 @@ p.fb-date {
 }
 
 .event-item h2, h3 {
-    margin: 15px 0px -2px 0px;
+    margin: -15px 0px -2px 0px;
 }
 
 .video-container {
@@ -428,3 +423,16 @@ p.fb-date {
     height: 100%;
 }
 
+.video-container img {
+    margin-top: -50px;
+}
+
+
+.photo-fullscreen {
+    text-align: center;
+}
+
+.photo-fullscreen img {
+    max-width: 1100px;
+    max-height: 1200px;
+}

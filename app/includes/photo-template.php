@@ -12,7 +12,7 @@
     </header>
 
 
-<div class="col-12">
+<div class="col-12 photo-fullscreen">
 <?php
 
 $albumYear = substr($photoAlbumDate, 0, 4);
@@ -22,14 +22,15 @@ if($albumYear < 2015 && $albumMonth < 10){
     $band = "confusion";
 }
 
-echo "<img src='/images/original-photos/" . $photographer . "/" . $band . "-" . $photoAlbum . "-" . $photoAlbumDate . "-" . $photoNo . ".jpg'/>";
-
+echo "<img src='/images/photos/big/" . $photographer . "/" . $band . "-" . $photoAlbum . "-" . $photoAlbumDate . "-" . $photoNo . ".jpg'/>";
+echo "<p>";
 echo $photoAlbum;
 echo " --- ";
 echo $photoAlbumDate;
 echo " --- ";
 echo $photoNo;
 echo " --- ";
+echo "</p>";
 ?>
 </div>
 </div>
