@@ -1,10 +1,9 @@
+
+
 <?php
 $albumId = intval($_GET['albumId']);
 $photoNo = intval($_GET['photoNo']);
-
 $photoCount = intval($_GET['photoCount']);
-
-
 $previous = $photoNo-1;
 $next = $photoNo+1;
 
@@ -18,35 +17,40 @@ $albumDate = __getSingleValue($db::PHOTOALBUMS_DATECOL, $db::PHOTOALBUMS_TABLENA
 $photographer = __getSingleValue($db::PHOTOALBUMS_PHOTOGRAPHERCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
 $photographerStripped = strtolower(str_replace(array('  ', ' '), '-', preg_replace('/[^a-zA-Z0-9 s]/', '', trim($photographer))));
 
+$albumDateStrTemp = strtotime($albumDate);
+$albumDateStr = date("F j, Y", $albumDateStrTemp);
+
 
 echo "<div class='col-9 text-center bg-noise bg-black no-padding'>";
 __getPhoto($albumId, $photoNo);
 echo "<div class='clear'></div>";
 echo "</div>";
 
-echo "<div class='col-3'>";
+echo "<div class='col-3 bg-noise bg-white'>";
 echo "<a href='#close' title='Close' class='close float-left'>X</a>";
-echo "<h2>" . $albumTitle . "</h2>";
-echo "<p>" . $photographer . "</p>";
-echo "<p>" . $albumDescription . "</p>";
-echo "<p>" . $albumDate . "</p>";
-echo $photoNo . " of " . $photoCount;
+
+echo "<div class='col-12 no-padding'>";
+    echo "<h2>" . $albumTitle . "</h2>";
+    echo "<p class='album-date'>" . $albumDateStr . "</p>";
+    echo "<p>" . $albumDescription . "</p>";
+echo "</div>";
+
+echo "<div class='col-12 no-padding'>";
+    echo "<p> Photo by " . $photographer . "</p>";
+    echo "<p>" . $photoNo . " of " . $photoCount . "</p>";
+echo "</div>";
+
 //echo "<p>" . __getPhotoDescription($albumId, $photoNo) . "</p>";
-if ($photoNo<10) {
-    echo "<a href='/photos/" . $albumTitle . "/" . $albumDate . "/" . $photographerStripped . "/0" . $photoNo . "/'> Watch full screen</a>";
-}else {
-    echo "<a href='/photos/" . $albumTitle . "/" . $albumDate . "/" . $photographerStripped . "/" . $photoNo . "/'> Watch full screen</a>";
-}
 
-echo "<div class='buttons'>";
 
+echo "<div class='navigation'>";
 
 if ($photoNo>1) {
     $previous = $photoNo - 1;
 }else {
     $previous = $photoCount;
 }
-echo "<button value='" . $previous . "' onclick='showPhoto($albumId, $photoCount, this.value)' class='button bg-setonescap-red fg-white'>Previous</button>";
+echo "<button id='prevButton' value='" . $previous . "' onclick='showPhoto($albumId, $photoCount, this.value)' class='button col-6 bg-setonescap-red fg-white'><i class='fa fa-step-backward'></i> Prev</button>";
 
 
 if ($photoNo<$photoCount) {
@@ -54,12 +58,16 @@ if ($photoNo<$photoCount) {
 }else {
     $next = 1;
 }
-    echo "<button value='" . $next . "' onclick='showPhoto($albumId, $photoCount, this.value)' class='button bg-setonescap-red fg-white'>Next</button>";
+    echo "<button id='nextButton' value='" . $next . "' onclick='showPhoto($albumId, $photoCount, this.value)' class='button col-6 bg-setonescap-red fg-white'>Next <i class='fa fa-step-forward'></i></button>";
 
+
+
+
+if ($photoNo<10) {
+    echo "<a href='/photos/" . $albumTitle . "/" . $albumDate . "/" . $photographerStripped . "/0" . $photoNo . "/ ' target='_blank' class='button col-12 bg-setonescap-red fg-white'> Watch full screen</a>";
+}else {
+    echo "<a href='/photos/" . $albumTitle . "/" . $albumDate . "/" . $photographerStripped . "/" . $photoNo . "/' target='_blank' class='button col-12 bg-setonescap-red fg-white'> Watch full screen</a>";
+}
 echo "</div>";
-
 echo "</div>";
-
-
 ?>
-
