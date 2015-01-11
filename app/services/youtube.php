@@ -14,7 +14,7 @@ $videos = json_decode($videos_json);
 
 foreach ($videos->items as $video) {
     $publishedDate = strtotime($video->snippet->publishedAt);
-    $postDate = date("M j. Y", $publishedDate);
+    $postDate = date("F j, Y", $publishedDate);
     echo "<div class='col-4 photoalbum-link'>";
         echo "<div class='panel bg-noise bg-white fg-black no-padding'>";
             echo "<div class='no-padding album-thumb video-container'>";

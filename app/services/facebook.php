@@ -43,18 +43,19 @@ $result = json_decode($data);
         $latest_post_link = $latest_post->link;
         $latest_post_picture = $latest_post->picture;
         $latest_post_date = strtotime($latest_post->created_time);
-        $postDate = date("M j. Y", $latest_post_date);
+        $postDate = date("F j, Y", $latest_post_date);
 
 
         if($latest_post_text !='' && ($latest_post->name != 'Live Photos')){
 
             ?>
 
-            <div class="col-4 news-post">
+            <div class="col-4 news-post" itemscope itemtype="http://schema.org/Article">
                 <div class="panel bg-noise bg-white fg-black no-padding">
 
                 <?php
                 echo "<div class='no-padding fb-thumb'>";
+                echo "<span itemprop='thumbnail'>";
                 if($latest_post_picture !='' &$latest_post->type == 'photo') {
                     $photodata = get_data("https://graph.facebook.com/" . $latest_post->object_id);
                     $photoresult = json_decode($photodata);
@@ -62,11 +63,12 @@ $result = json_decode($data);
                 }else if($latest_post_picture !=''){
                     echo "<img src='" . $latest_post_picture . "'/>";
                 }
+                echo "</span>";
                 echo "</div>";
                 ?>
                 <div class=''>
-                    <p class="fb-date"><?php echo $postDate; ?></p>
-                    <p><?php echo $tittel[0] ?></p>
+                    <p class="fb-date"><span itemprop="datePublished"><?php echo $postDate; ?></span></p>
+                    <p><span itemprop="articleBody"><?php echo $tittel[0] ?></span></p>
                     <?php
                     if ($latest_post_link != '' && $latest_post_link != null) {
                         echo "<a target='_blank' href='" . $latest_post_link . "' class='button bg-setonescap-red fg-white'>Read more</a>";

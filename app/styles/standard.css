@@ -270,6 +270,9 @@ padding: 0;
     border: 1px solid #DA2;
 }
 /* Foreground colors */
+.fg-black {
+    color: #333;
+}
 .fg-green {
     color: #6B4;
 }

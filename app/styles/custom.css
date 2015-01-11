@@ -4,8 +4,24 @@ body {
     background-color: #FFF;
 }
 
+::-moz-selection{
+    background:#EA5124;
+    color:#fff;text-shadow:none
+}
+
+::selection{
+    background:#EA5124;
+    color:#fff;
+    text-shadow:none
+}
+
+
 a {
     text-decoration: none;
+}
+
+h2 {
+    font-size: 2em;
 }
 
 .fixed {
@@ -16,7 +32,14 @@ a {
     padding: 0;
 }
 
+.sociallinks a {
+    display: inline-block;
+    padding: 15px;
+}
 
+.sociallinks a p {
+    margin-top: 0px;
+}
 
 a.facebook:hover{
     color: #3b5998;
@@ -42,6 +65,9 @@ a.google-plus:hover {
     color: #D73D32;
 }
 
+.fg-white {
+    color: #fff;
+}
 
 .content {
     padding: 0;
@@ -50,9 +76,16 @@ a.google-plus:hover {
    /* box-shadow: 0px 0px 30px -10px #000;*/
 }
 
+
 nav {
     font-size: 1.1em;
     padding: 5px 40px;
+}
+@media screen and (max-width: 750px) {
+    nav {
+        font-size: 1em;
+        padding: 5px 5px;
+    }
 }
 
 nav.fixed {
@@ -87,6 +120,7 @@ header nav img {
     font-weight: normal;
     font-size: 0.9em;
     text-transform: uppercase;
+    margin-right: -1px;
 }
 
 .bg-white {
@@ -95,6 +129,10 @@ header nav img {
 
 .bg-setonescap-red {
     background-color: #EA5124;
+}
+
+.fg-setonescap-red {
+    color: #EA5124;
 }
 
 .button.bg-setonescap-red {
@@ -192,7 +230,7 @@ header {
 
 .header-text h1 {
     margin: 0;
-    color: #EA5124;
+
     font-size: 4em;
 }
 
@@ -356,6 +394,11 @@ header {
     top: 3px;
 }
 
+.photoalbumDialog .navigation {
+    padding: 0;
+    max-width: 275px;
+}
+
 #picturebox .buttons {
     text-align: center;
 
@@ -400,11 +443,12 @@ p.fb-date, p.album-date {
 }
 
 .event-item {
+    margin-bottom: -1px;
 
 }
 
-.event-item h2, h3 {
-    margin: -15px 0px -2px 0px;
+.event-item h3, h4 {
+    margin: 0px 0px -2px 0px;
 }
 
 .video-container {
@@ -430,9 +474,67 @@ p.fb-date, p.album-date {
 
 .photo-fullscreen {
     text-align: center;
+    padding: 0;
 }
 
 .photo-fullscreen img {
-    max-width: 1100px;
+    max-width: 100%;
     max-height: 1200px;
+}
+
+
+.slicknav_menu {
+    display:none;
+}
+
+@media screen and (max-width: 40em) {
+    .js #menu {
+        display:none;
+    }
+
+    .js .slicknav_menu {
+        display:block;
+    }
+    .slicknav_nav .float-right{
+        float: none;
+    }
+    nav ul li a:hover, nav ul li a.active{
+        border-bottom: none;
+    }
+    .slicknav_nav img {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        opacity: 0.1;
+        width: 150px;
+    }
+    .slicknav_menu.fixed{
+        z-index: 500;
+        width: 100%;
+    }
+    header nav ul, nav ul {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #preview{
+        overflow: auto;
+        line-height: 1em;
+        height: 100%;
+    }
+    #preview h2{
+        margin: 0 0 5px 0;
+    }
+    #preview .col-9 {
+        height: 55%;
+    }
+    #preview button.col-6 {
+        width: 50%;
+    }
+
+    #preview .col-3 {
+        height: 45%;
+        width: 100%;
+    }
 }
