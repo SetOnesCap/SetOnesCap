@@ -64,9 +64,9 @@ if ($photoNo<$photoCount) {
 
 
 if ($photoNo<10) {
-    echo "<a href='/photos/" . $albumTitle . "/" . $albumDate . "/" . $photographerStripped . "/0" . $photoNo . "/ ' target='_blank' class='button col-12 bg-setonescap-red fg-white'> Watch full screen</a>";
+    echo "<a href='/photos/" . $albumTitle . "/" . $albumDate . "/" . $photographerStripped . "/0" . $photoNo . "/ ' target='_blank' class='button col-12 bg-setonescap-red fg-white'><i class='fa fa-expand'></i> Watch full screen</a>";
 }else {
-    echo "<a href='/photos/" . $albumTitle . "/" . $albumDate . "/" . $photographerStripped . "/" . $photoNo . "/' target='_blank' class='button col-12 bg-setonescap-red fg-white'> Watch full screen</a>";
+    echo "<a href='/photos/" . $albumTitle . "/" . $albumDate . "/" . $photographerStripped . "/" . $photoNo . "/' target='_blank' class='button col-12 bg-setonescap-red fg-white'><i class='fa fa-expand'></i> Watch full screen</a>";
 }
 echo "</div>";
 echo "</div>";
