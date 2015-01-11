@@ -3,9 +3,9 @@ node_modules
 dist
 .tmp
 
-app/.htaccess
-app/dbconf.php
-app/images/original-photos
-app/images/template
-app/images/venuelogos
-app/service-variables.php
+public_html/.htaccess
+public_html/dbconf.php
+public_html/images/original-photos
+public_html/images/template
+public_html/images/venuelogos
+public_html/service-variables.php
