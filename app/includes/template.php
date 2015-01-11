@@ -17,24 +17,19 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-<!-- <div
-    class="fb-like"
-    data-share="true"
-    data-width="450"
-    data-show-faces="true">
-</div> -->
 
 
 
 <div class="content">
     <header>
-        <nav class="fg-black bg-white fixed">
+        <nav id="menu" class="fg-black bg-white fixed">
             <img src="/images/template/bird-nav.png"/>
             <ul class="float-right">
                 <?php
                 __getLinkList($rootURL);
                 ?>
             </ul>
+
         </nav>
     </header>
     <section class="col-12 fg-black header <?php echo $pageTitle; ?>" data-speed="1.4" data-type="background">
@@ -49,6 +44,12 @@
     <main>
         <?php include("content/" . $pageFile); ?>
     </main>
+    <div
+        class="fb-like col-12"
+        data-share="true"
+        data-width="450"
+        data-show-faces="false">
+    </div>
     <div class="col-12 bg-noise bg-black fg-white bottom-col">
         <div class="col-12 text-center">
             <h2>Get in touch</h2>
@@ -163,9 +164,18 @@
     <div class="clearfix"></div>
 </div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript" src="/scripts/jquery.slicknav.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#menu').slicknav();
+    });
+</script>
+
 <script type="text/javascript" src="/scripts/showPhoto.js"></script>
 <script type="text/javascript" src="/scripts/parallax.js"></script>
 <script type="text/javascript" src="/scripts/activeLinks.js"></script>
+
 </body>
 </html>
 

@@ -10,11 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         <?php
-        if($pageTitle == 'Home' || $pageTitle == '' || $pageTitle == null){
-            echo $siteName;
+        if($pageTitle == 'home' || $pageTitle == '' || $pageTitle == null){
+            echo ucfirst($siteName);
         }
         else {
-            echo $pageTitle . " - " . $siteName;
+            echo ucfirst($pageTitle) . " - " . $siteName;
         }
         ?>
     </title>
@@ -37,8 +37,12 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $rootURL; ?>/font-awesome-4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $rootURL; ?>/styles/standard.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $rootURL; ?>/styles/custom.css">
+    <link rel="stylesheet" href="<?php echo $rootURL; ?>/styles/slicknav.css">
 
 
     <base target="_self" />
     <link rel="canonical" href="http://www.setonescap.com/$pageTitle">
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>

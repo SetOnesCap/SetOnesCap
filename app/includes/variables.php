@@ -1,4 +1,5 @@
 <?php
+mysql_query('SET NAMES utf8');
 $db = new DataBase();
 $siteName = "Set One's Cap";
 $pageTitle = isset($_GET['pageTitle']) ? $_GET['pageTitle'] : 'home';
