@@ -82,8 +82,6 @@ function __getContent($pageId){
         while($row = $result->fetch_assoc()) {
             echo "<p>" . $row[$db::PAGECONTENT_CONTENTCOL] . "<p>";
         }
-    } else {
-        echo "0 results";
     }
 //$db->close();
 }
@@ -180,7 +178,7 @@ function __getPhotoAlbum($albumId){
     $db = new DataBase();
     $albumTitle = __getSingleValue($db::PHOTOALBUMS_TITLECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
     $albumDate = __getSingleValue($db::PHOTOALBUMS_DATECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
-    $albumDateString = date("M j. Y", strtotime($albumDate));
+    $albumDateString = date("F j, Y", strtotime($albumDate));
     $albumDescription = __getSingleValue($db::PHOTOALBUMS_DESCRIPTIONCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
     $photographer = __getSingleValue($db::PHOTOALBUMS_PHOTOGRAPHERCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
     $photographerStripped = strtolower(str_replace(array('  ', ' '), '-', preg_replace('/[^a-zA-Z0-9 s]/', '', trim($photographer))));
@@ -197,13 +195,13 @@ function __getPhotoAlbum($albumId){
         echo "<div class='col-4 photoalbum-link'>";
             echo "<div class='panel bg-noise bg-white fg-black no-padding'>";
                 echo "<div class='no-padding album-thumb'>";
-                    echo "<img src='/images/photoalbums/" . $albumTitle . "-" . $albumDate . "-" . $photographerStripped . ".jpg' alt='" . $albumTitle . "' class='' />";
+                    echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum'><img src='/images/photoalbums/" . $albumTitle . "-" . $albumDate . "-" . $photographerStripped . ".jpg' alt='" . $albumTitle . "' class='' /></a>";
                 echo "</div>";
                 echo "<div>";
                     echo "<h3>" .  $albumTitle . "</h3>";
                     echo "<p class='album-date'>" . $albumDateString . "</p>";
-                    echo "<p>" . $photographer . "</p>";
                     echo "<p>" . $albumDescription . "</p>";
+                    echo "<p>Photos by " . $photographer . "</p>";
                     echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum' class='button bg-setonescap-red'> Watch photos</a>";
                 echo "</div>";
             echo "</div>";
