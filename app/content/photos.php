@@ -1,7 +1,8 @@
-<div class="col-12 bg-white fg-black">
-
+<div class="col-12 bg-white fg-black text-center">
+    <div class="col-8 center" id='introduction'>
         <p><?php __getContent($pageId); ?></p>
     </div>
+</div>
 
     <form>
 

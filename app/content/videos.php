@@ -1,7 +1,9 @@
 
 
-<div class="col-12 bg-white fg-black">
-    <p><?php __getContent($pageId); ?></p>
+<div class="col-12 bg-white fg-black text-center">
+    <div class="col-8 center" id='introduction'>
+        <p><?php __getContent($pageId); ?></p>
+    </div>
 </div>
 <div class="col-12 bg-white">
     <?php include_once('./services/youtube.php'); ?>
