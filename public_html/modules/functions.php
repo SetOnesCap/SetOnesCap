@@ -133,8 +133,6 @@ function __getAdminLinkList(){
     $db = new DataBase();
     $sql = "SELECT * FROM " . $db::ADMINPAGES_TABLENAME;
     $result = $db->query($sql);
-
-
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             if($row[$db::ADMINPAGES_PARENTIDCOL] == null || $row[$db::ADMINPAGES_PARENTIDCOL] == ""){
@@ -170,9 +168,7 @@ function __getAdminLinkList(){
     }else {
         echo "0 results";
     }
-//$db->close();
 }
-
 
 function __getPhotoAlbum($albumId){
     $db = new DataBase();
@@ -182,13 +178,9 @@ function __getPhotoAlbum($albumId){
     $albumDescription = __getSingleValue($db::PHOTOALBUMS_DESCRIPTIONCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
     $photographer = __getSingleValue($db::PHOTOALBUMS_PHOTOGRAPHERCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
     $photographerStripped = strtolower(str_replace(array('  ', ' '), '-', preg_replace('/[^a-zA-Z0-9 s]/', '', trim($photographer))));
-
     $photoCount = __getSingleValue($db::PHOTOALBUMS_ALBUMSIZECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
-
     $sql = "SELECT * FROM " . $db::PHOTOS_TABLENAME . " WHERE " . $db::PHOTOS_ALBUMIDCOL . " = " . $albumId;
-
     $result = $db->query($sql);
-
     if ($result->num_rows > 0) {
     //TODO Description at all photos    $photoCount = $result->num_rows;
 
