@@ -34,6 +34,7 @@
 /* Button */
 .slicknav_btn {
     margin: 5px 5px 6px;
+    z-index: 600;
 }
 /* Button Text */
 .slicknav_menu  .slicknav_menutxt {

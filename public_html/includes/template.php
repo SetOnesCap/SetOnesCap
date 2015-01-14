@@ -35,9 +35,8 @@
     <section class="col-12 fg-black header <?php echo $pageTitle; ?>" data-speed="1.4" data-type="background">
         <div class="header-text bg-white fg-setonescap-red">
             <h1><?php __getTitle($pageId); ?></h1>
-        <p class="credit-text"></p>
+            <p class="credit-text"></p>
         </div>
-        <!--    <h1>Set One's Cap<span> Official Website</span></h1>-->
 
 
     </section>
@@ -121,7 +120,7 @@
 
     </div>
     <footer class="fixed-bottom bg-white fg-black">
-        <div class="col-6">Copyright © 2014 <a href="http://www.setonescap.com" target="_blank">Set One's Cap</a></div>
+        <div class="col-6">Copyright © 2014 <a href="https://plus.google.com/+Setonescap" target="_blank">Set One's Cap</a></div>
         <div class="col-6 text-right">
             Website by: <a href="https://plus.google.com/+BenjaminDehli1/" target="_blank">Benjamin Dehli</a>
         </div>

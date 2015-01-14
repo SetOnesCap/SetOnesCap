@@ -372,6 +372,10 @@ p.fb-date, p.album-date {
     margin: 0px 0px -2px 0px;
 }
 
+.panel h3 {
+    margin: 0;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -395,7 +399,7 @@ p.fb-date, p.album-date {
 
 .photo-fullscreen {
     text-align: center;
-    padding: 0;
+    padding: 50px 0 0 0;
 }
 
 .photo-fullscreen img {
@@ -429,7 +433,7 @@ footer{
     .slicknav_nav img {
         position: absolute;
         right: 30px;
-        bottom: 30px;
+        bottom: 10px;
         opacity: 0.1;
         width: 150px;
     }
