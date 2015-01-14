@@ -170,6 +170,25 @@ function __getAdminLinkList(){
     }
 }
 
+
+function __getPhotographer($albumTitle, $albumDate, $photographerLink){
+    $db = new DataBase();
+    $photographerLinkShort = (substr($photographerLink, 0, 4));
+
+    $sql = "SELECT * FROM " . $db::PHOTOALBUMS_TABLENAME .
+        " WHERE " . $db::PHOTOALBUMS_TITLECOL . " = '" . $albumTitle .
+        "' AND " . $db::PHOTOALBUMS_DATECOL . " = '" . $albumDate .
+        "' AND " . $db::PHOTOALBUMS_PHOTOGRAPHERCOL . " LIKE '" . $photographerLinkShort . "%'";
+    $result = $db->query($sql);
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            return $row[$db::PHOTOALBUMS_PHOTOGRAPHERCOL];
+        }
+    }
+}
+
+
+
 function __getPhotoAlbum($albumId){
     $db = new DataBase();
     $albumTitle = __getSingleValue($db::PHOTOALBUMS_TITLECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
@@ -194,7 +213,7 @@ function __getPhotoAlbum($albumId){
                     echo "<p class='album-date'>" . $albumDateString . "</p>";
                     echo "<p>" . $albumDescription . "</p>";
                     echo "<p>Photos by " . $photographer . "</p>";
-                    echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum' class='button bg-setonescap-red'> Watch photos</a>";
+                    echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum' rel='nofollow' class='button bg-setonescap-red'> Watch photos</a>";
                 echo "</div>";
             echo "</div>";
 
