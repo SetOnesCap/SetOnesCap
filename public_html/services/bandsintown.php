@@ -76,4 +76,3 @@ usort($events, function($a, $b)
     }
     ?>
 </div>
-
