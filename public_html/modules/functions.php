@@ -1,6 +1,6 @@
 <?php
 
-include('./dbconf.php');
+include('dbconf.php');
 
 
 function __getSingleValue($returnValue, $table, $whereCol, $whereValue){
@@ -173,7 +173,7 @@ function __getAdminLinkList(){
 
 function __getPhotographer($albumTitle, $albumDate, $photographerLink){
     $db = new DataBase();
-    $photographerLinkShort = (substr($photographerLink, 0, 4));
+    $photographerLinkShort = (substr($photographerLink, 0, 3));
 
     $sql = "SELECT * FROM " . $db::PHOTOALBUMS_TABLENAME .
         " WHERE " . $db::PHOTOALBUMS_TITLECOL . " = '" . $albumTitle .
@@ -206,7 +206,7 @@ function __getPhotoAlbum($albumId){
         echo "<div class='col-4 photoalbum-link'>";
             echo "<div class='panel bg-noise bg-white fg-black no-padding'>";
                 echo "<div class='no-padding album-thumb'>";
-                    echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum'><img src='/images/photoalbums/" . $albumTitle . "-" . $albumDate . "-" . $photographerStripped . ".jpg' alt='" . $albumTitle . "' class='' /></a>";
+                    echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum'><img src='/images/photoalbums/" . strtolower($albumTitle) . "-" . $albumDate . "-" . $photographerStripped . ".jpg' alt='" . $albumTitle . "' class='' /></a>";
                 echo "</div>";
                 echo "<div>";
                     echo "<h3>" .  $albumTitle . "</h3>";
@@ -268,9 +268,9 @@ function __getPhoto($albumId, $photoNo){
         while($row = $result->fetch_assoc()) { */
             echo "<span class='helper'></span>";
             if ($photoNo < 10) {
-                echo "<img src='" . $db::PHOTOS_ROOTURL . "/small/" . $photographerStripped . "/" . $band . "-" . $albumTitle . "-" . $albumDate . "-0" . $photoNo . ".jpg' alt='" . $altText . "'/>";
+                echo "<img src='" . $db::PHOTOS_ROOTURL . "/small/" . $photographerStripped . "/" . $band . "-" . strtolower($albumTitle) . "-" . $albumDate . "-0" . $photoNo . ".jpg' alt='" . $altText . "'/>";
             }else{
-                echo "<img src='" . $db::PHOTOS_ROOTURL . "/small/" . $photographerStripped . "/" . $band . "-" . $albumTitle . "-" . $albumDate . "-" . $photoNo . ".jpg' alt='" . $altText . "'/>";
+                echo "<img src='" . $db::PHOTOS_ROOTURL . "/small/" . $photographerStripped . "/" . $band . "-" . strtolower($albumTitle) . "-" . $albumDate . "-" . $photoNo . ".jpg' alt='" . $altText . "'/>";
             }
     /*    }
     } else {

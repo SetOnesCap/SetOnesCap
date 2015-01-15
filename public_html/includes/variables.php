@@ -1,10 +1,10 @@
 <?php
-mysql_query('SET NAMES utf8');
+//mysql_query('SET NAMES utf8');
 $db = new DataBase();
 $siteName = "Set One's Cap";
 $pageTitle = isset($_GET['pageTitle']) ? $_GET['pageTitle'] : 'home';
 $pageTitle = str_replace('-', ' ', $pageTitle);
-$pageTitleString = $pageTitle;
+$pageTitleString = ucfirst($pageTitle);
 
 $pageId = __getSingleValue($db::PAGE_IDCOL, $db::PAGE_TABLENAME, $db::PAGE_TITLECOL, $pageTitle);
 $pageDescription = __getSingleValue($db::PAGE_DESCRIPTIONCOL, $db::PAGE_TABLENAME, $db::PAGE_TITLECOL, $pageTitle);

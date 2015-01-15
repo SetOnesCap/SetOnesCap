@@ -1,5 +1,4 @@
 
-<body class="bg-white">
 <div class="content">
     <header>
         <nav id="menu" class="fg-black bg-white fixed">
@@ -26,7 +25,7 @@ if($albumYear < 2015 && $albumMonth < 10){
     $band = "confusion";
 }
 
-echo "<img src='/images/photos/big/" . $photographer . "/" . $band . "-" . $photoAlbum . "-" . $photoAlbumDate . "-" . $photoNo . ".jpg'/>";
+echo "<img src='/images/photos/big/" . $photographer . "/" . $band . "-" . strtolower($photoAlbum) . "-" . $photoAlbumDate . "-" . $photoNo . ".jpg'/>";
 ?>
 
     <p> Photo by <?php echo $photographerString ?></p>

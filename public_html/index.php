@@ -11,7 +11,6 @@ include("./includes/head.php");
 if($pageTitle == 'admin'){
     header("Location: admin/index.php");
     die();
-   // include("admin/includes/admin-template.php");
 }else if($pageTitle == 'photos' && $photoAlbum != ''){
     include("includes/photo-template.php");
 }else {
