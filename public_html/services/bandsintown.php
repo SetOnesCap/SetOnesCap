@@ -19,19 +19,21 @@ usort($events, function($a, $b)
         if (date("Y-m-d", strtotime($event->datetime)) >= $dateNow){
             ?>
             <div itemscope itemtype='http://schema.org/Event' class='col-12 bg-noise bg-white fg-black event-item panel'>
-                <h3><span itemprop='summary'> <?php echo $event->title ?> </span></h3>
+                <h3><span itemprop='name'> <?php echo $event->title ?> </span></h3>
                 <div class='col-4'>
                     <h4>Date:</h4>
                     <time itemprop='startDate' datetime='<?php echo $event->datetime; ?>'> <?php echo $event->formatted_datetime; ?> </time>
                 </div>
-                ​<div itemprop='location' itemscope itemtype='http://schema.org/Organization' class='col-3'>
+                <div itemprop='location' itemscope itemtype='http://schema.org/Organization' class="no-padding">
+                ​<div class='col-3'>
                     <h4>Venue:</h4>
                     <span itemprop='name'> <?php echo $event->venue->name; ?></span>
                 </div>
-                <div itemprop='address' itemscope itemtype='http://schema.org/Address' class='col-3'>
+                <div class='col-3'>
                     <h4>Location:</h4>
-                    <span itemprop='locality'><?php echo $event->venue->city; ?></span>,
-                    <span itemprop='country-name'><?php echo $event->venue->country; ?></span>
+                    <span itemprop='address'><?php echo $event->venue->city; ?>,
+                    <?php echo $event->venue->country; ?></span>
+                </div>
                 </div>
                 <div class='col-2'>
                     <?php if ($event->ticket_url != '' || $event->ticket_url != null) { ?>
@@ -53,17 +55,19 @@ usort($events, function($a, $b)
         if (date("Y-m-d", strtotime($event->datetime)) < $dateNow){
             ?>
             <div itemscope itemtype='http://schema.org/Event' class='col-12 bg-noise bg-white fg-black event-item panel'>
-                <h3><span itemprop='summary'> <?php echo $event->title ?> </span></h3>
+                <h3><span itemprop='name'> <?php echo $event->title ?> </span></h3>
                 <div class='col-4'><h4>Date:</h4><time itemprop='startDate' datetime='<?php echo $event->datetime; ?>'> <?php echo $event->formatted_datetime; ?> </time></div>
-                ​<div itemprop='location' itemscope itemtype='http://schema.org/Organization' class='col-3'>
+                <div itemprop='location' itemscope itemtype='http://schema.org/Organization' class="no-padding">
+                ​<div class='col-3'>
                     <h4>Venue:</h4>
                     <span itemprop='name'> <?php echo $event->venue->name; ?> </span>
                 </div>
-                <div itemprop='address' itemscope itemtype='http://schema.org/Address' class='col-3'>
+                <div class='col-3'>
                     <h4>Location:</h4>
-                    <span itemprop='locality'><?php echo $event->venue->city; ?></span>,
-                    <span itemprop='country-name'><?php echo $event->venue->country; ?></span>
+                    <span itemprop='address'><?php echo $event->venue->city; ?>,
+                    <?php echo $event->venue->country; ?></span>
                 </div>
+                    </div>
                 <div class='col-2'>
                     <?php if ($event->ticket_url != '' || $event->ticket_url != null) { ?>
                         <a href='<?php echo htmlspecialchars($event->ticket_url, ENT_COMPAT); ?>' class='button bg-setonescap-red fg-white' target='_blank'>See event</a>

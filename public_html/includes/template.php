@@ -108,9 +108,11 @@
         <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-6">
             <h3>Booking:</h3>
             <p><span itemprop="name">Carl-Viktor Guttormsen</span></p>
-            <p>Parkveien 1</p>
-            <p>3970 Langesund</p>
-            <p>Norway</p>
+            <div itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address" class="no-padding">
+                <p><span itemprop="street-address">Parkveien 1</span></p>
+                <p><span itemprop="postal-code">3970 Langesund</span></p>
+                <p><span itemprop="country-name">Norway</span></p>
+            </div>
             <p>Phone: +47 90 26 21 60</p>
             <p>E-mail: booking@setonescap.com</p>
         </div>
