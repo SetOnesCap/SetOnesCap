@@ -1,5 +1,3 @@
-<body class="bg-white">
-
 <script>
     window.fbAsyncInit = function() {
         FB.init({
@@ -53,45 +51,45 @@
         <div class="col-12 text-center sociallinks">
             <h2>Get in touch</h2>
             <a href="https://www.facebook.com/setonescap" class="facebook" title="Check out Set One's Cap at Facebook">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-square-o fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x"></i>
-                </span>
+                <div class="fa-stack fa-2x">
+                    <span class="fa fa-square-o fa-stack-2x"></span>
+                    <span class="fa fa-facebook fa-stack-1x"></span>
+                </div>
                 <p>Facebook</p>
             </a>
             <a href="https://twitter.com/setonescap" class="twitter" title="Check out Set One's Cap at Twitter">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-square-o fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x"></i>
-                </span>
+                <div class="fa-stack fa-2x">
+                    <span class="fa fa-square-o fa-stack-2x"></span>
+                    <span class="fa fa-twitter fa-stack-1x"></span>
+                </div>
                 <p>Twitter</p>
             </a>
             <a href="http://instagram.com/setonescap" class="instagram" title="Check out Set One's Cap at Instagram">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-square-o fa-stack-2x"></i>
-                    <i class="fa fa-instagram fa-stack-1x"></i>
-                </span>
+                <div class="fa-stack fa-2x">
+                    <span class="fa fa-square-o fa-stack-2x"></span>
+                    <span class="fa fa-instagram fa-stack-1x"></span>
+                </div>
                 <p>Instagram</p>
             </a>
             <a href="https://www.youtube.com/user/setonescap" class="youtube" title="Check out Set One's Cap at YouTube">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-square-o fa-stack-2x"></i>
-                    <i class="fa fa-youtube fa-stack-1x"></i>
-                </span>
+                <div class="fa-stack fa-2x">
+                    <span class="fa fa-square-o fa-stack-2x"></span>
+                    <span class="fa fa-youtube fa-stack-1x"></span>
+                </div>
                 <p>YouTube</p>
             </a>
             <a href="https://soundcloud.com/setonescap" class="soundcloud" title="Check out Set One's Cap at SoundCloud">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-square-o fa-stack-2x"></i>
-                    <i class="fa fa-soundcloud fa-stack-1x"></i>
-                </span>
+                <div class="fa-stack fa-2x">
+                    <span class="fa fa-square-o fa-stack-2x"></span>
+                    <span class="fa fa-soundcloud fa-stack-1x"></span>
+                </div>
                 <p>Soundcloud</p>
             </a>
             <a href="https://plus.google.com/111095056778547378720" rel="publisher" class="google-plus" title="Check out Set One's Cap at Google Plus">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-square-o fa-stack-2x"></i>
-                    <i class="fa fa-google-plus fa-stack-1x"></i>
-                </span>
+                <div class="fa-stack fa-2x">
+                    <span class="fa fa-square-o fa-stack-2x"></span>
+                    <span class="fa fa-google-plus fa-stack-1x"></span>
+                </div>
                 <p>Google+</p>
             </a>
 

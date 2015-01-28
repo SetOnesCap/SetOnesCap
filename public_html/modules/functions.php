@@ -1,11 +1,7 @@
 <?php
-
-include('dbconf.php');
-
+include('/home/confuuaj/public_html/dbconf.php');
 
 function __getSingleValue($returnValue, $table, $whereCol, $whereValue){
-
-
     $db = new DataBase();
     $sql = "SELECT DISTINCT " . $returnValue . " FROM " . $table . " WHERE " . $whereCol . " = '" . $whereValue . "'";
     $result = $db->query($sql);
@@ -15,8 +11,10 @@ function __getSingleValue($returnValue, $table, $whereCol, $whereValue){
         while($row = $result->fetch_assoc()) {
             $returnresult =  $row[$returnValue];
         }
-    } else {
-        $returnresult = 0;
+    } else{
+       header('HTTP/1.0 404 not found');
+       include('/home/confuuaj/public_html/404.php');
+        exit();
     }
     return $returnresult;
 
@@ -60,7 +58,7 @@ function __getPageFile($pageId) {
             $resultTitle =  $row[$db::PAGE_TITLECOL];
         }
     } else {
-        echo "0 results";
+        
     }
     $pageFileName = strtolower(str_replace(array('  ', ' '), '-', preg_replace('/[^a-zA-Z0-9 s]/', '', trim($resultTitle)))) . ".php";
     return $pageFileName;
@@ -295,6 +293,3 @@ function __getPhotoDescription($albumId, $photoNo){
 
 
 ?>
-
-
-

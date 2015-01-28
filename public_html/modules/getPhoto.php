@@ -8,7 +8,7 @@ $previous = $photoNo-1;
 $next = $photoNo+1;
 
 
-include("../dbconf.php");
+//include("../dbconf.php");
 include("functions.php");
 $db = new DataBase();
 $albumTitle = __getSingleValue($db::PHOTOALBUMS_TITLECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);

@@ -253,7 +253,9 @@ header {
 .header.about {
     background: url('../images/headers/about.jpg') 50% 0 fixed;
 }
-
+.header.fourohfour {
+    background: url('../images/headers/404.jpg') 50% 0 fixed;
+}
 
 
 #introduction p {
@@ -390,6 +392,7 @@ p.fb-date, p.album-date {
     left: 0;
     width: 100%;
     height: 100%;
+    border: none;
 }
 
 .video-container img {
@@ -479,4 +482,8 @@ footer{
         text-align: center;
         padding: 2px;
     }
+}
+
+div.fa-stack {
+    padding: 0;
 }

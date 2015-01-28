@@ -20,7 +20,6 @@ foreach ($videos->items as $video) {
             echo "<div class='no-padding album-thumb video-container'>";
    echo" <iframe width='560'
             height='315'
-            frameborder='0'
             allowfullscreen
             name='" . $video->snippet->resourceId->videoId ."'
             id='".$video->snippet->resourceId->videoId."'>
@@ -33,7 +32,7 @@ foreach ($videos->items as $video) {
                 echo "<p class='album-date'>" . $postDate . "</p>";
                 echo "<p> Video from Set One&#8217;s Cap YouTube channel</p>";
                // echo "<p>" . $video->snippet->description . "</p>";
-                echo "<a href='//www.youtube.com/embed/" . $video->snippet->resourceId->videoId . "?modestbranding=1&theme=light&rel=0&showinfo=0' target='" . $video->snippet->resourceId->videoId ."' class='button bg-setonescap-red'>Watch video</a>";
+                echo "<a href='//www.youtube.com/embed/" . $video->snippet->resourceId->videoId . "?modestbranding=1&amp;theme=light&amp;rel=0&amp;showinfo=0' target='" . $video->snippet->resourceId->videoId ."' class='button bg-setonescap-red'>Watch video</a>";
             echo "</div>";
         echo "</div>";
     echo "</div>";

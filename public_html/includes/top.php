@@ -45,13 +45,15 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $rootURL; ?>/styles/standard.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $rootURL; ?>/styles/custom.css">
 
-    <base target="_self" />
-    <link rel="canonical" href="http://www.setonescap.com/<?php echo $pageTitle; ?>">
+   <!-- <base target="_self" /> -->
+   <!-- <link rel="canonical" href="http://www.setonescap.com/<?php echo $pageTitle; ?>"> -->
 
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@setonescap">
-    <meta name="twitter:creator" content="@BenjaminDehli">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@setonescap" />
+    <meta name="twitter:creator" content="@BenjaminDehli" />
+    <meta property="og:url" content="http://www.setonescap.com" />
+<meta property="og:title" content="Set One's Cap Official Website" />
     <meta name="twitter:title" content="Set One's Cap Official Website">
     <meta name="twitter:description" content="The norwegian pop-rock band Set One's Cap's Official Website. Visit setonescap.com to view photos, watch videos, get the latest news and see upcoming concerts">
     <meta name="twitter:image:src" content="http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-Rockefeller-2014-10-30-20.jpg">
@@ -59,6 +61,3 @@
 
 
 </head>
-<body>
-
-<div class="content">

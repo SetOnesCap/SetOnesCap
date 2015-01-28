@@ -35,7 +35,7 @@ usort($events, function($a, $b)
                 </div>
                 <div class='col-2'>
                     <?php if ($event->ticket_url != '' || $event->ticket_url != null) { ?>
-                        <a href='<?php echo $event->ticket_url; ?>' class='button bg-setonescap-red fg-white' target='_blank'>See event</a>
+                        <a href='<?php echo htmlspecialchars($event->ticket_url, ENT_COMPAT); ?>' class='button bg-setonescap-red fg-white' target='_blank'>See event</a>
                     <?php } ?>
                 </div>
                 <div class='clearfix'></div>
@@ -66,7 +66,7 @@ usort($events, function($a, $b)
                 </div>
                 <div class='col-2'>
                     <?php if ($event->ticket_url != '' || $event->ticket_url != null) { ?>
-                        <a href='<?php echo $event->ticket_url; ?>' class='button bg-setonescap-red fg-white' target='_blank'>See event</a>
+                        <a href='<?php echo htmlspecialchars($event->ticket_url, ENT_COMPAT); ?>' class='button bg-setonescap-red fg-white' target='_blank'>See event</a>
                     <?php } ?>
                 </div>
                 <div class='clearfix'></div>

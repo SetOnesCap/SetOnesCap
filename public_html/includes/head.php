@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Language" content="en">
     <meta name="description" content="<?php echo $pageDescription; ?>">
     <meta name="keywords" content="band, norwegian, pop, rock, pop-rock, music, concerts, photos, videos, info, biography">
     <meta name="author" content="Benjamin Dehli">
@@ -47,11 +46,17 @@
 
     <base target="_self" />
 
-    <link rel="canonical" href="http://www.setonescap.com/<?php echo $pageTitle; ?>">
+   <!-- <link rel="canonical" href="http://www.setonescap.com/<?php echo $pageTitle; ?>"> -->
 
     <meta property="og:site_name" content="Set One's Cap"/>
-    <meta property="og:title" content="The norwegian pop-rock band Set One's Cap's Official Website" />
-    <meta property="og:url" content="http://www.setonescap.com" />
+    <meta property="og:title" content="Set One's Cap Official Website" />
+    <?php
+    if($pageTitle == 'home' || $pageTitle == '' || $pageTitle == null){
+            echo "<meta property='og:url' content='http://www.setonescap.com' />";
+        }else{
+            echo "<meta property='og:url' content='http://www.setonescap.com/" . $pageTitle . "' />";
+        }
+    ?>
     <meta property="og:description" content="The norwegian pop-rock band Set One's Cap's Official Website. Visit setonescap.com to view photos, watch videos, get the latest news and see upcoming concerts." />
     <meta property="og:image" content="http://www.setonescap.com/images/template/fb-card.jpg" />
 
@@ -60,7 +65,7 @@
     <meta name="twitter:creator" content="@BenjaminDehli">
     <meta name="twitter:title" content="Set One's Cap Official Website">
     <meta name="twitter:description" content="The norwegian pop-rock band Set One's Cap's Official Website. Visit setonescap.com to view photos, watch videos, get the latest news and see upcoming concerts.">
-    <meta name="twitter:image:src" content="http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-Rockefeller-2014-10-30-20.jpg">
+    <meta name="twitter:image:src" content="http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-20.jpg">
 
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>

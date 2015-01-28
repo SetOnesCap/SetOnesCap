@@ -11,6 +11,8 @@ $pageDescription = __getSingleValue($db::PAGE_DESCRIPTIONCOL, $db::PAGE_TABLENAM
 $pageFile = __getPageFile($pageId);
 
 
+
+
 if($pageTitle == 'photos'){
     $photoAlbum = ($_GET['photoAlbum']);
     $photoAlbumDate = ($_GET['photoAlbumDate']);
@@ -24,5 +26,7 @@ if($pageTitle == 'photos'){
 }
 
 
-?>
 
+
+
+?>

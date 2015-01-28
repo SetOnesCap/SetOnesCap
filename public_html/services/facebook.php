@@ -59,9 +59,9 @@ $result = json_decode($data);
                 if($latest_post_picture !='' &$latest_post->type == 'photo') {
                     $photodata = get_data("https://graph.facebook.com/" . $latest_post->object_id);
                     $photoresult = json_decode($photodata);
-                    echo "<img src='" . $photoresult->images[4]->source . "' alt='Picture from facebook post' class='' />";
+                    echo "<img src='" . htmlspecialchars($photoresult->images[4]->source, ENT_COMPAT) . "' alt='Picture from facebook post' class='' />";
                 }else if($latest_post_picture !=''){
-                    echo "<img src='" . $latest_post_picture . "' alt='Picture from facebook post'/>";
+                    echo "<img src='" . htmlspecialchars($latest_post_picture, ENT_COMPAT) . "' alt='Picture from facebook post'/>";
                 }
                 echo "</span>";
                 echo "</div>";
@@ -71,7 +71,7 @@ $result = json_decode($data);
                     <p><span itemprop="articleBody"><?php echo $latest_post_text ?></span></p>
                     <?php
                     if ($latest_post_link != '' && $latest_post_link != null) {
-                        echo "<a target='_blank' href='" . $latest_post_link . "' class='button bg-setonescap-red fg-white'>Read more</a>";
+                        echo "<a target='_blank' href='" . htmlspecialchars($latest_post_link, ENT_COMPAT) . "' class='button bg-setonescap-red fg-white'>Read more</a>";
                     }
                     ?>
                 </div>
