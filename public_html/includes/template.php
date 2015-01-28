@@ -44,7 +44,7 @@
     <div
         class="fb-like col-12"
         data-share="true"
-        data-width="450"
+        data-width="300"
         data-show-faces="false">
     </div>
     <div class="col-12 bg-noise bg-black fg-white bottom-col">

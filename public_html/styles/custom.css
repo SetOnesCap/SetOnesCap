@@ -487,3 +487,30 @@ footer{
 div.fa-stack {
     padding: 0;
 }
+
+div.fb-like span {
+    height: auto!important;
+    bottom: 20px;
+    max-width: 100%;
+}
+
+div.fb-like span iframe{
+    height: auto!important;
+    max-width: 100%;
+}
+
+@-moz-document url-prefix() {
+    .col-4.news-post {
+        width: 33%;
+    }
+    @media (max-width: 767px) {
+        .col-4.news-post {
+            width: 50%;
+        }
+    }
+    @media (max-width: 639px) {
+        .col-4.news-post {
+            width: 100%;
+        }
+    }
+}
