@@ -35,7 +35,7 @@ $result = json_decode($data);
 <h2>Latest news</h2>
 <div id='news-posts' class='js-masonry' data-masonry-options='{ "itemSelector": ".news-post" }'>
     <?php
-	for ($i=0; $i < 30; $i++) {
+	for ($i=0; $i < 40 ; $i++) {
         $latest_post =  $result->data[$i];
         $latest_post_text = $latest_post->message;
         $latest_post_linktitle = (strlen($latest_post_text) > 83) ? substr($latest_post_text,0,80).'...' : $latest_post_text;

@@ -5,7 +5,5 @@ User-agent: *
 Disallow: /old_site
 Disallow: /services
 Disallow: /admin
-Disallow: /scripts
-Disallow: /font-awesome-4.2.0
 Disallow: /includes
 Disallow: /modules
