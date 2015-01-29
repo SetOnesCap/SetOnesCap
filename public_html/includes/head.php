@@ -7,6 +7,7 @@
     <meta name="keywords" content="band, norwegian, pop, rock, pop-rock, music, concerts, photos, videos, info, biography">
     <meta name="author" content="Benjamin Dehli">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="follow"/>
 
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -45,8 +46,19 @@
 
 
     <base target="_self" />
+    <?php
+    if($pageTitle == 'home' || $pageTitle == '' || $pageTitle == null){
+        echo "<link rel='canonical' href='http://www.setonescap.com'>";
+    }
+    elseif($pageTitle == 'photos' && $photoAlbum != '' && $photoAlbum != null){
+        echo "<link rel='canonical' href='http://www.setonescap.com/" . $pageTitle . "/" . $photoAlbum . "/" . $photoAlbumDate . "/" . $photographer . "/" . $photoNo . "/'>";
+    }
+    else{
+        echo "<link rel='canonical' href='http://www.setonescap.com/" . $pageTitle . "/'>";
+    }
+    ?>
 
-   <!-- <link rel="canonical" href="http://www.setonescap.com/<?php echo $pageTitle; ?>"> -->
+
 
     <meta property="og:site_name" content="Set One's Cap"/>
     <meta property="og:title" content="Set One's Cap Official Website" />
@@ -71,3 +83,13 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body class="bg-white">
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57441525-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
