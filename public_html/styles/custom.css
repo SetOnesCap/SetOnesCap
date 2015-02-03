@@ -24,6 +24,30 @@ h2 {
     font-size: 2em;
 }
 
+.breadcrumbs {
+    font-size: .9em;
+    text-align: left;
+    padding: 2px;
+    color: #777;
+}
+
+.breadcrumbs a{
+    padding: 3px;
+}
+
+.breadcrumbs a:hover{
+    color: #EA5124;
+}
+
+.breadcrumbs div {
+    display: inline;
+    padding: 0;
+}
+
+.photo-fullscreen .breadcrumbs {
+    margin-top: 40px;
+}
+
 .fixed {
     position: fixed;
 }
@@ -129,6 +153,10 @@ header nav img {
 
 .bg-setonescap-red {
     background-color: #EA5124;
+}
+
+button.bg-setonescap-red:hover, a.bg-setonescap-red:hover  {
+    color: #FFF;
 }
 
 .fg-setonescap-red {

@@ -24,6 +24,25 @@
 
 
 <div class="col-12 photo-fullscreen">
+    <div class="col-12 breadcrumbs">
+        <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="http://www.setonescap.com" itemprop="url">
+                <span itemprop="title">Set One's Cap</span>
+            </a>
+            &rsaquo;
+        </div>
+        <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="http://www.setonescap.com/photos/" itemprop="url">
+                <span itemprop="title"><?php echo ucfirst($pageTitle); ?></span>
+            </a>
+            &rsaquo;
+        </div>
+        <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="http://www.setonescap.com/photos/<?php echo $photoAlbum; ?>/<?php echo $photoAlbumDate; ?>/<?php echo $photographer; ?>/<?php echo $photoNo; ?>/" itemprop="url">
+                <span itemprop="title"><?php echo ucwords($photoAlbum) . " - " . $photoAlbumDate . " by " . $photographerString . ", photo " . "$photoNo"; ?></span>
+            </a>
+        </div>
+    </div>
     <h1><?php echo $photoAlbumString . " - " . $photoAlbumDate ?></h1>
 <?php
 

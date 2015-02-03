@@ -39,6 +39,23 @@
 
     </section>
     <main>
+        <div class="col-12 breadcrumbs">
+            <?php if($pageTitle != 'home'){ ?>
+                <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a href="http://www.setonescap.com" itemprop="url">
+                        <span itemprop="title">Set One's Cap</span>
+                    </a>
+
+                    &rsaquo;
+                </div>
+                <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a href="http://www.setonescap.com/<?php echo $pageTitle; ?>/" itemprop="url">
+                        <span itemprop="title"><?php echo ucfirst($pageTitle); ?></span>
+                    </a>
+
+                </div>
+            <?php } ?>
+        </div>
         <?php include("content/" . $pageFile); ?>
     </main>
     <div
