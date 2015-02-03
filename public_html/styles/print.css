@@ -1,0 +1,44 @@
+@media print {
+    header{
+        display: none;
+    }
+    .header{
+        min-height: 200px;
+    }
+    .fb-thumb, .album-thumb{
+        display: none;
+    }
+    .button {
+        display: none;
+    }
+    .news-post {
+        position: static!important;
+        width: 100%;
+        padding: 3px;
+    }
+    p.fb-date{
+        font-size: 1.2em;
+        line-height: 0;
+    }
+    .bg-noise {
+        background: none;
+    }
+    .panel {
+        border: none;
+    }
+    .fb_iframe_widget {
+        display: none;
+    }
+    .fb-like{
+        display: none;
+    }
+    .fg-white {
+        color: #000;
+    }
+    .bg-black {
+        background-color: #fff;
+    }
+    .sociallinks{
+        display: none;
+    }
+}
