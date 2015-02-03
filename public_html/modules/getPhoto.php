@@ -12,6 +12,7 @@ $next = $photoNo+1;
 include("functions.php");
 $db = new DataBase();
 $albumTitle = __getSingleValue($db::PHOTOALBUMS_TITLECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
+$albumTitleStripped = strtolower(str_replace(array('  ', ' '), '-', preg_replace('/[^a-zA-Z0-9 s]/', '', trim($albumTitle))));
 $albumDescription = __getSingleValue($db::PHOTOALBUMS_DESCRIPTIONCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
 $albumDate = __getSingleValue($db::PHOTOALBUMS_DATECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
 $photographer = __getSingleValue($db::PHOTOALBUMS_PHOTOGRAPHERCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
@@ -64,9 +65,9 @@ if ($photoNo<$photoCount) {
 
 
 if ($photoNo<10) {
-    echo "<a href='/photos/" . $albumTitle . "/" . $albumDate . "/" . $photographerStripped . "/0" . $photoNo . "/ ' target='_blank' class='button col-12 bg-setonescap-red fg-white'><i class='fa fa-expand'></i> Watch full screen</a>";
+    echo "<a href='/photos/" . $albumTitleStripped . "/" . $albumDate . "/" . $photographerStripped . "/0" . $photoNo . "/ ' target='_blank' class='button col-12 bg-setonescap-red fg-white'><i class='fa fa-expand'></i> Watch full screen</a>";
 }else {
-    echo "<a href='/photos/" . $albumTitle . "/" . $albumDate . "/" . $photographerStripped . "/" . $photoNo . "/' target='_blank' class='button col-12 bg-setonescap-red fg-white'><i class='fa fa-expand'></i> Watch full screen</a>";
+    echo "<a href='/photos/" . $albumTitleStripped . "/" . $albumDate . "/" . $photographerStripped . "/" . $photoNo . "/' target='_blank' class='button col-12 bg-setonescap-red fg-white'><i class='fa fa-expand'></i> Watch full screen</a>";
 }
 echo "</div>";
 echo "</div>";

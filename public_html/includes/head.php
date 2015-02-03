@@ -43,6 +43,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/standard.css">
     <link rel="stylesheet" type="text/css" href="/styles/custom.css">
     <link rel="stylesheet" href="/styles/slicknav.css">
+    <link rel="stylesheet" href="/styles/print.css">
 
 
     <base target="_self" />

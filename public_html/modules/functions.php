@@ -190,6 +190,7 @@ function __getPhotographer($albumTitle, $albumDate, $photographerLink){
 function __getPhotoAlbum($albumId){
     $db = new DataBase();
     $albumTitle = __getSingleValue($db::PHOTOALBUMS_TITLECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
+    $albumTitleStripped = strtolower(str_replace(array('  ', ' '), '-', preg_replace('/[^a-zA-Z0-9 s]/', '', trim($albumTitle))));
     $albumDate = __getSingleValue($db::PHOTOALBUMS_DATECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
     $albumDateString = date("F j, Y", strtotime($albumDate));
     $albumDescription = __getSingleValue($db::PHOTOALBUMS_DESCRIPTIONCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
@@ -204,7 +205,7 @@ function __getPhotoAlbum($albumId){
         echo "<div class='col-4 photoalbum-link'>";
             echo "<div class='panel bg-noise bg-white fg-black no-padding'>";
                 echo "<div class='no-padding album-thumb'>";
-                    echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum'><img src='/images/photoalbums/" . strtolower($albumTitle) . "-" . $albumDate . "-" . $photographerStripped . ".jpg' alt='" . $albumTitle . "' class='' /></a>";
+                    echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum'><img src='/images/photoalbums/" . strtolower($albumTitleStripped) . "-" . $albumDate . "-" . $photographerStripped . ".jpg' alt='" . $albumTitle . "' class='' /></a>";
                 echo "</div>";
                 echo "<div>";
                     echo "<h3>" .  $albumTitle . "</h3>";
@@ -248,6 +249,7 @@ function __getPhoto($albumId, $photoNo){
     $db = new DataBase();
 
     $albumTitle = __getSingleValue($db::PHOTOALBUMS_TITLECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
+    $albumTitleStripped = strtolower(str_replace(array('  ', ' '), '-', preg_replace('/[^a-zA-Z0-9 s]/', '', trim($albumTitle))));
     $albumDate = __getSingleValue($db::PHOTOALBUMS_DATECOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
     $band = __getSingleValue($db::PHOTOALBUMS_BANDCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
     $photographer = __getSingleValue($db::PHOTOALBUMS_PHOTOGRAPHERCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
@@ -266,9 +268,9 @@ function __getPhoto($albumId, $photoNo){
         while($row = $result->fetch_assoc()) { */
             echo "<span class='helper'></span>";
             if ($photoNo < 10) {
-                echo "<img src='" . $db::PHOTOS_ROOTURL . "/small/" . $photographerStripped . "/" . $band . "-" . strtolower($albumTitle) . "-" . $albumDate . "-0" . $photoNo . ".jpg' alt='" . $altText . "'/>";
+                echo "<img src='" . $db::PHOTOS_ROOTURL . "/small/" . $photographerStripped . "/" . $band . "-" . strtolower($albumTitleStripped) . "-" . $albumDate . "-0" . $photoNo . ".jpg' alt='" . $altText . "'/>";
             }else{
-                echo "<img src='" . $db::PHOTOS_ROOTURL . "/small/" . $photographerStripped . "/" . $band . "-" . strtolower($albumTitle) . "-" . $albumDate . "-" . $photoNo . ".jpg' alt='" . $altText . "'/>";
+                echo "<img src='" . $db::PHOTOS_ROOTURL . "/small/" . $photographerStripped . "/" . $band . "-" . strtolower($albumTitleStripped) . "-" . $albumDate . "-" . $photoNo . ".jpg' alt='" . $altText . "'/>";
             }
     /*    }
     } else {

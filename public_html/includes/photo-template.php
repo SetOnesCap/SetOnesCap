@@ -24,7 +24,7 @@
 
 
 <div class="col-12 photo-fullscreen">
-    <h1><?php echo $photoAlbum . " - " . $photoAlbumDate ?></h1>
+    <h1><?php echo $photoAlbumString . " - " . $photoAlbumDate ?></h1>
 <?php
 
 $albumYear = substr($photoAlbumDate, 0, 4);
