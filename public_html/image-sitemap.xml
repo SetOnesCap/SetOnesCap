@@ -449,10 +449,4 @@
             <image:loc>http://www.setonescap.com/images/template/logo-big.png</image:loc>
         </image:image>
     </url>
-    <url>
-        <loc>http://www.setonescap.com/home/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-    </url>
 </urlset>
