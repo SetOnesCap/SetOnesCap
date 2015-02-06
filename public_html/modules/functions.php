@@ -86,7 +86,8 @@ function __getContent($pageId){
 
 
 
-function __getTitle($pageId){
+function __getTitle($pageId)
+{
 
     $db = new DataBase();
 
@@ -94,14 +95,18 @@ function __getTitle($pageId){
     $result = $db->query($sql);
 
     if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            echo $row["title"];
+        while ($row = $result->fetch_assoc()) {
+            if ($row["title"] == "Home") {
+                echo "Set One's Cap";
+            } else {
+                echo $row["title"];
+            }
         }
     } else {
         echo "0 results";
     }
-//$db->close();
 }
+
 
 
 

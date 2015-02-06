@@ -22,7 +22,7 @@ if($pageTitle == 'photos'){
     $photographerString = __getPhotographer($photoAlbumString, $photoAlbumDate, $photographer);
 
     if($photoAlbum != '' AND $photoAlbum != null) {
-        $pageTitleString = ucwords($photoAlbum) . " - " . $photoAlbumDate . " - " . $photographerString . " - " . $photoNo;
+        $pageTitleString = $photoAlbumString . " - " . $photoAlbumDate . " - " . $photographerString . " - " . $photoNo;
     }
 }
 
