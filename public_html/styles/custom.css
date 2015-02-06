@@ -486,6 +486,7 @@ footer{
     }
     #preview h2{
         margin: 0 0 5px 0;
+        line-height: 1em;
     }
     #preview .col-9 {
         height: 55%;

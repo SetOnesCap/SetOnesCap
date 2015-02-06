@@ -63,6 +63,10 @@
     padding:5px 10px;
     margin:2px 5px;
 }
+.slicknav_nav ul li {
+    font-size: 1.4em;
+    line-height: 33px;
+}
 .slicknav_nav a{
     padding:5px 10px;
     margin:2px 5px;
