@@ -7,3 +7,7 @@ Disallow: /services
 Disallow: /admin
 Disallow: /includes
 Disallow: /modules
+
+Sitemap: http://www.setonescap.com/sitemap.xml
+Sitemap: http://www.setonescap.com/image-sitemap.xml
+Sitemap: http://www.setonescap.com/video-sitemap.xml

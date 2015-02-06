@@ -1,0 +1,25 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    <url>
+        <loc>http://www.setonescap.com/videos/</loc>
+        <video:video>
+            <video:thumbnail_loc>https://i.ytimg.com/vi/RuFpBmMiDRM/hqdefault.jpg</video:thumbnail_loc>
+            <video:title>Set One's Cap at Rockefeller</video:title>
+            <video:description>Videoclip from Set One's Cap concert at Rockefeller Music Hall in Oslo, Norway</video:description>
+            <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=RuFpBmMiDRM</video:player_loc>
+            <video:duration>88</video:duration>
+            <video:publication_date>2014-12-28</video:publication_date>
+        </video:video>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/videos/</loc>
+        <video:video>
+            <video:thumbnail_loc>https://i.ytimg.com/vi/7JSkiD4Lck4/hqdefault.jpg</video:thumbnail_loc>
+            <video:title>Set One's Cap - Wait for the Other</video:title>
+            <video:description>Video of the demo Wait for the Other by Set One's Cap</video:description>
+            <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=7JSkiD4Lck4</video:player_loc>
+            <video:duration>202</video:duration>
+            <video:publication_date>2014-11-04</video:publication_date>
+        </video:video>
+    </url>
+</urlset>
