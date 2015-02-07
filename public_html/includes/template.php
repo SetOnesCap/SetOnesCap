@@ -137,7 +137,7 @@
 
     </div>
     <footer class="fixed-bottom bg-white fg-black">
-        <div class="col-6">Copyright © 2014 <a href="https://plus.google.com/+Setonescap" target="_blank">Set One's Cap</a></div>
+        <div class="col-6">© 2014 <a href="https://plus.google.com/+Setonescap" target="_blank">Set One's Cap</a></div>
         <div class="col-6 text-right">
             Website by: <a href="https://plus.google.com/+BenjaminDehli1/" target="_blank">Benjamin Dehli</a>
         </div>
