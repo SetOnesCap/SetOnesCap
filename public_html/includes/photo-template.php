@@ -23,48 +23,57 @@
 
 
 
-<div class="col-12 photo-fullscreen">
-    <div class="col-12 breadcrumbs">
-        <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-            <a href="http://www.setonescap.com" itemprop="url">
-                <span itemprop="title">Set One's Cap</span>
-            </a>
-            &rsaquo;
+    <div class="col-12 photo-fullscreen">
+
+        <h1><?php echo $photoAlbumString . " - " . $photoAlbumDate ?></h1>
+        <p> Photo by <?php echo $photographerString ?></p>
+        <div class="col-12 breadcrumbs">
+            <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a href="http://www.setonescap.com" itemprop="url">
+                    <span itemprop="title">Set One's Cap</span>
+                </a>
+                &rsaquo;
+            </div>
+            <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a href="http://www.setonescap.com/photos/" itemprop="url">
+                    <span itemprop="title"><?php echo ucfirst($pageTitle); ?></span>
+                </a>
+                &rsaquo;
+            </div>
+            <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a href="http://www.setonescap.com/photos/<?php echo $photoAlbum; ?>/<?php echo $photoAlbumDate; ?>/<?php echo $photographer; ?>/<?php echo $photoNo; ?>/" itemprop="url">
+                    <span itemprop="title"><?php echo $photoAlbumString . " - " . $photoAlbumDate . " by " . $photographerString . ", photo " . ltrim($photoNo, '0') . " of " . ltrim($photoAlbumSize, '0'); ?></span>
+                </a>
+            </div>
         </div>
-        <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-            <a href="http://www.setonescap.com/photos/" itemprop="url">
-                <span itemprop="title"><?php echo ucfirst($pageTitle); ?></span>
-            </a>
-            &rsaquo;
-        </div>
-        <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-            <a href="http://www.setonescap.com/photos/<?php echo $photoAlbum; ?>/<?php echo $photoAlbumDate; ?>/<?php echo $photographer; ?>/<?php echo $photoNo; ?>/" itemprop="url">
-                <span itemprop="title"><?php echo $photoAlbumString . " - " . $photoAlbumDate . " by " . $photographerString . ", photo " . "$photoNo"; ?></span>
-            </a>
-        </div>
+        <?php
+
+        $albumYear = substr($photoAlbumDate, 0, 4);
+        $albumMonth = substr($photoAlbumDate, 5, 2);
+        $band = "setonescap";
+        if($albumYear < 2015 && $albumMonth < 10){
+            $band = "confusion";
+        }
+
+        echo "<img src='/images/photos/big/" . $photographer . "/" . $band . "-" . strtolower($photoAlbum) . "-" . $photoAlbumDate . "-" . $photoNo . ".jpg'/>";
+        ?>
+
+
     </div>
-    <h1><?php echo $photoAlbumString . " - " . $photoAlbumDate ?></h1>
-<?php
-
-$albumYear = substr($photoAlbumDate, 0, 4);
-$albumMonth = substr($photoAlbumDate, 5, 2);
-$band = "setonescap";
-if($albumYear < 2015 && $albumMonth < 10){
-    $band = "confusion";
-}
-
-echo "<img src='/images/photos/big/" . $photographer . "/" . $band . "-" . strtolower($photoAlbum) . "-" . $photoAlbumDate . "-" . $photoNo . ".jpg'/>";
-?>
-
-    <p> Photo by <?php echo $photographerString ?></p>
-</div>
     <div
         class="fb-like col-12"
         data-share="true"
         data-width="450"
         data-show-faces="false">
     </div>
+    <footer class="fixed-bottom bg-white fg-black">
+        <div class="col-6">© 2014 <a href="https://plus.google.com/+Setonescap" target="_blank">Set One's Cap</a></div>
+        <div class="col-6 text-right">
+            Website by: <a href="https://plus.google.com/+BenjaminDehli1/" target="_blank">Benjamin Dehli</a>
+        </div>
+    </footer>
 </div>
+
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>

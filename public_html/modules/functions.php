@@ -190,6 +190,38 @@ function __getPhotographer($albumTitle, $albumDate, $photographerLink){
     }
 }
 
+function __getPhotoAlbumMetaDescription($albumTitle, $albumDate, $photographerLink){
+    $db = new DataBase();
+    $photographerLinkShort = (substr($photographerLink, 0, 3));
+
+    $sql = "SELECT * FROM " . $db::PHOTOALBUMS_TABLENAME .
+        " WHERE " . $db::PHOTOALBUMS_TITLECOL . " = '" . $albumTitle .
+        "' AND " . $db::PHOTOALBUMS_DATECOL . " = '" . $albumDate .
+        "' AND " . $db::PHOTOALBUMS_PHOTOGRAPHERCOL . " LIKE '" . $photographerLinkShort . "%'";
+    $result = $db->query($sql);
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            return $row[$db::PHOTOALBUMS_DESCRIPTIONCOL];
+        }
+    }
+}
+
+function __getPhotoAlbumSize($albumTitle, $albumDate, $photographerLink){
+    $db = new DataBase();
+    $photographerLinkShort = (substr($photographerLink, 0, 3));
+
+    $sql = "SELECT * FROM " . $db::PHOTOALBUMS_TABLENAME .
+        " WHERE " . $db::PHOTOALBUMS_TITLECOL . " = '" . $albumTitle .
+        "' AND " . $db::PHOTOALBUMS_DATECOL . " = '" . $albumDate .
+        "' AND " . $db::PHOTOALBUMS_PHOTOGRAPHERCOL . " LIKE '" . $photographerLinkShort . "%'";
+    $result = $db->query($sql);
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            return $row[$db::PHOTOALBUMS_ALBUMSIZECOL];
+        }
+    }
+}
+
 
 
 function __getPhotoAlbum($albumId){
