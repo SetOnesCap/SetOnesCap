@@ -25,7 +25,7 @@ usort($events, function($a, $b)
                     <time itemprop='startDate' datetime='<?php echo $event->datetime; ?>'> <?php echo $event->formatted_datetime; ?> </time>
                 </div>
                 <div itemprop='location' itemscope itemtype='http://schema.org/Organization' class="no-padding">
-                ​<div class='col-3'>
+                    <div class='col-3'>
                     <h4>Venue:</h4>
                     <span itemprop='name'> <?php echo $event->venue->name; ?></span>
                 </div>
@@ -58,7 +58,7 @@ usort($events, function($a, $b)
                 <h3><span itemprop='name'> <?php echo $event->title ?> </span></h3>
                 <div class='col-4'><h4>Date:</h4><time itemprop='startDate' datetime='<?php echo $event->datetime; ?>'> <?php echo $event->formatted_datetime; ?> </time></div>
                 <div itemprop='location' itemscope itemtype='http://schema.org/Organization' class="no-padding">
-                ​<div class='col-3'>
+                    <div class='col-3'>
                     <h4>Venue:</h4>
                     <span itemprop='name'> <?php echo $event->venue->name; ?> </span>
                 </div>

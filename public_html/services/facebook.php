@@ -59,7 +59,7 @@ $result = json_decode($data);
                 if($latest_post_picture !='' &$latest_post->type == 'photo') {
                     $photodata = get_data("https://graph.facebook.com/" . $latest_post->object_id);
                     $photoresult = json_decode($photodata);
-                    echo "<img src='" . htmlspecialchars($photoresult->images[4]->source, ENT_COMPAT) . "' alt='Picture from facebook post' class='' />";
+                    echo "<img src='" . htmlspecialchars($photoresult->images[2]->source, ENT_COMPAT) . "' alt='Picture from facebook post' class='' />";
                 }else if($latest_post_picture !=''){
                     echo "<img src='" . htmlspecialchars($latest_post_picture, ENT_COMPAT) . "' alt='Picture from facebook post'/>";
                 }
