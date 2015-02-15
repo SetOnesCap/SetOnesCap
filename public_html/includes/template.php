@@ -148,16 +148,16 @@
 </div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 
-<script type="text/javascript" src="/scripts/jquery.slicknav.js"></script>
+<script type="text/javascript" src="/scripts/jquery.slicknav.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $('#menu').slicknav();
     });
 </script>
 
-<script type="text/javascript" src="/scripts/showPhoto.js"></script>
-<script type="text/javascript" src="/scripts/parallax.js"></script>
-<script type="text/javascript" src="/scripts/activeLinks.js"></script>
+<script type="text/javascript" src="/scripts/showPhoto.min.js"></script>
+<script type="text/javascript" src="/scripts/parallax.min.js"></script>
+<script type="text/javascript" src="/scripts/activeLinks.min.js"></script>
 
 </body>
 </html>
