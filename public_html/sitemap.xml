@@ -4,7 +4,7 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
   <loc>http://www.setonescap.com</loc>
@@ -193,7 +193,7 @@
 </url>
 
 
-
+<!-- old photos
 <url>
 <loc>http://www.setonescap.com/photos/Elvespeilet/2014-08-20/kai-hansen/01/</loc>
 </url>
@@ -700,6 +700,6 @@
 </url>
 <url>
 <loc>http://www.setonescap.com/photos/Stevneplassen/2012-09-07/even-b-ruud/01/</loc>
-</url>
+</url> -->
 
 </urlset>
