@@ -144,7 +144,7 @@ function __getAdminLinkList(){
                 if($row[$db::ADMINPAGES_TITLECOL] == "Home"){
                     echo "<li><a href='" . $db::ROOTURL . "'><i class='" . $row[$db::ADMINPAGES_ICONCOL] . "'></i>" . $title . "</a></li>";
                 }else{
-                    echo "<li><a href='" . $db::ROOTURL . "/" . $URLtitle . "'><i class='" . $row[$db::ADMINPAGES_ICONCOL] . "'></i>" . $title . "</a>";
+                    echo "<li><a href='" . $db::ROOTURL . "/admin/" . $URLtitle . "'><i class='" . $row[$db::ADMINPAGES_ICONCOL] . "'></i>" . $title . "</a>";
                     $sql2 = "SELECT * FROM " . $db::ADMINPAGES_TABLENAME;
                     $result2 = $db->query($sql2);
                     $ul = 0;
@@ -158,7 +158,7 @@ function __getAdminLinkList(){
                                 echo "<ul>";
                                 $ulSet = true;
                             }
-                            echo "<li><a href='" . $db::ROOTURL . "/" . $URLtitle . "'><i class='" . $subrow[$db::ADMINPAGES_ICONCOL] . "'></i>" . $title . "</a></li>";
+                            echo "<li><a href='" . $db::ROOTURL . "/admin/" . $URLtitle . "'><i class='" . $subrow[$db::ADMINPAGES_ICONCOL] . "'></i>" . $title . "</a></li>";
                         }
                     }
                     if ($ulSet==true){
