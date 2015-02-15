@@ -8,6 +8,7 @@
     <meta name="author" content="Benjamin Dehli">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="follow"/>
+    <meta name="google" value="notranslate">
 
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -40,10 +41,10 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="/font-awesome-4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/styles/standard.css">
-    <link rel="stylesheet" type="text/css" href="/styles/custom.css">
-    <link rel="stylesheet" href="/styles/slicknav.css">
-    <link rel="stylesheet" href="/styles/print.css">
+    <link rel="stylesheet" type="text/css" href="/styles/standard.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/custom.min.css">
+    <link rel="stylesheet" href="/styles/slicknav.min.css">
+    <link rel="stylesheet" href="/styles/print.min.css">
 
 
     <base target="_self" />
