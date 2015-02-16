@@ -1,4 +1,4 @@
-<script src="./scripts/masonry.pkgd.js"></script>
+<script src="./scripts/masonry.pkgd.min.js"></script>
 
 <script>
     var container = document.querySelector('#news-posts');
@@ -44,6 +44,21 @@ $result = json_decode($data);
         $latest_post_picture = $latest_post->picture;
         $latest_post_date = strtotime($latest_post->created_time);
         $postDate = date("F j, Y", $latest_post_date);
+        $buttonText = "Read more";
+
+        if (strpos($latest_post_link,'facebook') !== false) {
+            $buttonText = "See facebook post";
+            if (strpos($latest_post_link,'events') !== false) {
+                $buttonText = "See facebook event";
+            }
+        }
+
+        if (strpos($latest_post_link,'youtube') !== false) {
+            $buttonText = "Watch YouTube video";
+        }
+
+
+
 
 
         if($latest_post_text !='' && ($latest_post->name != 'Live Photos')){
@@ -70,8 +85,8 @@ $result = json_decode($data);
                     <p class="fb-date"><span itemprop="datePublished"><?php echo $postDate; ?></span></p>
                     <p><span itemprop="articleBody"><?php echo $latest_post_text ?></span></p>
                     <?php
-                    if ($latest_post_link != '' && $latest_post_link != null) {
-                        echo "<a target='_blank' href='" . htmlspecialchars($latest_post_link, ENT_COMPAT) . "' class='button bg-setonescap-red fg-white'>Read more</a>";
+                    if ($latest_post_link != '' && $latest_post_link != null && strpos($latest_post_link,'setonescap.com') == false) {
+                        echo "<a target='_blank' href='" . htmlspecialchars($latest_post_link, ENT_COMPAT) . "' class='button bg-setonescap-red fg-white'>" . $buttonText . "</a>";
                     }
                     ?>
                 </div>
