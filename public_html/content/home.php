@@ -12,5 +12,6 @@ $i = 0;
 </div>
 <div class="col-12 bg-white">
     <?php include_once('./services/facebook.php'); ?>
+   <?php// include_once('./services/instagram.php'); ?>
 </div>
 

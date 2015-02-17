@@ -367,7 +367,7 @@ header {
     max-height: 300px;
 }
 
-.fb-thumb img, .album-thumb img {
+.fb-thumb img, .album-thumb img, .fb-thumb video {
     width: 100%;
 }
 
