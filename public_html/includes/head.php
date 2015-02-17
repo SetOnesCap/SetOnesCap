@@ -60,7 +60,7 @@
     }
     ?>
 
-
+    <meta name="p:domain_verify" content="6abd7415ec9fe39f1c6c7ba4d99ef255"/>
 
     <meta property="og:site_name" content="Set One's Cap"/>
     <meta property="og:title" content="Set One's Cap Official Website" />
