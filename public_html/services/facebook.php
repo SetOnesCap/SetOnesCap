@@ -1,11 +1,20 @@
 <script src="./scripts/masonry.pkgd.min.js"></script>
-
+<script src="../scripts/imagesloaded.pkgd.min.js"></script>
 <script>
+    jQuery(function(){
+        var $container = $('#news-posts');
+        $container.imagesLoaded( function () {
+            itemSelector: '.news-post',
+                isAnimated: true,
+                isFitWidth: true
+        });
+    });
+/*
     var container = document.querySelector('#news-posts');
     var msnry = new Masonry( container, {
         // options
         itemSelector: '.news-post'
-    });
+    });*/
 </script>
 
 <?php include("./service-variables.php"); ?>
@@ -35,7 +44,7 @@ $result = json_decode($data);
 <h2>Latest news</h2>
 <div id='news-posts' class='js-masonry' data-masonry-options='{ "itemSelector": ".news-post" }'>
     <?php
-	for ($i=0; $i < 40 ; $i++) {
+	for ($i=0; $i < 30 ; $i++) {
         $latest_post =  $result->data[$i];
         $latest_post_text = $latest_post->message;
         $latest_post_linktitle = (strlen($latest_post_text) > 83) ? substr($latest_post_text,0,80).'...' : $latest_post_text;
