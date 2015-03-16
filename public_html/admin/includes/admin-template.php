@@ -49,12 +49,27 @@
 
     <ul>
         <?php
-        __getAdminLinkList();
+        //__getAdminLinkList();
         ?>
 
     </ul>
 
 </aside>
+
+
+<?php include("../service-variables.php"); ?>
+
+<div class="col-12 bg-white fg-black">
+
+    <p><?php // __getContent($pageId); ?></p>
+</div>
+<div class="col-12 no-padding text-center">
+<h1>Admin backend</h1>
+    <p>The backend are under development</p>
+    <a class="button bg-setonescap-red" href="http://www.setonescap.com">Back to Set One's Cap</a>
+</div>
+
+
 
 </body>
 </html>
