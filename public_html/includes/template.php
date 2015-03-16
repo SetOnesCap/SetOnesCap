@@ -102,7 +102,7 @@
                 </div>
                 <p>Soundcloud</p>
             </a>
-            <a href="https://plus.google.com/111095056778547378720" rel="publisher" class="google-plus" title="Check out Set One's Cap at Google Plus">
+            <a href="https://plus.google.com/+Setonescap" class="google-plus" title="Check out Set One's Cap at Google Plus">
                 <div class="fa-stack fa-2x">
                     <span class="fa fa-square-o fa-stack-2x"></span>
                     <span class="fa fa-google-plus fa-stack-1x"></span>
@@ -137,9 +137,9 @@
 
     </div>
     <footer class="fixed-bottom bg-white fg-black">
-        <div class="col-6">© 2014 <a href="https://plus.google.com/+Setonescap" target="_blank">Set One's Cap</a></div>
+        <div class="col-6">© 2014 <a href="https://plus.google.com/+Setonescap" target="_blank" rel="publisher">Set One's Cap</a></div>
         <div class="col-6 text-right">
-            Website by: <a href="https://plus.google.com/+BenjaminDehli1/" target="_blank">Benjamin Dehli</a>
+            Website by: <a href="https://plus.google.com/+BenjaminDehli1/" target="_blank" rel="author">Benjamin Dehli</a>
         </div>
     </footer>
 

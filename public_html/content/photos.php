@@ -17,5 +17,5 @@
     </div>
 </div>
 <div class="col-12 bg-white">
-<?php include_once('./services/instagram.php'); ?>
+<?php include_once('./services/instagramphotos.php'); ?>
 </div>

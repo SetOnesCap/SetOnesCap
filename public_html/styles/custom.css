@@ -369,6 +369,7 @@ header {
 
 .fb-thumb img, .album-thumb img, .fb-thumb video {
     width: 100%;
+    height: auto;
 }
 
 .bottom-col {

@@ -1,27 +1,12 @@
 <script src="./scripts/masonry.pkgd.min.js"></script>
-<script src="../scripts/imagesloaded.pkgd.min.js"></script>
-<script>
-    jQuery(function(){
-        var $container = $('#news-posts');
-        $container.imagesLoaded( function () {
-            itemSelector: '.news-post',
-                isAnimated: true,
-                isFitWidth: true
-        });
-    });
-/*
-    var container = document.querySelector('#news-posts');
-    var msnry = new Masonry( container, {
-        // options
-        itemSelector: '.news-post'
-    });*/
-</script>
+<script src="./scripts/imagesloaded.pkgd.min.js"></script>
 
 <?php include("./service-variables.php"); ?>
 <?php
 /* gets the data from a URL */
 
-function get_data($url) {
+function get_data($url)
+{
     $ch = curl_init();
     $timeout = 5;
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -44,10 +29,10 @@ $result = json_decode($data);
 <h2>Latest news</h2>
 <div id='news-posts' class='js-masonry' data-masonry-options='{ "itemSelector": ".news-post" }'>
     <?php
-	for ($i=0; $i < 30 ; $i++) {
-        $latest_post =  $result->data[$i];
+    for ($i = 0; $i < 30; $i++) {
+        $latest_post = $result->data[$i];
         $latest_post_text = $latest_post->message;
-        $latest_post_linktitle = (strlen($latest_post_text) > 83) ? substr($latest_post_text,0,80).'...' : $latest_post_text;
+        $latest_post_linktitle = (strlen($latest_post_text) > 83) ? substr($latest_post_text, 0, 80) . '...' : $latest_post_text;
         preg_match('/^([^.!?]*[\.!?]+){0,1}/', strip_tags($latest_post_text), $tittel);
         $latest_post_link = $latest_post->link;
         $latest_post_picture = $latest_post->picture;
@@ -55,61 +40,67 @@ $result = json_decode($data);
         $postDate = date("F j, Y", $latest_post_date);
         $buttonText = "Read more";
 
-        if (strpos($latest_post_link,'facebook') !== false) {
+        if (strpos($latest_post_link, 'facebook') !== false) {
             $buttonText = "See facebook post";
-            if (strpos($latest_post_link,'events') !== false) {
+            if (strpos($latest_post_link, 'events') !== false) {
                 $buttonText = "See facebook event";
             }
         }
 
-        if (strpos($latest_post_link,'youtube') !== false) {
+        if (strpos($latest_post_link, 'youtube') !== false) {
             $buttonText = "Watch YouTube video";
         }
 
 
-
-
-
-        if($latest_post_text !='' && ($latest_post->name != 'Live Photos')){
+        if ($latest_post_text != '' && ($latest_post->name != 'Live Photos')) {
 
             ?>
 
             <div class="col-4 news-post" itemscope itemtype="http://schema.org/Article">
                 <div class="panel bg-noise bg-white fg-black no-padding">
 
-                <?php
-                echo "<div class='no-padding fb-thumb'>";
-                echo "<span itemprop='thumbnail'>";
-                if($latest_post_picture !='' &$latest_post->type == 'photo') {
-                    $photodata = get_data("https://graph.facebook.com/" . $latest_post->object_id);
-                    $photoresult = json_decode($photodata);
-                    echo "<img src='" . htmlspecialchars($photoresult->images[2]->source, ENT_COMPAT) . "' alt='Picture from facebook post' class='' />";
-                }else if($latest_post_picture !=''){
-                    echo "<img src='" . htmlspecialchars($latest_post_picture, ENT_COMPAT) . "' alt='Picture from facebook post'/>";
-                }
-                echo "</span>";
-                echo "</div>";
-                ?>
-                <div class=''>
-                    <p class="fb-date"><span itemprop="datePublished"><?php echo $postDate; ?></span></p>
-                    <p><span itemprop="articleBody"><?php echo $latest_post_text ?></span></p>
                     <?php
-                    if ($latest_post_link != '' && $latest_post_link != null && strpos($latest_post_link,'setonescap.com') == false) {
-                        echo "<a target='_blank' href='" . htmlspecialchars($latest_post_link, ENT_COMPAT) . "' class='button bg-setonescap-red fg-white'>" . $buttonText . "</a>";
+                    echo "<div class='no-padding fb-thumb'>";
+                    echo "<span itemprop='thumbnail'>";
+                    if ($latest_post_picture != '' & $latest_post->type == 'photo') {
+                        $photodata = get_data("https://graph.facebook.com/" . $latest_post->object_id);
+                        $photoresult = json_decode($photodata);
+                        echo "<img src='" . htmlspecialchars($photoresult->images[2]->source, ENT_COMPAT) . "' alt='Picture from facebook post' class='' />";
+                    } else if ($latest_post_picture != '') {
+                        echo "<img src='" . htmlspecialchars($latest_post_picture, ENT_COMPAT) . "' alt='Picture from facebook post'/>";
                     }
+                    echo "</span>";
+                    echo "</div>";
                     ?>
-                </div>
-                <div class="clearfix"></div>
+                    <div class=''>
+                        <p class="fb-date"><span itemprop="datePublished"><?php echo $postDate; ?></span></p>
+
+                        <p><span itemprop="articleBody"><?php echo $latest_post_text ?></span></p>
+                        <?php
+                        if ($latest_post_link != '' && $latest_post_link != null && strpos($latest_post_link, 'setonescap.com') == false) {
+                            echo "<a target='_blank' href='" . htmlspecialchars($latest_post_link, ENT_COMPAT) . "' class='button bg-setonescap-red fg-white'>" . $buttonText . "</a>";
+                        }
+                        ?>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
 
-            <?php
-             }
+        <?php
+        }
     }
 
-echo "</div>";
-?>
+    echo "</div>";
+    ?>
+    <script>
+        $document.ready(function () {
+            var $container = $('#news-posts').masonry();
+            $container.imagesLoaded(function () {
+                $container.masonry();
+            });
+        });
 
+    </script>
 
 
 
