@@ -92,15 +92,14 @@ $result = json_decode($data);
 
     echo "</div>";
     ?>
+
     <script>
-        $document.ready(function () {
+        $(window).load(function () {
             var $container = $('#news-posts').masonry();
             $container.imagesLoaded(function () {
                 $container.masonry();
             });
         });
-
     </script>
-
 
 

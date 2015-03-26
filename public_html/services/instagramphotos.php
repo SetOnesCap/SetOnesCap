@@ -51,11 +51,10 @@ $images = json_decode($images_json);
     ?>
 </div>
 <script>
-    $document.ready(function () {
+    $(window).load(function () {
         var $container = $('#news-posts').masonry();
         $container.imagesLoaded(function () {
             $container.masonry();
         });
     });
-
 </script>

@@ -1,21 +1,23 @@
 <script>
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
         FB.init({
-            appId      : '1526040134335346',
-            xfbml      : true,
-            version    : 'v2.2'
+            appId: '1526040134335346',
+            xfbml: true,
+            version: 'v2.2'
         });
     };
 
-    (function(d, s, id){
+    (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-
 
 
 <div class="content">
@@ -33,6 +35,7 @@
     <section class="col-12 fg-black header <?php echo $pageTitle; ?>" data-speed="1.4" data-type="background">
         <div class="header-text bg-white fg-setonescap-red">
             <h1><?php __getTitle($pageId); ?></h1>
+
             <p class="credit-text"></p>
         </div>
 
@@ -40,7 +43,7 @@
     </section>
     <main>
         <div class="col-12 breadcrumbs">
-            <?php if($pageTitle != 'home'){ ?>
+            <?php if ($pageTitle != 'home') { ?>
                 <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
                     <a href="http://www.setonescap.com" itemprop="url">
                         <span itemprop="title">Set One's Cap</span>
@@ -113,51 +116,66 @@
         </div>
         <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-6">
             <h3>Web:</h3>
+
             <p><span itemprop="name">Benjamin Dehli</span></p>
+
             <div itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address" class="no-padding">
                 <p><span itemprop="street-address">Margretes veg 15</span></p>
+
                 <p><span itemprop="postal-code">3804</span> <span itemprop="locality">B&oslash; i Telemark</span></p>
+
                 <p><span itemprop="country-name">Norway</span></p>
             </div>
             <p>Phone: +47 92 29 27 19</p>
+
             <p>E-mail: post@setonescap.com</p>
         </div>
         <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-6">
             <h3>Booking:</h3>
+
             <p><span itemprop="name">Carl-Viktor Guttormsen</span></p>
+
             <div itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address" class="no-padding">
                 <p><span itemprop="street-address">Parkveien 1</span></p>
+
                 <p><span itemprop="postal-code">3970 Langesund</span></p>
+
                 <p><span itemprop="country-name">Norway</span></p>
             </div>
             <p>Phone: +47 90 26 21 60</p>
+
             <p>E-mail: booking@setonescap.com</p>
         </div>
 
 
     </div>
     <footer class="fixed-bottom bg-white fg-black">
-        <div class="col-6">© 2014 <a href="https://plus.google.com/+Setonescap" target="_blank" rel="publisher">Set One's Cap</a></div>
+        <div class="col-6">© 2014
+            <a href="https://plus.google.com/+Setonescap" target="_blank" rel="publisher">Set One's Cap</a></div>
         <div class="col-6 text-right">
-            Website by: <a href="https://plus.google.com/+BenjaminDehli1/" target="_blank" rel="author">Benjamin Dehli</a>
+            Website by:
+            <a href="https://plus.google.com/+BenjaminDehli1/" target="_blank" rel="author">Benjamin Dehli</a>
         </div>
     </footer>
 
 
     <div class="clearfix"></div>
 </div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
 
 <script type="text/javascript" src="/scripts/jquery.slicknav.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#menu').slicknav();
-    });
-</script>
 
 <script type="text/javascript" src="/scripts/showPhoto.min.js"></script>
 <script type="text/javascript" src="/scripts/parallax.min.js"></script>
 <script type="text/javascript" src="/scripts/activeLinks.min.js"></script>
+<script>
+    $( document ).ready(function () {
+        $('#menu').slicknav();
+    });
+
+
+
+</script>
 
 </body>
 </html>
