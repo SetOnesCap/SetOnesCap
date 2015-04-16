@@ -6,7 +6,9 @@
 <form>
     <div class="col-12 bg-white fg-black">
         <h2>Photoalbums of Set One's Cap</h2>
+        <div class="no-padding" id="photoalbums">
         <?php __getPhotoAlbums('setonescap') ?>
+        </div>
         <div class='clear'></div>
     </div>
 </form>
@@ -19,3 +21,12 @@
 <div class="col-12 bg-white">
 <?php include_once('./services/instagramphotos.php'); ?>
 </div>
+
+<script>
+    $(window).load(function () {
+        var $container = $('#photoalbums').masonry();
+        $container.imagesLoaded(function () {
+            $container.masonry();
+        });
+    });
+</script>

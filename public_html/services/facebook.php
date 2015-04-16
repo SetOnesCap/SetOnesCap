@@ -52,7 +52,7 @@ $result = json_decode($data);
         }
 
 
-        if ($latest_post_text != '' && ($latest_post->name != 'Live Photos')) {
+        if ($latest_post_text != '' && ($latest_post->name != 'Live Photos') && ($latest_post->name != 'Ocean Sound Recordings 2015')) {
 
             ?>
 

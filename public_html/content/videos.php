@@ -16,11 +16,11 @@
 
 
 <script>
-    $(document).ready(function(){
+ /*   $(document).ready(function(){
         $("a").click(function(e) {
             e.preventDefault();
 
             $("#videoPreview").attr("src", $(this).attr("href"));
         })
-    });
+    });*/
 </script>

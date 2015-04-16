@@ -31,7 +31,6 @@ foreach ($videos->items as $video) {
                 echo "<h3>" . $video->snippet->title . "</h3>";
                 echo "<p class='album-date'>" . $postDate . "</p>";
                 echo "<p> Video from Set One&#8217;s Cap YouTube channel</p>";
-               // echo "<p>" . $video->snippet->description . "</p>";
                 echo "<a href='//www.youtube.com/embed/" . $video->snippet->resourceId->videoId . "?modestbranding=1&amp;theme=light&amp;rel=0&amp;showinfo=0' target='" . $video->snippet->resourceId->videoId ."' class='button bg-setonescap-red'>Watch video</a>";
             echo "</div>";
         echo "</div>";
