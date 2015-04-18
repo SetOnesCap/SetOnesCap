@@ -6,6 +6,10 @@
     </div>
 </div>
 <div class="col-12 bg-white">
+    <div class="line-through">
+        <span></span>
+        <h2>YouTube videos</h2>
+    </div>
     <?php include_once('./services/youtube.php'); ?>
 </div>
 <!--

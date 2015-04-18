@@ -26,7 +26,9 @@ $result = json_decode($data);
 
 
 ?>
-<h2>Latest news</h2>
+<div class="line-through">
+    <span></span><h2>Latest news</h2>
+</div>
 <div id='news-posts' class='js-masonry' data-masonry-options='{ "itemSelector": ".news-post" }'>
     <?php
     for ($i = 0; $i < 30; $i++) {

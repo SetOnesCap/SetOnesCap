@@ -1,24 +1,3 @@
-<script>
-/*    window.fbAsyncInit = function () {
-        FB.init({
-            appId: '1526040134335346',
-            xfbml: true,
-            version: 'v2.2'
-        });
-    };
-
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk')); */
-</script>
-
 
 <div class="content">
     <header>
@@ -61,15 +40,14 @@
         </div>
         <?php include("content/" . $pageFile); ?>
     </main>
-    <div
-        class="fb-like col-12"
-        data-share="true"
-        data-width="300"
-        data-show-faces="false">
-    </div>
     <div class="col-12 bg-noise bg-black fg-white bottom-col">
         <div class="col-12 text-center sociallinks">
-            <h2>Get in touch</h2>
+            <div class="line-through">
+                <span></span>
+
+                <h2>Get in touch</h2>
+            </div>
+
             <a href="https://www.facebook.com/setonescap" class="facebook" title="Check out Set One's Cap at Facebook">
                 <div class="fa-stack fa-2x">
                     <span class="fa fa-square-o fa-stack-2x"></span>
@@ -114,7 +92,7 @@
             </a>
 
         </div>
-        <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-6">
+        <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-4">
             <h3>Web:</h3>
 
             <p><span itemprop="name">Benjamin Dehli</span></p>
@@ -128,9 +106,9 @@
             </div>
             <p>Phone: +47 92 29 27 19</p>
 
-            <p>E-mail: post@setonescap.com</p>
+            <p>E-mail: support@setonescap.com</p>
         </div>
-        <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-6">
+        <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-4">
             <h3>Booking:</h3>
 
             <p><span itemprop="name">Carl-Viktor Guttormsen</span></p>
@@ -145,6 +123,13 @@
             <p>Phone: +47 90 26 21 60</p>
 
             <p>E-mail: booking@setonescap.com</p>
+        </div>
+        <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-4">
+            <h3>For everything else:</h3>
+
+            <p>Feel free to contact us at</p>
+
+            <p>post@setonescap.com</p>
         </div>
 
 
@@ -169,10 +154,9 @@
 <script type="text/javascript" src="/scripts/parallax.min.js"></script>
 <script type="text/javascript" src="/scripts/activeLinks.min.js"></script>
 <script>
-    $( document ).ready(function () {
+    $(document).ready(function () {
         $('#menu').slicknav();
     });
-
 
 
 </script>

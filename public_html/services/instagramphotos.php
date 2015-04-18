@@ -14,8 +14,11 @@ $instagram_url = "https://api.instagram.com/v1/users/" . $userId . "/media/recen
 $images_json = file_get_contents($instagram_url);
 $images = json_decode($images_json);
 ?>
+<div class="line-through">
+    <span></span>
+    <h2>Latest instagram photos</h2>
+</div>
 
-<h2>Latest instagram photos</h2>
 <div id='news-posts' class='js-masonry' data-masonry-options='{ "itemSelector": ".news-post" }'>
 
     <?php

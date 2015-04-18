@@ -72,6 +72,8 @@
     margin:2px 5px;
     text-decoration:none;
     color:#333;
+    transition: none;
+    -webkit-transition: none;
 }
 .slicknav_nav .slicknav_item a,
 .slicknav_nav .slicknav_parent-link a {

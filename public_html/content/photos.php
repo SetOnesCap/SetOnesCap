@@ -5,7 +5,11 @@
 </div>
 <form>
     <div class="col-12 bg-white fg-black">
-        <h2>Photoalbums of Set One's Cap</h2>
+        <div class="line-through">
+            <span></span>
+            <h2>Photoalbums</h2>
+        </div>
+
         <div class="no-padding" id="photoalbums">
         <?php __getPhotoAlbums('setonescap') ?>
         </div>
