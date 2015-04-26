@@ -30,14 +30,14 @@ h2 {
 
 .line-through h2{
     font-size: 2.9em;
-    background-color: #fff;
+    background-color: #fcfcfc;
     display: inline-block;
     margin: auto;
     padding: 0 12px;
 }
 
 .line-through span {
-    border-top: 1px solid #F9F9F9;
+    border-top: 1px solid #FFF;
     border-bottom: 1px solid #EFEFEF;
     width: 100%;
     max-width: 700px;
@@ -51,8 +51,8 @@ h2 {
 }
 
 .bg-black .line-through span{
-    border-top: 1px solid #404040;
-    border-bottom: 1px solid #4E4E4E;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #1F1F1F;
 }
 .sociallinks .line-through span{
     margin-bottom: -7px;
@@ -182,7 +182,7 @@ header nav img {
 }
 
 .bg-white {
-    background-color: #ffffff;
+    background-color: #fcfcfc;
 }
 
 .bg-setonescap-red {
