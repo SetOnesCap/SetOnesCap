@@ -41,10 +41,15 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="/font-awesome-4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/roboto.min.css">
+
+    <!--@import 'https://fonts.googleapis.com/css?family=Roboto:200,400,300,700';
+    @import 'https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,600'; -->
+
     <link rel="stylesheet" type="text/css" href="/styles/standard.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/custom.min.css">
     <link rel="stylesheet" href="/styles/slicknav.min.css">
-    <link rel="stylesheet" href="/styles/print.min.css">
+    <link rel="stylesheet" href="/styles/print.min.css" media="print">
 
 
     <base target="_self" />
@@ -81,8 +86,10 @@
     <meta name="twitter:description" content="The norwegian pop-rock band Set One's Cap's Official Website. Visit setonescap.com to view photos, watch videos, get the latest news and see upcoming concerts.">
     <meta name="twitter:image:src" content="http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-20.jpg">
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+    <script async type="text/javascript" src="/scripts/jquery-1.11.2.min.js"></script>
+    <script async type="text/javascript" src="/scripts/modernizr.min.js"></script>
+   <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script> -->
 </head>
 <body class="bg-white">
 <script>
