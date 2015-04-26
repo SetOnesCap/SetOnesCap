@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/01/</loc>
@@ -9,7 +8,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-01.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-01.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -18,7 +19,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-02.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-02.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -27,7 +30,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-03.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-03.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -36,7 +41,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-04.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-04.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -45,7 +52,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-05.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-05.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -54,7 +63,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-06.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-06.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -63,7 +74,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-07.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-07.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -72,7 +85,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-08.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-08.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -81,7 +96,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-09.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-09.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -90,7 +107,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-10.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-10.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -99,7 +118,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-11.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-11.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -108,7 +129,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-12.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-12.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -117,7 +140,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-13.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-13.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -126,7 +151,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-14.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-14.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -135,7 +162,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-15.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-15.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -144,7 +173,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-16.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-16.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -153,7 +184,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-17.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-17.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -162,7 +195,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-18.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-18.jpg
+            </image:loc>
         </image:image>
     </url>
 
@@ -173,7 +208,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-01.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-01.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -182,7 +219,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-02.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-02.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -191,7 +230,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-03.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-03.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -200,7 +241,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-04.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-04.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -209,7 +252,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-05.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-05.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -218,7 +263,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-06.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-06.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -227,7 +274,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-07.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-07.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -236,7 +285,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-08.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-08.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -245,7 +296,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-09.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-09.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -254,7 +307,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-10.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-10.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -263,7 +318,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-11.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-11.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -272,7 +329,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-12.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-12.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -281,7 +340,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-01.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-01.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -290,7 +351,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-02.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-02.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -299,7 +362,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-03.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-03.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -308,7 +373,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-04.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-04.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -317,7 +384,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-05.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-05.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -326,7 +395,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-06.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-06.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -335,7 +406,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-07.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-07.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -344,7 +417,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-08.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-08.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -353,7 +428,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-09.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-09.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -362,7 +439,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-10.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-10.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -371,7 +450,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-11.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-11.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -380,7 +461,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-12.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-12.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -389,7 +472,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-13.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-13.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -398,7 +483,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-14.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-14.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -407,7 +494,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-15.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-15.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -416,7 +505,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-16.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-16.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -425,7 +516,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-17.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-17.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -434,7 +527,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-18.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-18.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -443,7 +538,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-19.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-19.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -452,7 +549,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-20.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-20.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -461,7 +560,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-21.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-21.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -470,7 +571,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-22.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-22.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -479,7 +582,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-23.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-23.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -488,7 +593,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-24.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-24.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -497,7 +604,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-25.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-25.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -506,7 +615,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-26.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-26.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -515,7 +626,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-01.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-01.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -524,7 +637,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-02.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-02.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -533,7 +648,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-03.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-03.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -542,7 +659,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-04.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-04.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -551,7 +670,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-05.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-05.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -560,7 +681,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-06.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-06.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -569,7 +692,9 @@
             <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-07.jpg</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-07.jpg
+            </image:loc>
         </image:image>
     </url>
     <url>
@@ -593,7 +718,8 @@
             <image:loc>http://www.setonescap.com/images/photoalbums/rockefeller-2014-10-30-karl-myrvang.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/photoalbums/rockefeller-2014-10-30-marceli-szelag.jpg</image:loc>
+            <image:loc>http://www.setonescap.com/images/photoalbums/rockefeller-2014-10-30-marceli-szelag.jpg
+            </image:loc>
         </image:image>
         <image:image>
             <image:loc>http://www.setonescap.com/images/photoalbums/rockefeller-2014-10-30-julie-talmo.jpg</image:loc>
