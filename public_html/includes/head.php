@@ -48,6 +48,8 @@
     <link rel="stylesheet" href="/styles/slicknav.min.css">
     <link rel="stylesheet" href="/styles/print.min.css" media="print">
 
+    <!-- <link rel="stylesheet" type="text/css" href="/styles/custom.min.css"> -->
+
 
     <base target="_self" />
     <?php
@@ -82,8 +84,8 @@
     <meta name="twitter:title" content="Set One's Cap Official Website">
     <meta name="twitter:description" content="The norwegian pop-rock band Set One's Cap's Official Website. Visit setonescap.com to view photos, watch videos, get the latest news and see upcoming concerts.">
     <meta name="twitter:image:src" content="http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-20.jpg">
-    
-    <script async type="text/javascript" src="/scripts/jquery-1.11.2.min.js"></script>
+
+    <script type="text/javascript" src="/scripts/jquery-1.11.2.min.js"></script>
     <script async type="text/javascript" src="/scripts/modernizr.min.js"></script>
 
 </head>

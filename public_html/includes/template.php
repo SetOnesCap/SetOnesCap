@@ -1,16 +1,16 @@
-
-<div class="content">
-    <header>
-        <nav id="menu" class="fg-black bg-white fixed">
+<header>
+    <nav id="menu" class="fg-black bg-white fixed">
+        <div class="content">
             <img src="/images/template/bird-nav.png" alt="Set Ones Cap logo, drawing of a bird with a hat"/>
             <ul class="float-right">
                 <?php
                 __getLinkList($rootURL);
                 ?>
             </ul>
-
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
+<div class="content">
     <section class="col-12 fg-black header <?php echo $pageTitle; ?>" data-speed="1.4" data-type="background">
         <div class="header-text bg-white fg-setonescap-red">
             <h1><?php __getTitle($pageId); ?></h1>
@@ -159,6 +159,21 @@
     });
 
 
+</script>
+<script>
+    $(document).ready(function(){
+        resizeDiv();
+    });
+
+    window.onresize = function(event) {
+        resizeDiv();
+    }
+
+    function resizeDiv() {
+        var vpw = $(window).width();
+        var vph = $(window).height();
+        $('.header').css({'height': vpw/2.3 + 'px'});
+    }
 </script>
 
 </body>
