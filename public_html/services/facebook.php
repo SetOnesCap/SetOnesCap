@@ -24,14 +24,16 @@ $data = get_data("https://graph.facebook.com/" . $pageId . "/promotable_posts?ac
 
 $result = json_decode($data);
 
-
+$postCount = count($result->data);
 ?>
 <div class="line-through">
-    <span></span><h2>Latest news</h2>
+    <span></span>
+
+    <h2>Latest news</h2>
 </div>
 <div id='news-posts' class='js-masonry' data-masonry-options='{ "itemSelector": ".news-post" }'>
     <?php
-    for ($i = 0; $i < 30; $i++) {
+    for ($i = 0; $i < $postCount; $i++) {
         $latest_post = $result->data[$i];
         $latest_post_text = $latest_post->message;
         $latest_post_linktitle = (strlen($latest_post_text) > 83) ? substr($latest_post_text, 0, 80) . '...' : $latest_post_text;
@@ -65,9 +67,22 @@ $result = json_decode($data);
                     echo "<div class='no-padding fb-thumb'>";
                     echo "<span itemprop='thumbnail'>";
                     if ($latest_post_picture != '' & $latest_post->type == 'photo') {
-                        $photodata = get_data("https://graph.facebook.com/" . $latest_post->object_id);
+                        $photodata = get_data("https://graph.facebook.com/" . $latest_post->object_id . "?fields=images&access_token=" . $accessToken);
                         $photoresult = json_decode($photodata);
-                        echo "<img src='" . htmlspecialchars($photoresult->images[2]->source, ENT_COMPAT) . "' alt='Picture from facebook post' class='' />";
+                        $photoCount = count($photoresult->images);
+                        for ($index = 0; $index < $photoCount; $index++) {
+                            if ($photoresult->images[$index]->width > 400 && $photoresult->images[$index]->width < 700) {
+                                $photoSource = $photoresult->images[$index]->source;
+                                $photoWidth = $photoresult->images[$index]->width;
+                                $photoHeight = $photoresult->images[$index]->height;
+                            }
+
+                        }
+                        if ($photoSource == '' || $photoSource == null) {
+                            $photoSource = $photoSource = $photoresult->images[2]->source;
+                        }
+
+                        echo "<img src='" . htmlspecialchars($photoSource, ENT_COMPAT) . "' width='" . $photoWidth . "' height='" . $photoHeight . "' alt='Picture from facebook' />";
                     } else if ($latest_post_picture != '') {
                         echo "<img src='" . htmlspecialchars($latest_post_picture, ENT_COMPAT) . "' alt='Picture from facebook post'/>";
                     }
