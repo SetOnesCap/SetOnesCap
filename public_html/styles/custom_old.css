@@ -61,7 +61,7 @@ h2 {
 .breadcrumbs {
     font-size: .9em;
     text-align: left;
-    padding: 2px 15px;
+    padding: 2px;
     color: #777;
 }
 
@@ -129,8 +129,9 @@ a.google-plus:hover {
 
 .content {
     padding: 0;
+    max-width: 1100px;
     margin: auto;
-    /* box-shadow: 0px 0px 30px -10px #000;*/
+   /* box-shadow: 0px 0px 30px -10px #000;*/
 }
 
 
@@ -147,15 +148,6 @@ nav {
 
 nav.fixed {
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-}
-
-nav.bg-white{
-    border-bottom: 1px solid #EEE;
-}
-
-nav.bg-white li:hover{
-    background-color: #FCFCFC;
 }
 
 header nav ul {
@@ -178,16 +170,14 @@ header nav img {
     float: left;
 }
 .button {
-    -webkit-transition: all 0.1s ease;
-    transition: all 0.1s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     -webkit-transform-style: preserve-3d;
     text-align: center;
     font-weight: normal;
     font-size: 0.9em;
     text-transform: uppercase;
     margin-right: -1px;
-    box-shadow: 1px 1px 1px 0 rgba(0,0,0,.2);
-    border-radius: 2px;
 }
 
 .bg-white {
@@ -198,7 +188,7 @@ header nav img {
     background-color: #EA5124;
 }
 
-button.bg-setonescap-red:hover, a.bg-setonescap-red:hover, .button.bg-setonescap-red.slicknav_open {
+button.bg-setonescap-red:hover, a.bg-setonescap-red:hover  {
     color: #FFF;
 }
 
@@ -207,33 +197,13 @@ button.bg-setonescap-red:hover, a.bg-setonescap-red:hover, .button.bg-setonescap
 }
 
 .button.bg-setonescap-red {
-    background-color: #FAFAFA;
-    background: #fefefe; /* Old browsers */
-    background: -moz-linear-gradient(top,  #fefefe 0%, #f3f3f3 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#f3f3f3)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #fefefe 0%,#f3f3f3 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #fefefe 0%,#f3f3f3 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #fefefe 0%,#f3f3f3 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #fefefe 0%,#f3f3f3 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f3f3f3',GradientType=0 ); /* IE6-9 */
-
+    background-color: inherit;
     border: 1px solid #EA5124;
-    border-top-color: #FA6134;
-    border-bottom-color: #DA4114;
     color: #333;
 }
 
-.button.bg-setonescap-red:hover, .bg-setonescap-red.slicknav_open {
+.button.bg-setonescap-red:hover {
     background-color: #EA5124;
-    background: #ef5629; /* Old browsers */
-    background: -moz-linear-gradient(top,  #ef5629 0%, #e24216 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ef5629), color-stop(100%,#e24216)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #ef5629 0%,#e24216 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #ef5629 0%,#e24216 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #ef5629 0%,#e24216 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #ef5629 0%,#e24216 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5629', endColorstr='#e24216',GradientType=0 ); /* IE6-9 */
-
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -308,17 +278,15 @@ header {
 }
 .header {
     min-height: 450px;
-    background-size: cover!important;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #000;
     padding: 0px;
-    box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.16);
 }
 
 .header-text {
     position: absolute;
     bottom: 0px;
-    box-shadow: 2px -2px 2px rgba(0, 0, 0, 0.16);
 }
 
 .header-text h1 {
@@ -383,7 +351,6 @@ header {
     margin: 0px auto;
     padding: 0;
     background: #fff;
-    box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.9);
 }
 
 .photoalbumDialog > div img {
@@ -423,13 +390,13 @@ header {
 
 
 .fixed-bottom{
+    max-width: 1100px;
     margin: auto;
 }
 
 .fb-thumb, .album-thumb {
     overflow: hidden;
     max-height: 300px;
-    border-radius: 2px;
 }
 
 .fb-thumb img, .album-thumb img, .fb-thumb video {
@@ -438,7 +405,6 @@ header {
 }
 
 .bottom-col {
-    padding-top: 30px;
     padding-bottom: 130px;
     line-height: .5em;
 }
@@ -497,14 +463,12 @@ p.fb-date, p.album-date {
 
 .photo-fullscreen {
     text-align: center;
-    padding: 75px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 .photo-fullscreen img {
     max-width: 100%;
     max-height: 1200px;
-    margin-top: 20px;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.6);
 }
 
 
@@ -611,18 +575,4 @@ div.fb-like span iframe{
             width: 100%;
         }
     }
-}
-
-@media screen and (min-width: 1440px) {
-    .col-4{width: 25%}
-    .bottom-col .col-4{width: 33.3333%}
-    .col-6{width: 33.3333%}
-    footer .col-6{width: 50%;}
-}
-
-@media screen and (min-width: 1920px) {
-    .col-4{width: 20%}
-    .bottom-col .col-4{width: 33.3333%}
-    .col-6{width: 25%}
-    footer .col-6{width: 50%;}
 }

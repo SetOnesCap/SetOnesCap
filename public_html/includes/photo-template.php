@@ -10,7 +10,7 @@
 </script>
 <div class="content">
     <header>
-        <nav id="menu" class="fg-black bg-white fixed">
+        <nav id="menu" class="fg-black bg-white border fixed">
             <img src="/images/template/bird-nav.png" alt="Set Ones Cap logo, drawing of a bird with a hat"/>
             <ul class="float-right">
                 <?php
@@ -66,7 +66,7 @@
         data-width="450"
         data-show-faces="false">
     </div>
-    <footer class="fixed-bottom bg-white fg-black">
+    <footer class="bg-white border fg-black">
         <div class="col-6">© 2014 <a href="https://plus.google.com/+Setonescap" target="_blank">Set One's Cap</a></div>
         <div class="col-6 text-right">
             Website by: <a href="https://plus.google.com/+BenjaminDehli1/" target="_blank">Benjamin Dehli</a>

@@ -134,7 +134,7 @@
 
 
     </div>
-    <footer class="fixed-bottom bg-white fg-black">
+    <footer class="bg-white fg-black">
         <div class="col-6">© 2014
             <a href="https://plus.google.com/+Setonescap" target="_blank" rel="publisher">Set One's Cap</a></div>
         <div class="col-6 text-right">

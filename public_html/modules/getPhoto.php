@@ -28,7 +28,7 @@ echo "<div class='clear'></div>";
 echo "</div>";
 
 echo "<div class='col-3 bg-noise bg-white'>";
-echo "<a href='#close' title='Close' class='close float-left'>X</a>";
+echo "<a href='#close' title='Close' class='close float-left'><span class='fa fa-close'></span></a>";
 
 echo "<div class='col-12 no-padding'>";
     echo "<h2>" . $albumTitle . "</h2>";

@@ -240,7 +240,7 @@ function __getPhotoAlbum($albumId){
     //TODO Description at all photos    $photoCount = $result->num_rows;
 
         echo "<div class='col-4 news-post photoalbum-link'>";
-            echo "<div class='panel bg-noise bg-white fg-black no-padding'>";
+            echo "<div class='panel bg-white fg-black no-padding'>";
                 echo "<div class='no-padding album-thumb'>";
                     echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum'><img src='/images/photoalbums/" . strtolower($albumTitleStripped) . "-" . $albumDate . "-" . $photographerStripped . ".jpg' alt='" . $albumTitle . "' class='' /></a>";
                 echo "</div>";
