@@ -28,7 +28,7 @@ $images = json_decode($images_json);
             ?>
 
             <div class="col-3 news-post" itemscope itemtype="http://schema.org/Article">
-                <div class="panel bg-noise bg-white fg-black no-padding">
+                <div class="panel bg-white fg-black no-padding">
 
                     <?php
                     echo "<div class='no-padding fb-thumb' style='max-height: 640px;'>";

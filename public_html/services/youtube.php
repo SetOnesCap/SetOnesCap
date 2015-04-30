@@ -16,7 +16,7 @@ foreach ($videos->items as $video) {
     $publishedDate = strtotime($video->snippet->publishedAt);
     $postDate = date("F j, Y", $publishedDate);
     echo "<div class='col-6 photoalbum-link'>";
-        echo "<div class='panel bg-noise bg-white fg-black no-padding'>";
+        echo "<div class='panel bg-white fg-black no-padding'>";
             echo "<div class='no-padding album-thumb video-container'>";
    echo" <iframe width='560'
             height='315'

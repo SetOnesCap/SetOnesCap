@@ -61,7 +61,7 @@ $postCount = count($result->data);
             ?>
 
             <div class="col-4 news-post" itemscope itemtype="http://schema.org/Article">
-                <div class="panel bg-noise bg-white fg-black no-padding">
+                <div class="panel bg-white fg-black no-padding">
 
                     <?php
                     echo "<div class='no-padding fb-thumb'>";

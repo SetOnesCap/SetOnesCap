@@ -30,7 +30,7 @@ foreach ($events as $event) {
         foreach ($events as $event) {
             if (date("Y-m-d", strtotime($event->datetime)) >= $dateNow) {
                 ?>
-                <div itemscope itemtype='http://schema.org/Event' class='col-12 bg-noise bg-white fg-black event-item panel'>
+                <div itemscope itemtype='http://schema.org/Event' class='col-12 bg-white fg-black event-item panel'>
                     <h3><span itemprop='name'> <?php echo $event->title ?> </span></h3>
 
                     <div class='col-4'>
