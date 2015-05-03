@@ -5,6 +5,10 @@ Disallow: /admin
 Disallow: /includes
 Disallow: /modules
 
+Allow: /scripts
+Allow: /styles
+Allow: /font-awesome-4.2.0
+
 Sitemap: http://www.setonescap.com/sitemap.xml
 Sitemap: http://www.setonescap.com/image-sitemap.xml
 Sitemap: http://www.setonescap.com/video-sitemap.xml

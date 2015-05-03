@@ -18,12 +18,17 @@ $albumDate = __getSingleValue($db::PHOTOALBUMS_DATECOL, $db::PHOTOALBUMS_TABLENA
 $photographer = __getSingleValue($db::PHOTOALBUMS_PHOTOGRAPHERCOL, $db::PHOTOALBUMS_TABLENAME, $db::PHOTOALBUMS_IDCOL, $albumId);
 $photographerStripped = strtolower(str_replace(array('  ', ' '), '-', preg_replace('/[^a-zA-Z0-9 s]/', '', trim($photographer))));
 
+$photoDescription = __getPhotoDescription($albumId, $photoNo);
+
 $albumDateStrTemp = strtotime($albumDate);
 $albumDateStr = date("F j, Y", $albumDateStrTemp);
 
 
 echo "<div class='col-9 text-center bg-noise bg-black no-padding'>";
 __getPhoto($albumId, $photoNo);
+echo "<div class='photodescription'>";
+echo  $photoDescription;
+echo "</div>";
 echo "<div class='clear'></div>";
 echo "</div>";
 
@@ -35,6 +40,10 @@ echo "<div class='col-12 no-padding'>";
     echo "<p class='album-date'>" . $albumDateStr . "</p>";
     echo "<p>" . $albumDescription . "</p>";
 echo "</div>";
+
+
+
+
 
 echo "<div class='col-12 no-padding'>";
     echo "<p> Photo by " . $photographer . "</p>";

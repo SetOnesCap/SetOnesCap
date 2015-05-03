@@ -124,7 +124,7 @@
 
             <p>E-mail: booking@setonescap.com</p>
         </div>
-        <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-4">
+        <div class="col-4">
             <h3>For everything else:</h3>
 
             <p>Feel free to contact us at</p>

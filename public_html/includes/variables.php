@@ -23,6 +23,8 @@ if($pageTitle == 'photos'){
 
 
     if($photoAlbum != '' AND $photoAlbum != null) {
+        $photoAlbumId = __getPhotoalbumId($photoAlbumString, $photoAlbumDate, $photographer);
+
         $photoAlbumSize = __getPhotoAlbumSize($photoAlbumString, $photoAlbumDate, $photographer);
         $pageTitleString = $photoAlbumString . " - " . $photoAlbumDate . " - " . $photographerString . " - " . ltrim($photoNo, '0') . " of " . ltrim($photoAlbumSize, '0');
 
