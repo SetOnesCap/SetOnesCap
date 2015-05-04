@@ -11,7 +11,7 @@
     </nav>
 </header>
 <div class="content">
-    <section class="col-12 fg-black header <?php echo $pageTitle; ?>" data-speed="1.4" data-type="background">
+    <section class="col-12 fg-black header header-<?php echo $headerNo; ?>" data-speed="1.4" data-type="background">
         <div class="header-text bg-white fg-setonescap-red">
             <h1><?php __getTitle($pageId); ?></h1>
 

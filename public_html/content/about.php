@@ -6,12 +6,12 @@
         <?php __getContent($pageId); ?>
         <h3>Members</h3>
         <ul>
-            <li>Joakim Juul - Vocals</li>
-            <li>Martin Torgersen - Synth and Piano</li>
-            <li>Benjamin Dehli - Organ and Electric piano</li>
-            <li>Carl-Viktor Guttormsen - Guitar</li>
-            <li>Sondre Gautefald - Bass</li>
             <li>Kasper Waag - Drums</li>
+            <li>Sondre Gautefald - Bass</li>
+            <li>Benjamin Dehli - Organ and Electric piano</li>
+            <li>Martin Torgersen - Synth and Piano</li>
+            <li>Joakim Juul - Vocals</li>
+            <li>Carl-Viktor Guttormsen - Guitar</li>
         </ul>
     </div>
     <div class="col-4 text-center">

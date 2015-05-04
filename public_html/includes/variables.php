@@ -10,6 +10,8 @@ $pageId = __getSingleValue($db::PAGE_IDCOL, $db::PAGE_TABLENAME, $db::PAGE_TITLE
 $pageDescription = __getSingleValue($db::PAGE_DESCRIPTIONCOL, $db::PAGE_TABLENAME, $db::PAGE_TITLECOL, $pageTitle);
 $pageFile = __getPageFile($pageId);
 
+$headerNo = rand(1,10);
+
 
 
 
