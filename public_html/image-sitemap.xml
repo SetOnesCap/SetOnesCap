@@ -3,10 +3,482 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
     <url>
-        <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/01/</loc>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/01/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-01.jpg
+            </image:loc>
         </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/02/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-02.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/03/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-03.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/04/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-04.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/05/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-05.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/06/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-06.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/07/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-07.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/08/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-08.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/09/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-09.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/10/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-10.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/11/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-11.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/12/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-12.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/13/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-13.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/14/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-14.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/15/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-15.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/16/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-16.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/17/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-17.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/18/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-18.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/19/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-19.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/20/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-20.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/21/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-21.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/22/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-22.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/23/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-23.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/24/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-24.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/25/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-25.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/26/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-26.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/27/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-27.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/28/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-28.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/29/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-29.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/30/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-30.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/31/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-31.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/32/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-32.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/33/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-33.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/34/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-34.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/35/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-35.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/36/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-36.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/37/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-37.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/38/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-38.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/39/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-39.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/40/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-40.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/41/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-41.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/42/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-42.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/43/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-43.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/44/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-44.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/45/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-45.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/46/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-46.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/47/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-47.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/48/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-48.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/49/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-49.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/ocean-sound-recordings/2015-04-10/set-ones-cap/50/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-ocean-sound-recordings-2015-04-10-50.jpg
+            </image:loc>
+        </image:image>
+    </url>
+
+
+    <url>
+        <loc>http://www.setonescap.com/photos/the-road-to-ocean-sound-recordings/2015-04-09/set-ones-cap/01/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-the-road-to-ocean-sound-recordings-2015-04-09-01.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/the-road-to-ocean-sound-recordings/2015-04-09/set-ones-cap/02/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-the-road-to-ocean-sound-recordings-2015-04-09-02.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/the-road-to-ocean-sound-recordings/2015-04-09/set-ones-cap/03/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-the-road-to-ocean-sound-recordings-2015-04-09-03.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/the-road-to-ocean-sound-recordings/2015-04-09/set-ones-cap/04/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-the-road-to-ocean-sound-recordings-2015-04-09-04.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/the-road-to-ocean-sound-recordings/2015-04-09/set-ones-cap/05/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-the-road-to-ocean-sound-recordings-2015-04-09-05.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/the-road-to-ocean-sound-recordings/2015-04-09/set-ones-cap/06/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-the-road-to-ocean-sound-recordings-2015-04-09-06.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/the-road-to-ocean-sound-recordings/2015-04-09/set-ones-cap/07/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-the-road-to-ocean-sound-recordings-2015-04-09-07.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/the-road-to-ocean-sound-recordings/2015-04-09/set-ones-cap/08/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-the-road-to-ocean-sound-recordings-2015-04-09-08.jpg
+            </image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://www.setonescap.com/photos/the-road-to-ocean-sound-recordings/2015-04-09/set-ones-cap/09/</loc>
+        <image:image>
+            <image:loc>
+                http://www.setonescap.com/images/photos/big/set-ones-cap/setonescap-the-road-to-ocean-sound-recordings-2015-04-09-09.jpg
+            </image:loc>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/01/</loc>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-01.jpg
@@ -16,9 +488,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/02/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-02.jpg
             </image:loc>
@@ -26,9 +495,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/03/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-03.jpg
@@ -38,9 +504,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/04/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-04.jpg
             </image:loc>
@@ -48,9 +511,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/05/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-05.jpg
@@ -60,9 +520,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/06/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-06.jpg
             </image:loc>
@@ -70,9 +527,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/07/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-07.jpg
@@ -82,9 +536,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/08/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-08.jpg
             </image:loc>
@@ -92,9 +543,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/09/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-09.jpg
@@ -104,9 +552,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/10/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-10.jpg
             </image:loc>
@@ -114,9 +559,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/11/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-11.jpg
@@ -126,9 +568,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/12/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-12.jpg
             </image:loc>
@@ -136,9 +575,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/13/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-13.jpg
@@ -148,9 +584,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/14/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-14.jpg
             </image:loc>
@@ -158,9 +591,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/15/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-15.jpg
@@ -170,9 +600,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/16/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-16.jpg
             </image:loc>
@@ -181,9 +608,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/17/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-17.jpg
             </image:loc>
@@ -191,9 +615,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/rockeklubben-i-porsgrunn/2015-01-30/ketil-hardy/18/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/ketil-hardy/setonescap-rockeklubben-i-porsgrunn-2015-01-30-18.jpg
@@ -205,9 +626,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/julie-talmo/01/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-01.jpg
             </image:loc>
@@ -215,9 +633,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/julie-talmo/02/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-02.jpg
@@ -227,9 +642,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/julie-talmo/03/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-03.jpg
             </image:loc>
@@ -237,9 +649,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/julie-talmo/04/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-04.jpg
@@ -249,9 +658,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/julie-talmo/05/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-05.jpg
             </image:loc>
@@ -259,9 +665,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/julie-talmo/06/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-06.jpg
@@ -271,9 +674,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/julie-talmo/07/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-07.jpg
             </image:loc>
@@ -281,9 +681,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/julie-talmo/08/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-08.jpg
@@ -293,9 +690,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/julie-talmo/09/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-09.jpg
             </image:loc>
@@ -303,9 +697,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/julie-talmo/10/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-10.jpg
@@ -315,9 +706,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/julie-talmo/11/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-11.jpg
             </image:loc>
@@ -325,9 +713,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/julie-talmo/12/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/julie-talmo/setonescap-rockefeller-2014-10-30-12.jpg
@@ -337,9 +722,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/01/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-01.jpg
             </image:loc>
@@ -347,9 +729,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/02/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-02.jpg
@@ -359,9 +738,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/03/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-03.jpg
             </image:loc>
@@ -369,9 +745,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/04/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-04.jpg
@@ -381,9 +754,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/05/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-05.jpg
             </image:loc>
@@ -391,9 +761,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/06/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-06.jpg
@@ -403,9 +770,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/07/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-07.jpg
             </image:loc>
@@ -413,9 +777,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/08/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-08.jpg
@@ -425,9 +786,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/09/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-09.jpg
             </image:loc>
@@ -435,9 +793,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/10/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-10.jpg
@@ -447,9 +802,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/11/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-11.jpg
             </image:loc>
@@ -457,9 +809,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/12/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-12.jpg
@@ -469,9 +818,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/13/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-13.jpg
             </image:loc>
@@ -479,9 +825,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/14/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-14.jpg
@@ -491,9 +834,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/15/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-15.jpg
             </image:loc>
@@ -501,9 +841,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/16/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-16.jpg
@@ -513,9 +850,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/17/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-17.jpg
             </image:loc>
@@ -523,9 +857,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/18/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-18.jpg
@@ -535,9 +866,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/19/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-19.jpg
             </image:loc>
@@ -545,9 +873,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/20/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-20.jpg
@@ -557,9 +882,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/21/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-21.jpg
             </image:loc>
@@ -567,9 +889,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/22/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-22.jpg
@@ -579,9 +898,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/23/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-23.jpg
             </image:loc>
@@ -589,9 +905,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/24/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-24.jpg
@@ -601,9 +914,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/25/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-25.jpg
             </image:loc>
@@ -611,9 +921,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/marceli-szelag/26/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/marceli-szelag/setonescap-rockefeller-2014-10-30-26.jpg
@@ -623,9 +930,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/karl-myrvang/01/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-01.jpg
             </image:loc>
@@ -633,9 +937,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/karl-myrvang/02/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-02.jpg
@@ -645,9 +946,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/karl-myrvang/03/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-03.jpg
             </image:loc>
@@ -655,9 +953,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/karl-myrvang/04/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-04.jpg
@@ -667,9 +962,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/karl-myrvang/05/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-05.jpg
             </image:loc>
@@ -677,9 +969,6 @@
     </url>
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/karl-myrvang/06/</loc>
-        <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
         <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-06.jpg
@@ -689,14 +978,12 @@
     <url>
         <loc>http://www.setonescap.com/photos/Rockefeller/2014-10-30/karl-myrvang/07/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>
                 http://www.setonescap.com/images/photos/big/karl-myrvang/setonescap-rockefeller-2014-10-30-07.jpg
             </image:loc>
         </image:image>
     </url>
+
     <url>
         <loc>http://www.setonescap.com</loc>
         <image:image>
@@ -712,9 +999,6 @@
     <url>
         <loc>http://www.setonescap.com/photos/</loc>
         <image:image>
-            <image:loc>http://www.setonescap.com/images/template/bird-nav.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>http://www.setonescap.com/images/photoalbums/rockefeller-2014-10-30-karl-myrvang.jpg</image:loc>
         </image:image>
         <image:image>
@@ -723,6 +1007,15 @@
         </image:image>
         <image:image>
             <image:loc>http://www.setonescap.com/images/photoalbums/rockefeller-2014-10-30-julie-talmo.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>http://www.setonescap.com/images/photoalbums/rockeklubben-i-porsgrunn-2015-01-30-ketil-hardy.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>http://www.setonescap.com/images/photoalbums/the-road-to-ocean-sound-recordings-2015-04-09-set-ones-cap.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>http://www.setonescap.com/images/photoalbums/ocean-sound-recordings-2015-04-10-set-ones-cap.jpg</image:loc>
         </image:image>
     </url>
     <url>
