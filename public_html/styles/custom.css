@@ -598,6 +598,9 @@ footer{
 
 
 @media screen and (max-width: 767px) {
+    .header-text h1 {
+        font-size: 5em;
+    }
     #preview{
         overflow: auto;
         line-height: 1em;
@@ -625,6 +628,9 @@ footer{
 }
 
 @media screen and (max-width: 500px) {
+    .header-text h1 {
+        font-size: 4em;
+    }
     footer .col-6 {
         width: 100%;
         text-align: center;
