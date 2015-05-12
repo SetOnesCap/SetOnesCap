@@ -313,7 +313,6 @@ header {
 }
 .header {
     min-height: 450px;
-    background-size: cover!important;
     background-repeat: no-repeat;
     color: #000;
     padding: 0px;
@@ -629,6 +628,13 @@ footer{
 }
 
 @media screen and (max-width: 500px) {
+    .header-text h1{
+        margin: 200px auto 0;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 500px) {
     .header-text h1 {
         font-size: 4em;
     }
@@ -667,6 +673,11 @@ div.fb-like span iframe{
         .col-4.news-post {
             width: 100%;
         }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header {
+        background-size: cover !important;
     }
 }
 
