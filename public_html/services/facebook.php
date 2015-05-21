@@ -44,29 +44,39 @@ $postCount = count($result->data);
         $postDate = date("F j, Y", $latest_post_date);
         $buttonText = "Read more";
 
+        $postType = '';
+
+        /* Set button text */
         if (strpos($latest_post_link, 'facebook') !== false) {
-            $buttonText = "See facebook post";
+            $postType = 'facebook';
             if (strpos($latest_post_link, 'events') !== false) {
+                $postType = 'facebookEvent';
+            }
+        }
+        else if (strpos($latest_post_link, 'youtube') !== false) {
+            $postType = 'youtube';
+        }
+
+        if ($postType == 'facebook') {
+            $buttonText = 'See facebook post';
+            if ($postType == 'facebookEvent') {
                 $buttonText = "See facebook event";
             }
         }
 
-        if (strpos($latest_post_link, 'youtube') !== false) {
+        if ($postType == 'youtube') {
             $buttonText = "Watch YouTube video";
         }
 
 
         if ($latest_post_text != '' && ($latest_post->name != 'Live Photos') && ($latest_post->name != 'Ocean Sound Recordings 2015')) {
-
             ?>
-
             <div class="col-4 news-post" itemscope itemtype="http://schema.org/Article">
                 <div class="panel bg-white fg-black no-padding">
-
                     <?php
                     echo "<div class='no-padding fb-thumb'>";
                     echo "<span itemprop='thumbnail'>";
-                    if ($latest_post_picture != '' & $latest_post->type == 'photo') {
+                    if ($postType != 'youtube' && $latest_post_picture != '' && $latest_post->type == 'photo') {
                         $photodata = get_data("https://graph.facebook.com/" . $latest_post->object_id . "?fields=images&access_token=" . $accessToken);
                         $photoresult = json_decode($photodata);
                         $photoCount = count($photoresult->images);
@@ -76,14 +86,20 @@ $postCount = count($result->data);
                                 $photoWidth = $photoresult->images[$index]->width;
                                 $photoHeight = $photoresult->images[$index]->height;
                             }
-
                         }
                         if ($photoSource == '' || $photoSource == null) {
                             $photoSource = $photoSource = $photoresult->images[2]->source;
                         }
 
                         echo "<img src='" . htmlspecialchars($photoSource, ENT_COMPAT) . "' width='" . $photoWidth . "' height='" . $photoHeight . "' alt='Picture from facebook' />";
-                    } else if ($latest_post_picture != '') {
+                    }else if($postType == 'youtube') {
+                        $youtubeId = str_replace('https://', '', $latest_post_link);
+                        $youtubeId = str_replace('http://', '', $youtubeId);
+                        $youtubeId = str_replace('www.youtube.com/watch?v=', '', $youtubeId);
+                        $photoSource = 'https://i.ytimg.com/vi/' . $youtubeId . '/hqdefault.jpg';
+                        echo "<img src='" . $photoSource . "' alt='Picture from facebook post'/>";
+                    }
+                    else if ($latest_post_picture != '') {
                         echo "<img src='" . htmlspecialchars($latest_post_picture, ENT_COMPAT) . "' alt='Picture from facebook post'/>";
                     }
                     echo "</span>";
@@ -102,14 +118,11 @@ $postCount = count($result->data);
                     <div class="clearfix"></div>
                 </div>
             </div>
-
         <?php
         }
     }
-
     echo "</div>";
     ?>
-
     <script>
         $(window).load(function () {
             var $container = $('#news-posts').masonry();
@@ -118,5 +131,3 @@ $postCount = count($result->data);
             });
         });
     </script>
-
-
