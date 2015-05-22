@@ -1,17 +1,18 @@
-<div class="col-12 bg-white fg-black text-center">
+<div class="col-12 fg-black text-center">
     <div class="col-8 center" id='introduction'>
         <p><?php __getContent($pageId); ?></p>
     </div>
 </div>
 <form>
-    <div class="col-12 bg-white fg-black">
+    <div class="col-12 fg-black">
         <div class="line-through">
             <span></span>
+
             <h2>Photoalbums</h2>
         </div>
 
         <div class="no-padding" id="photoalbums">
-        <?php __getPhotoAlbums('setonescap') ?>
+            <?php __getPhotoAlbums('setonescap') ?>
         </div>
         <div class='clear'></div>
     </div>
@@ -22,8 +23,8 @@
         <a href='#close' title='Close' class='close'>X</a>
     </div>
 </div>
-<div class="col-12 bg-white">
-<?php include_once('./services/instagramphotos.php'); ?>
+<div class="col-12">
+    <?php include_once('./services/instagramphotos.php'); ?>
 </div>
 
 <script>

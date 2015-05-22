@@ -1,6 +1,6 @@
 <?php include("./service-variables.php"); ?>
 
-<div class="col-12 bg-white fg-black">
+<div class="col-12 fg-black">
 
     <p><?php __getContent($pageId); ?></p>
 </div>

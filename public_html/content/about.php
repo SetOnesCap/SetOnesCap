@@ -1,8 +1,10 @@
-
-
-<div class="col-12 bg-white fg-black">
+<div class="col-12 fg-black">
     <div class="col-8" id='introduction'>
-        <h2>Biography</h2>
+        <div class="line-through">
+            <span></span>
+
+            <h2>Biography</h2>
+        </div>
         <?php __getContent($pageId); ?>
         <h3>Members</h3>
         <ul>
