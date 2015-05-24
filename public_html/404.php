@@ -128,7 +128,7 @@
             </a>
 
         </div>
-        <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-6">
+        <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-4">
             <h3>Web:</h3>
             <p><span itemprop="name">Benjamin Dehli</span></p>
             <div itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address" class="no-padding">
@@ -137,9 +137,9 @@
                 <p><span itemprop="country-name">Norway</span></p>
             </div>
             <p>Phone: +47 92 29 27 19</p>
-            <p>E-mail: post@setonescap.com</p>
+            <p>E-mail: support@setonescap.com</p>
         </div>
-        <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-6">
+        <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-4">
             <h3>Booking:</h3>
             <p><span itemprop="name">Carl-Viktor Guttormsen</span></p>
             <p>Parkveien 1</p>
@@ -147,6 +147,13 @@
             <p>Norway</p>
             <p>Phone: +47 90 26 21 60</p>
             <p>E-mail: booking@setonescap.com</p>
+        </div>
+        <div class="col-4">
+            <h3>For everything else:</h3>
+
+            <p>Feel free to contact us at</p>
+
+            <p>post@setonescap.com</p>
         </div>
 
 

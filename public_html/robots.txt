@@ -1,13 +1,24 @@
 User-agent: *
-Disallow: /old_site
-Disallow: /services
+Disallow: /old_site/
 Disallow: /admin
-Disallow: /includes
-Disallow: /modules
-
-Allow: /scripts
-Allow: /styles
-Allow: /font-awesome-4.2.0
+Allow: /styles/
+Allow: /scripts/
+Allow: /images/
+Allow: /font-awesome-4.2.0/css/font-awesome.min.css
+Allow: /styles/roboto.min.css
+Allow: /styles/standard.min.css
+Allow: /styles/custom.min.css
+Allow: /styles/slicknav.min.css
+Allow: /styles/print.min.css
+Allow: /scripts/jquery-1.11.2.min.js
+Allow: /scripts/modernizr.min.js
+Allow: /scripts/masonry.pkgd.min.js
+Allow: /scripts/imagesloaded.pkgd.min.js
+Allow: /scripts/jquery.slicknav.min.js
+Allow: /scripts/showPhoto.min.js
+Allow: /scripts/parallax.min.js
+Allow: /scripts/activeLinks.min.js
+Allow: /images/template/bird-nav.png
 
 Sitemap: http://www.setonescap.com/sitemap.xml
 Sitemap: http://www.setonescap.com/image-sitemap.xml
