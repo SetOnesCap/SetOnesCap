@@ -107,26 +107,6 @@
 <script type="text/javascript" src="/scripts/showPhoto.min.js"></script>
 <script type="text/javascript" src="/scripts/parallax.min.js"></script>
 <script type="text/javascript" src="/scripts/activeLinks.min.js"></script>
-<script>
-    window.fbAsyncInit = function () {
-        FB.init({
-            appId: '1526040134335346',
-            xfbml: true,
-            version: 'v2.2'
-        });
-    };
-
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
 
 </body>
 </html>
