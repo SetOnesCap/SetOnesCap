@@ -60,7 +60,7 @@ if ($photoNo>1) {
 }else {
     $previous = $photoCount;
 }
-echo "<button id='prevButton' value='" . $previous . "' onclick='showPhoto($albumId, $photoCount, this.value)' class='button col-6 bg-setonescap-red fg-white'><i class='fa fa-step-backward'></i> Prev</button>";
+echo "<div id='prevButton-wrapper'><button id='prevButton' value='" . $previous . "' onclick='showPhoto($albumId, $photoCount, this.value)' class='button col-6 bg-setonescap-red raised fg-white'><i class='fa fa-step-backward'></i> Prev</button></div>";
 
 
 if ($photoNo<$photoCount) {
@@ -68,16 +68,17 @@ if ($photoNo<$photoCount) {
 }else {
     $next = 1;
 }
-    echo "<button id='nextButton' value='" . $next . "' onclick='showPhoto($albumId, $photoCount, this.value)' class='button col-6 bg-setonescap-red fg-white'>Next <i class='fa fa-step-forward'></i></button>";
+    echo "<div id='nextButton-wrapper'><button id='nextButton' value='" . $next . "' onclick='showPhoto($albumId, $photoCount, this.value)' class='button col-6 bg-setonescap-red raised fg-white'>Next <i class='fa fa-step-forward'></i></button></div>";
 
 
 
-
+echo "<div id='fullscreenButton-wrapper'>";
 if ($photoNo<10) {
-    echo "<a href='/photos/" . $albumTitleStripped . "/" . $albumDate . "/" . $photographerStripped . "/0" . $photoNo . "/ ' target='_blank' class='button col-12 bg-setonescap-red fg-white'><i class='fa fa-expand'></i> Watch full screen</a>";
+    echo "<a href='/photos/" . $albumTitleStripped . "/" . $albumDate . "/" . $photographerStripped . "/0" . $photoNo . "/ ' target='_blank' class='button col-12 bg-setonescap-red raised fg-white'><i class='fa fa-expand'></i> Watch full screen</a>";
 }else {
-    echo "<a href='/photos/" . $albumTitleStripped . "/" . $albumDate . "/" . $photographerStripped . "/" . $photoNo . "/' target='_blank' class='button col-12 bg-setonescap-red fg-white'><i class='fa fa-expand'></i> Watch full screen</a>";
+    echo "<a href='/photos/" . $albumTitleStripped . "/" . $albumDate . "/" . $photographerStripped . "/" . $photoNo . "/' target='_blank' class='button col-12 bg-setonescap-red raised fg-white'><i class='fa fa-expand'></i> Watch full screen</a>";
 }
+echo "</div>";
 echo "</div>";
 echo "</div>";
 ?>
