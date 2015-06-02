@@ -34,6 +34,7 @@ h2 {
     display: inline-block;
     margin: auto;
     padding: 0 12px;
+    line-height: 1.4em;
 }
 
 .line-through span {
@@ -41,9 +42,8 @@ h2 {
     border-bottom: 1px solid #EFEFEF;
     width: 100%;
     max-width: 700px;
-    margin: auto;
     display: block;
-    margin-bottom: -35px;
+    margin: auto auto -35px;
 }
 
 .bg-black .line-through h2{
@@ -53,9 +53,6 @@ h2 {
 .bg-black .line-through span{
     border-top: 1px solid #333;
     border-bottom: 1px solid #1F1F1F;
-}
-.sociallinks .line-through span{
-    margin-bottom: -7px;
 }
 
 .breadcrumbs {
@@ -730,6 +727,19 @@ footer{
         text-align: center;
         padding: 2px;
     }
+    .line-through span {
+        display: none;
+    }
+    .line-through h2 {
+        padding: 0;
+        background: none!important;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .header-text h1{
+        font-size: 2.4em;
+    }
 }
 
 
@@ -762,6 +772,23 @@ div.fb-like span iframe{
             width: 100%;
         }
     }
+
+
+    @media (min-width: 1440px) {
+        .col-4.news-post{width: 25%}
+        .bottom-col .col-4{width: 33%}
+        .col-6{width: 33%}
+        footer .col-6{width: 50%;}
+    }
+
+    @media (min-width: 1920px) {
+        .col-4.news-post{width: 20%}
+        .bottom-col .col-4{width: 33%}
+        .col-6{width: 25%}
+        footer .col-6{width: 50%;}
+    }
+
+
 }
 @media screen and (min-width: 1200px) {
     .header {
