@@ -28,8 +28,8 @@ $images = json_decode($images_json);
 
             $imageText = $image->caption->text;
             $imageText = htmlspecialchars($imageText, ENT_QUOTES);
-            $imageText = preg_replace('/(?<!\S)#([0-9a-zA-Z]+)/', '<a href="https://instagram.com/explore/tags/$1">#$1</a>', $imageText);
-            $imageText = preg_replace('/(?<!\S)@([0-9a-zA-Z]+)/', '<a href="https://instagram.com/$1">#$1</a>', $imageText);
+            $imageText = preg_replace('/(?<!\S)#([0-9a-zA-Z]+)/', '<a href="https://instagram.com/explore/tags/$1" target="_blank">#$1</a>', $imageText);
+            $imageText = preg_replace('/(?<!\S)@([0-9a-zA-Z]+)/', '<a href="https://instagram.com/$1" target="_blank">#$1</a>', $imageText);
             $imageAltText = $image->caption->text;
             $imageAltText = str_replace("#", "", $imageAltText);
             $imageAltText = str_replace("@", "", $imageAltText);
