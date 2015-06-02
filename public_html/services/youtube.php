@@ -52,7 +52,7 @@ function getYouTubeSubscriberCount($user)
 ?>
 
 <div class="col-12 text-center">
-    <a target="_blank" class="button bg-setonescap-red raised" href="http://www.youtube.com/subscription_center?add_user=setonescap" target="_tab"><span class="fa fa-youtube-play"></span> Subscribe
+    <a target="_blank" class="button bg-setonescap-red raised" href="http://www.youtube.com/subscription_center?add_user=setonescap"><span class="fa fa-youtube-play"></span> Subscribe
         <span class="button-addon"><?php echo getYouTubeSubscriberCount('setonescap'); ?></span>
     </a>
 </div>

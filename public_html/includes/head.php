@@ -8,7 +8,6 @@
     <meta name="author" content="Benjamin Dehli">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="follow"/>
-    <meta name="google" value="notranslate">
 
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />

@@ -25,6 +25,15 @@ $images = json_decode($images_json);
     foreach ($images->data as $image) {
         if ($image->type == "image") {
             $postDate = date("F j, Y", $image->created_time);
+
+            $imageText = $image->caption->text;
+            $imageText = htmlspecialchars($imageText, ENT_QUOTES);
+            $imageText = preg_replace('/(?<!\S)#([0-9a-zA-Z]+)/', '<a href="https://instagram.com/explore/tags/$1">#$1</a>', $imageText);
+            $imageText = preg_replace('/(?<!\S)@([0-9a-zA-Z]+)/', '<a href="https://instagram.com/$1">#$1</a>', $imageText);
+            $imageAltText = $image->caption->text;
+            $imageAltText = str_replace("#", "", $imageAltText);
+            $imageAltText = str_replace("@", "", $imageAltText);
+            $imageAltText = htmlspecialchars($imageAltText, ENT_QUOTES);
             ?>
 
             <div class="col-3 news-post" itemscope itemtype="http://schema.org/Article">
@@ -34,7 +43,7 @@ $images = json_decode($images_json);
                     echo "<div class='no-padding fb-thumb' style='max-height: 640px;'>";
                     echo "<span itemprop='thumbnail'>";
 
-                    echo "<img src='" . $image->images->standard_resolution->url . "' alt='" . $image->caption->text . "' height='640' width='640' />";
+                    echo "<img src='" . $image->images->standard_resolution->url . "' alt='" . $imageAltText . "' height='640' width='640' />";
 
                     echo "</span>";
                     echo "</div>";
@@ -42,7 +51,7 @@ $images = json_decode($images_json);
                     <div class=''>
                         <p class="fb-date"><span itemprop="datePublished"><?php echo "$postDate"; ?></span></p>
 
-                        <p><span itemprop="articleBody"><?php echo $image->caption->text ?></span></p>
+                        <p><span itemprop="articleBody"><?php echo $imageText; ?></span></p>
 
                     </div>
                     <div class="clearfix"></div>

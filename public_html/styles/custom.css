@@ -580,6 +580,10 @@ padding: 0 2px 0 0;
     overflow: hidden;
 }
 
+#news-posts a {
+    color: #EA5124;
+}
+
 
 p.fb-date, p.album-date {
     margin: 0;
