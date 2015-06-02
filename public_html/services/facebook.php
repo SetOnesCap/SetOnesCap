@@ -46,27 +46,37 @@ $postCount = count($result->data);
 
         $postType = '';
 
+
+        // Make hrefs from urls in string
+        $latest_post_text = preg_replace('@((https?://)?([-\w]+\.[-\w\.]+)+\w(:\d+)?(/([-\w/_\.]*(\?\S+)?)?)*)@', '<a href="$1" target="blank">$1</a>', $latest_post_text);
+        $latest_post_text = str_replace("href=\"www.","href=\"http://www.",$latest_post_text);
+
         /* Set button text */
         if (strpos($latest_post_link, 'facebook') !== false) {
             $postType = 'facebook';
             if (strpos($latest_post_link, 'events') !== false) {
                 $postType = 'facebookEvent';
             }
-        }
-        else if (strpos($latest_post_link, 'youtube') !== false) {
+        } else if (strpos($latest_post_link, 'youtube') !== false) {
             $postType = 'youtube';
         }
 
         if ($postType == 'facebook') {
+            $latest_post_text = preg_replace('/(?<!\S)#([0-9a-zA-Z]+)/', '<a href="https://www.facebook.com/hashtag/$1" target="_blank">#$1</a>', $latest_post_text);
             $buttonText = 'See facebook post';
             if ($postType == 'facebookEvent') {
                 $buttonText = "See facebook event";
             }
         }
 
+        echo'<span style="display: none;">' . $text .  '</span>';
+
         if ($postType == 'youtube') {
             $buttonText = "Watch YouTube video";
         }
+
+
+
 
 
         if ($latest_post_text != '' && ($latest_post->name != 'Live Photos') && ($latest_post->name != 'Ocean Sound Recordings 2015')) {
@@ -92,14 +102,13 @@ $postCount = count($result->data);
                         }
 
                         echo "<img src='" . htmlspecialchars($photoSource, ENT_COMPAT) . "' width='" . $photoWidth . "' height='" . $photoHeight . "' alt='Picture from facebook' />";
-                    }else if($postType == 'youtube') {
+                    } else if ($postType == 'youtube') {
                         $youtubeId = str_replace('https://', '', $latest_post_link);
                         $youtubeId = str_replace('http://', '', $youtubeId);
                         $youtubeId = str_replace('www.youtube.com/watch?v=', '', $youtubeId);
                         $photoSource = 'https://i.ytimg.com/vi/' . $youtubeId . '/hqdefault.jpg';
                         echo "<img src='" . $photoSource . "' alt='Picture from facebook post'/>";
-                    }
-                    else if ($latest_post_picture != '') {
+                    } else if ($latest_post_picture != '') {
                         echo "<img src='" . htmlspecialchars($latest_post_picture, ENT_COMPAT) . "' alt='Picture from facebook post'/>";
                     }
                     echo "</span>";
