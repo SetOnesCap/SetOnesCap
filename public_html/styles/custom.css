@@ -37,6 +37,16 @@ h2 {
     line-height: 1.4em;
 }
 
+
+.line-through h3 {
+    font-size: 2em;
+    background-color: #F9F9F9;
+    display: inline-block;
+    margin: 15px auto 0;
+    padding: 0 12px;
+    line-height: 1em;
+}
+
 .line-through span {
     border-top: 1px solid #FFF;
     border-bottom: 1px solid #EFEFEF;
@@ -46,9 +56,10 @@ h2 {
     margin: auto auto -35px;
 }
 
-.bg-black .line-through h2{
+.bg-black .line-through h2, .bg-black .line-through h3{
     background-color: #2A2A2A;
 }
+
 
 .bg-black .line-through span{
     border-top: 1px solid #333;
@@ -565,6 +576,11 @@ padding: 0 2px 0 0;
     line-height: .5em;
 }
 
+.bottom-col p {
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
 #news-posts, #photoalbums-link {
     width: auto;
     padding: 0;
@@ -642,6 +658,39 @@ p.fb-date, p.album-date {
 
 .slicknav_menu {
     display:none;
+}
+
+
+.input-field-group{
+    text-align: center;
+}
+.input-field-group input {
+    display: inline-block;
+    height: 51px;
+    border: 1px solid #EEE;
+
+}
+.input-field-group .input-field{
+    padding: 15px;
+    font-size: 18px;
+    width: 400px;
+    max-width: 100%;
+    background: none;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: box-shadow .28s cubic-bezier(0.4,0,0.2,1);
+    transition: background-color .3s;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+.input-field-group .input-field:focus{
+    outline: none;
+    border-color: #EA5124;
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    color: #333;
+}
+.input-field-group .button{
+    margin-top: 0;
 }
 
 footer{
@@ -730,7 +779,7 @@ footer{
     .line-through span {
         display: none;
     }
-    .line-through h2 {
+    .line-through h2, .line-through h3 {
         padding: 0;
         background: none!important;
     }

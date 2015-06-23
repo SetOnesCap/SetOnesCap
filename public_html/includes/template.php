@@ -92,6 +92,27 @@
             </a>
 
         </div>
+
+        <div class="col-12">
+            <div class="line-through">
+                <span></span>
+
+                <h3>Subscribe to our newsletters</h3>
+            </div>
+            <form action="//setonescap.us11.list-manage.com/subscribe/post?u=aaa5751df5aedfb525de2a85c&amp;id=8d64514e26" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                <div class="input-field-group">
+                    <input type="email" value="" name="EMAIL" class="required email input-field" id="mce-EMAIL" placeholder="Your email">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button bg-setonescap-red raised">
+                </div>
+                <div style="position: absolute; left: -5000px;">
+                    <input type="text" name="b_aaa5751df5aedfb525de2a85c_8d64514e26" tabindex="-1" value="">
+                </div>
+
+            </form>
+        </div>
+
+
         <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-4">
             <h3>Web:</h3>
 
@@ -131,6 +152,8 @@
 
             <p>post@setonescap.com</p>
         </div>
+
+
 
 
     </div>
