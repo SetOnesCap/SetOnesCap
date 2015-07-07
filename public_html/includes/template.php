@@ -17,8 +17,6 @@
 
             <p class="credit-text"></p>
         </div>
-
-
     </section>
     <main>
         <div class="col-12 breadcrumbs">
@@ -48,42 +46,42 @@
                 <h2>Get in touch</h2>
             </div>
 
-            <a href="https://www.facebook.com/setonescap" class="facebook" title="Check out Set One's Cap at Facebook">
+            <a href="https://www.facebook.com/setonescap" target="_blank" class="facebook" title="Check out Set One's Cap at Facebook">
                 <div class="fa-stack fa-2x">
                     <span class="fa fa-square-o fa-stack-2x"></span>
                     <span class="fa fa-facebook fa-stack-1x"></span>
                 </div>
                 <p>Facebook</p>
             </a>
-            <a href="https://twitter.com/setonescap" class="twitter" title="Check out Set One's Cap at Twitter">
+            <a href="https://twitter.com/setonescap" target="_blank" class="twitter" title="Check out Set One's Cap at Twitter">
                 <div class="fa-stack fa-2x">
                     <span class="fa fa-square-o fa-stack-2x"></span>
                     <span class="fa fa-twitter fa-stack-1x"></span>
                 </div>
                 <p>Twitter</p>
             </a>
-            <a href="http://instagram.com/setonescap" class="instagram" title="Check out Set One's Cap at Instagram">
+            <a href="http://instagram.com/setonescap" target="_blank" class="instagram" title="Check out Set One's Cap at Instagram">
                 <div class="fa-stack fa-2x">
                     <span class="fa fa-square-o fa-stack-2x"></span>
                     <span class="fa fa-instagram fa-stack-1x"></span>
                 </div>
                 <p>Instagram</p>
             </a>
-            <a href="https://www.youtube.com/user/setonescap" class="youtube" title="Check out Set One's Cap at YouTube">
+            <a href="https://www.youtube.com/user/setonescap" target="_blank" class="youtube" title="Check out Set One's Cap at YouTube">
                 <div class="fa-stack fa-2x">
                     <span class="fa fa-square-o fa-stack-2x"></span>
                     <span class="fa fa-youtube fa-stack-1x"></span>
                 </div>
                 <p>YouTube</p>
             </a>
-            <a href="https://soundcloud.com/setonescap" class="soundcloud" title="Check out Set One's Cap at SoundCloud">
+            <a href="https://soundcloud.com/setonescap" target="_blank" class="soundcloud" title="Check out Set One's Cap at SoundCloud">
                 <div class="fa-stack fa-2x">
                     <span class="fa fa-square-o fa-stack-2x"></span>
                     <span class="fa fa-soundcloud fa-stack-1x"></span>
                 </div>
                 <p>Soundcloud</p>
             </a>
-            <a href="https://plus.google.com/+Setonescap" class="google-plus" title="Check out Set One's Cap at Google Plus">
+            <a href="https://plus.google.com/+Setonescap" target="_blank" class="google-plus" title="Check out Set One's Cap at Google Plus">
                 <div class="fa-stack fa-2x">
                     <span class="fa fa-square-o fa-stack-2x"></span>
                     <span class="fa fa-google-plus fa-stack-1x"></span>
@@ -130,20 +128,20 @@
             <p>E-mail: support@setonescap.com</p>
         </div>
         <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-4">
-            <h3>Booking:</h3>
+            <h3>Management / Booking:</h3>
 
-            <p><span itemprop="name">Carl-Viktor Guttormsen</span></p>
+            <p><span itemprop="name">Jon F. Leiulfsrud</span></p>
 
             <div itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address" class="no-padding">
-                <p><span itemprop="street-address">Parkveien 1</span></p>
+                <p><span itemprop="street-address">Dokkveien 8</span></p>
 
-                <p><span itemprop="postal-code">3970 Langesund</span></p>
+                <p><span itemprop="postal-code">3920 Porsgrunn</span></p>
 
                 <p><span itemprop="country-name">Norway</span></p>
             </div>
-            <p>Phone: +47 90 26 21 60</p>
+            <p>Phone: +47 90 10 92 84</p>
 
-            <p>E-mail: booking@setonescap.com</p>
+            <p>E-mail: jon@compro.no</p>
         </div>
         <div class="col-4">
             <h3>For everything else:</h3>
