@@ -41,13 +41,15 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="/font-awesome-4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/roboto.min.css">
+    <!--
+       <link rel="stylesheet" type="text/css" href="/styles/standard.min.css">
+       <link rel="stylesheet" type="text/css" href="/styles/custom.min.css">
+       -->
+       <link rel="stylesheet" type="text/css" href="/styles/main.min.css">
+       <link rel="stylesheet" href="/styles/slicknav.min.css">
+       <link rel="stylesheet" href="/styles/print.min.css" media="print">
 
-    <link rel="stylesheet" type="text/css" href="/styles/standard.min.css">
-    <link rel="stylesheet" type="text/css" href="/styles/custom.min.css">
-    <link rel="stylesheet" href="/styles/slicknav.min.css">
-    <link rel="stylesheet" href="/styles/print.min.css" media="print">
-
-    <!-- <link rel="stylesheet" type="text/css" href="/styles/custom.min.css"> -->
+       <!-- <link rel="stylesheet" type="text/css" href="/styles/custom.min.css"> -->
 
 
     <base target="_self" />

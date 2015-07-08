@@ -1,0 +1,55 @@
+
+h2 {
+  font-size: 2em;
+}
+.line-through {
+  text-align: center;
+}
+
+
+.line-through h2{
+  font-size: 2.9em;
+  background-color: #F9F9F9;
+  display: inline-block;
+  margin: auto;
+  padding: 0 12px;
+  line-height: 1.4em;
+}
+
+
+.line-through h3 {
+  font-size: 2em;
+  background-color: #F9F9F9;
+  display: inline-block;
+  margin: 15px auto 0;
+  padding: 0 12px;
+  line-height: 1em;
+}
+
+.line-through span {
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #EFEFEF;
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: auto auto -35px;
+}
+
+.bg-black .line-through h2, .bg-black .line-through h3{
+  background-color: #2A2A2A;
+}
+
+
+.bg-black .line-through span{
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #1F1F1F;
+}
+
+#introduction p {
+  font-size: 1.2em;
+}
+
+.bottom-col p {
+  line-height: 1.2;
+  margin: 12px 0;
+}

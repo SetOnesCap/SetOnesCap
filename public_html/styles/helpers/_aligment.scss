@@ -1,0 +1,36 @@
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.float-right{
+  float: right;
+}
+.float-left{
+  float: left;
+}
+.center {
+  margin: auto;
+  float: none!important;
+  display: block;
+}
+
+.clearfix {
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+.fixed-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9000;
+  margin: auto;
+}
+.fixed {
+  position: fixed;
+}

@@ -1,0 +1,39 @@
+
+.bg-noise, .bg-noise:hover, .bg-noise li:hover {
+  background-image: url(../images/template/noise.png);
+  background-repeat: repeat;
+}
+.bg-black {
+  background-color: #222;
+}
+
+
+nav.bg-white{
+  border-bottom: 1px solid #FFF;
+}
+
+nav.bg-white li:hover{
+  background-color: #FFF;
+}
+
+.fg-black {
+  color: #333;
+}
+.fg-white {
+  color: #FFF;
+}
+a.fg-white:hover, .fg-white a:hover {
+  color: #FFF;
+}
+.bg-white {
+  background-color: #FFF;
+}
+
+.bg-setonescap-red {
+  background-color: #EA5124;
+}
+
+
+footer{
+  color: #777!important;
+}

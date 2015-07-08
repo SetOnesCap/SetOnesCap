@@ -1,0 +1,32 @@
+
+.input-field-group{
+  text-align: center;
+}
+.input-field-group input {
+  display: inline-block;
+  height: 51px;
+  border: 1px solid #EEE;
+
+}
+.input-field-group .input-field{
+  padding: 15px;
+  font-size: 18px;
+  width: 400px;
+  max-width: 100%;
+  background: none;
+  color: #fff;
+  margin-bottom: 10px;
+  transition: box-shadow .28s cubic-bezier(0.4,0,0.2,1);
+  transition: background-color .3s;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+.input-field-group .input-field:focus{
+  outline: none;
+  border-color: #EA5124;
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  color: #333;
+}
+.input-field-group .button{
+  margin-top: 0;
+}

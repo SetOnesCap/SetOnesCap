@@ -1,0 +1,46 @@
+nav {
+  font-size: 1.1em;
+  padding: 5px 40px;
+  ul {
+    height: 60px;
+    margin: 0;
+    li {
+      display: inline-block;
+      line-height: 20px;
+      a {
+        text-decoration: none;
+        padding: 15px;
+        display: inline-block;
+        padding: 19px 16px;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        -webkit-transform-style: preserve-3d;
+      }
+      a:hover, a.active {
+        border-bottom: 8px solid #EA5124;
+      }
+    }
+  }
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    font-size: 1em;
+    padding: 5px 5px;
+  }
+}
+
+nav.fixed {
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+
+
+
+
+
