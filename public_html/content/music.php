@@ -6,7 +6,7 @@
 <div class="col-12">
     <div class="line-through">
         <span></span>
-        <h2>Videos</h2>
+        <h2>Music</h2>
     </div>
-    <?php include_once('./services/youtube.php'); ?>
+    <?php include_once('./services/soundcloud.php'); ?>
 </div>

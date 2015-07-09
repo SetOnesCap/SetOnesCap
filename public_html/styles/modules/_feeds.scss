@@ -70,3 +70,37 @@ p.fb-date, p.album-date {
 .video-container img {
   margin-top: -50px;
 }
+
+.artwork-thumb {
+  padding: 0;
+}
+
+.artwork-thumb img{
+  width: 100%;
+}
+
+.trackinfo audio {
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.trackinfo a span{
+  color:#FF4800;
+}
+
+.trackinfo a:hover{
+  color:#FF4800;
+}
+
+.trackinfo .col-12{
+  padding: 0;
+}
+
+
+
+.trackinfo {
+   /* display: inline-block;
+    width: calc(100% - 100px);*/
+}
+
