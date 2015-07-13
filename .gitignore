@@ -4,6 +4,7 @@ dist
 .tmp
 
 public_html/.htaccess
+public_html/._webhtaccess
 public_html/dbconf.php
 public_html/images
 public_html/service-variables.php
