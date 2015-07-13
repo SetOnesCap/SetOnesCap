@@ -7,7 +7,9 @@ $events = json_decode($events_json);
 $dateNow = date("Y-m-d");
 
 usort($events, function ($a, $b) {
-    return strcmp($a->name, $b->name);
+    $aName = (isset($a->name)) ? $a->name : '';
+    $bName = (isset($b->name)) ? $b->name : '';
+    return strcmp($aName, $bName);
 });
 
 $upcomingEvent = false;

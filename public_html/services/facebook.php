@@ -35,12 +35,13 @@ $postCount = count($result->data);
     <?php
     for ($i = 0; $i < $postCount; $i++) {
         $latest_post = $result->data[$i];
-        $latest_post_text = $latest_post->message;
+        $latest_post_text = (isset($latest_post->message) ? $latest_post->message : '');
         $latest_post_linktitle = (strlen($latest_post_text) > 83) ? substr($latest_post_text, 0, 80) . '...' : $latest_post_text;
         preg_match('/^([^.!?]*[\.!?]+){0,1}/', strip_tags($latest_post_text), $tittel);
         $latest_post_link = $latest_post->link;
         $latest_post_picture = $latest_post->picture;
         $latest_post_date = strtotime($latest_post->created_time);
+        $latest_post_name = (isset($latest_post->name)) ? $latest_post->name : '';
         $postDate = date("F j, Y", $latest_post_date);
         $buttonText = "Read more";
 
@@ -69,8 +70,6 @@ $postCount = count($result->data);
             }
         }
 
-        echo'<span style="display: none;">' . $text .  '</span>';
-
         if ($postType == 'youtube') {
             $buttonText = "Watch YouTube video";
         }
@@ -79,7 +78,7 @@ $postCount = count($result->data);
 
 
 
-        if ($latest_post_text != '' && ($latest_post->name != 'Live Photos') && ($latest_post->name != 'Ocean Sound Recordings 2015')) {
+        if ($latest_post_text != '' && ($latest_post_name != 'Live Photos') && ($latest_post_name != 'Ocean Sound Recordings 2015')) {
             ?>
             <div class="col-4 news-post" itemscope itemtype="http://schema.org/Article">
                 <div class="panel bg-white fg-black no-padding">

@@ -16,11 +16,11 @@ $headerNo = rand(1,10);
 
 
 if($pageTitle == 'photos'){
-    $photoAlbum = ($_GET['photoAlbum']);
+    $photoAlbum = (isset($_GET['photoAlbum']) ? $_GET['photoAlbum'] : '');
     $photoAlbumString = ucwords(str_replace('-', ' ', $photoAlbum));
-    $photoAlbumDate = ($_GET['photoAlbumDate']);
-    $photoNo = ($_GET['photoNo']);
-    $photographer = ($_GET['photographer']);
+    $photoAlbumDate = (isset($_GET['photoAlbumDate'])) ? $_GET['photoAlbumDate'] : '';
+    $photoNo = (isset($_GET['photoNo'])) ? $_GET['photoNo'] : '';
+    $photographer = (isset($_GET['photographer'])) ? $_GET['photographer'] : '';
     $photographerString = __getPhotographer($photoAlbumString, $photoAlbumDate, $photographer);
 
 
