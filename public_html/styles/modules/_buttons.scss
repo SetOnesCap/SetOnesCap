@@ -46,7 +46,7 @@ button.bg-setonescap-red:hover, a.bg-setonescap-red:hover, .button.bg-setonescap
   color: #EA5124;
 }
 
-.button.bg-setonescap-red:focus{
+.button.bg-setonescap-red:focus, .button.bg-setonescap-red:hover{
   outline: none;
   background-color: #EF5629;
   color: #FFF;
