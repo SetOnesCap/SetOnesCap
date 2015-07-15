@@ -1,5 +1,6 @@
 <?php
 include('/home/confuuaj/public_html/dbconf.php');
+//include('./dbconf.php');
 
 function __getSingleValue($returnValue, $table, $whereCol, $whereValue){
     $db = new DataBase();
@@ -258,7 +259,7 @@ function __getPhotoAlbum($albumId){
         echo "<div class='col-4 news-post photoalbum-link'>";
             echo "<div class='panel bg-white fg-black no-padding'>";
                 echo "<div class='no-padding album-thumb'>";
-                    echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum'><img src='/images/photoalbums/" . strtolower($albumTitleStripped) . "-" . $albumDate . "-" . $photographerStripped . ".jpg' alt='" . $albumTitle . "' class='' /></a>";
+                    echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum'><img src='/images/photoalbums/" . strtolower($albumTitleStripped) . "-" . $albumDate . "-" . $photographerStripped . ".jpg' width='587' height='330' alt='" . $albumTitle . "' class='' /></a>";
                 echo "</div>";
                 echo "<div>";
                     echo "<h3>" .  $albumTitle . "</h3>";
