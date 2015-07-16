@@ -727,7 +727,8 @@ div.fa-stack {
     right: 30px;
     bottom: 10px;
     opacity: 0.1;
-    width: 150px; }
+    width: 90px;
+    height: auto; }
 
   .slicknav_menu.fixed {
     z-index: 500;
