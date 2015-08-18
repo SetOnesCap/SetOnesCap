@@ -11,13 +11,17 @@
     </nav>
 </header>
 <div class="content">
-    <section class="col-12 fg-black header header-<?php echo $headerNo; ?>" data-speed="1.4" data-type="background">
+
+    <section class="col-12 fg-black header" data-speed="1.4" data-type="background">
+  <!--  <section class="col-12 fg-black header header-<?php echo $headerNo; ?>" data-speed="1.4" data-type="background">-->
         <div class="header-text bg-white fg-setonescap-red">
             <h1><?php __getTitle($pageId); ?></h1>
 
             <p class="credit-text"></p>
         </div>
     </section>
+
+
     <main>
         <div class="col-12 breadcrumbs">
             <?php if ($pageTitle != 'home') { ?>
@@ -168,19 +172,6 @@
     <div class="clearfix"></div>
 </div>
 
-
-<script type="text/javascript" src="/scripts/jquery.slicknav.min.js"></script>
-
-<script type="text/javascript" src="/scripts/showPhoto.min.js"></script>
-<script type="text/javascript" src="/scripts/parallax.min.js"></script>
-<script type="text/javascript" src="/scripts/activeLinks.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('#menu').slicknav();
-    });
-
-
-</script>
 <script>
     $(document).ready(function(){
         resizeDiv();
@@ -193,9 +184,21 @@
     function resizeDiv() {
         var vpw = $(window).width();
         var vph = $(window).height();
-        $('.header').css({'height': vpw/2.3 + 'px'});
+        $('.header').css({'height': vpw/2.8 + 'px'});
     }
 </script>
+<script type="text/javascript" src="/scripts/jquery.slicknav.min.js"></script>
+
+<script type="text/javascript" src="/scripts/showPhoto.min.js"></script>
+<script type="text/javascript" src="/scripts/parallax.min.js"></script>
+<script type="text/javascript" src="/scripts/activeLinks.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#menu').slicknav();
+    });
+</script>
+
 
 </body>
 </html>

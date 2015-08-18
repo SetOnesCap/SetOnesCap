@@ -101,7 +101,11 @@
   outline: none;
 }
 
-
+.photoalbumDialog .navigation .button-gallery .fa{
+  color: inherit;
+  margin: 0;
+  font-size: inherit;
+}
 
 .photoalbumDialog .navigation #prevButton-wrapper {
   padding: 0 2px 0 0;
@@ -147,13 +151,17 @@
 
 .photo-fullscreen {
   text-align: center;
-  padding: 75px 0 0 0;
+  padding: 0;
 }
 
 .photo-fullscreen img {
   max-width: 100%;
   max-height: 1200px;
-  margin-top: 20px;
+  margin-top: 5px;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.6);
+}
+
+.photo-fullscreen-description {
+  margin-top: -20px;
 }
 

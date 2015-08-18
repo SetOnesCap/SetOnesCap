@@ -100,6 +100,12 @@ h2 {
   padding: 0 12px;
   line-height: 1.4em; }
 
+.headertext-noheader {
+  margin-top: 80px;
+  font-size: 6em;
+  margin-bottom: 0;
+  line-height: 1em; }
+
 .line-through h3 {
   font-size: 2em;
   background-color: #F9F9F9;
@@ -444,7 +450,8 @@ header {
   min-height: 450px;
   background-repeat: no-repeat;
   color: #000;
-  padding: 0px; }
+  padding: 0px;
+  background: url("../images/headers/header.jpg") 50% 0 fixed; }
 
 .header-text {
   background-color: rgba(50, 50, 50, 0.5);
@@ -546,7 +553,8 @@ nav.fixed {
   padding: 0; }
 
 .photo-fullscreen .breadcrumbs {
-  margin-top: 40px; }
+  margin-top: 40px;
+  float: none; }
 
 .photoalbumDialog {
   position: fixed;
@@ -635,6 +643,11 @@ nav.fixed {
   opacity: 1;
   outline: none; }
 
+.photoalbumDialog .navigation .button-gallery .fa {
+  color: inherit;
+  margin: 0;
+  font-size: inherit; }
+
 .photoalbumDialog .navigation #prevButton-wrapper {
   padding: 0 2px 0 0;
   width: 50%;
@@ -673,13 +686,16 @@ nav.fixed {
 
 .photo-fullscreen {
   text-align: center;
-  padding: 75px 0 0 0; }
+  padding: 0; }
 
 .photo-fullscreen img {
   max-width: 100%;
   max-height: 1200px;
-  margin-top: 20px;
+  margin-top: 5px;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.6); }
+
+.photo-fullscreen-description {
+  margin-top: -20px; }
 
 .sociallinks a {
   display: inline-block;
@@ -741,7 +757,7 @@ div.fa-stack {
   .header-text h1 {
     margin: 200px auto 0;
     position: static;
-    font-size: 3.6em; }
+    font-size: 3em; }
 
   footer .col-6 {
     width: 100%;
@@ -762,7 +778,7 @@ div.fa-stack {
     max-height: 600px; } }
 @media screen and (max-width: 767px) {
   .header-text h1 {
-    font-size: 5em; }
+    font-size: 3.4em; }
 
   #preview {
     overflow: auto;
