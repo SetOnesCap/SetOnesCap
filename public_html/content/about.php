@@ -10,7 +10,7 @@
         <ul>
             <li>Kasper Waag - Drums</li>
             <li>Sondre Gautefald - Bass</li>
-            <li>Benjamin Dehli - Organ and Electric piano</li>
+            <li>Benjamin Dehli - Organ, Rhodes and Clavinet</li>
             <li>Martin Torgersen - Synth and Piano</li>
             <li>Joakim Juul - Vocals</li>
             <li>Carl-Viktor Guttormsen - Guitar</li>

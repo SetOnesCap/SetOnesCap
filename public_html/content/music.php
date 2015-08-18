@@ -6,7 +6,7 @@
 <div class="col-12">
     <div class="line-through">
         <span></span>
-        <h2>Music</h2>
+        <h2>Singles</h2>
     </div>
     <?php include_once('./services/soundcloud.php'); ?>
 </div>
