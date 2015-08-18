@@ -26,17 +26,16 @@ if($pageTitle == 'photos'){
 
     if($photoAlbum != '' AND $photoAlbum != null) {
         $photoAlbumId = __getPhotoalbumId($photoAlbumString, $photoAlbumDate, $photographer);
-
         $photoAlbumSize = __getPhotoAlbumSize($photoAlbumString, $photoAlbumDate, $photographer);
-        $pageTitleString = $photoAlbumString . " - " . $photoAlbumDate . " - " . $photographerString . " - " . ltrim($photoNo, '0') . " of " . ltrim($photoAlbumSize, '0');
-
-        $pageDescriptionTemp = __getPhotoAlbumMetaDescription($photoAlbumString, $photoAlbumDate, $photographer);
-        $pageDescription = $pageDescriptionTemp . ", photo " . ltrim($photoNo, '0') . " of " . ltrim($photoAlbumSize, '0') . " by " . $photographerString;
+        if($photoNo != null && $photoNo != '') {
+            $pageTitleString = $photoAlbumString . " - " . $photoAlbumDate . " - " . $photographerString . " - " . ltrim($photoNo, '0') . " of " . ltrim($photoAlbumSize, '0');
+            $pageDescriptionTemp = __getPhotoAlbumMetaDescription($photoAlbumString, $photoAlbumDate, $photographer);
+            $pageDescription = $pageDescriptionTemp . ", photo " . ltrim($photoNo, '0') . " of " . ltrim($photoAlbumSize, '0') . " by " . $photographerString;
+        }else{
+            $pageTitleString = $photoAlbumString . " - " . $photoAlbumDate . " - " . $photographerString;
+            $pageDescriptionTemp = __getPhotoAlbumMetaDescription($photoAlbumString, $photoAlbumDate, $photographer);
+            $pageDescription = $pageDescriptionTemp . ", photos by " . $photographerString;
+        }
     }
 }
 
-
-
-
-
-?>

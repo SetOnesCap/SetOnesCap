@@ -44,6 +44,7 @@ echo "<div class='navigation'>";
         }
         echo "<button id='prevButton' value='" . $previous . "' onclick='showPhoto($albumId, $photoCount, this.value)' class='button'><i class='fa fa-arrow-left'></i></button>";
 
+        echo "<a href='/photos/" . $albumTitleStripped . "/" . $albumDate . "/" . $photographerStripped . "/' class='button button-gallery' ><span class='fa fa-th'></span></a>";
 
         if ($photoNo < $photoCount) {
             $next = $photoNo + 1;

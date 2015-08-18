@@ -1,5 +1,6 @@
 <?php
-//header('Content-Type: text/html; charset=UTF-8');
+//$rootURL = 'http://setonescap.local'; // For localhost only
+
 include("./service-variables.php");
 include("./modules/functions.php");
 include("./includes/variables.php");
@@ -10,8 +11,11 @@ if($pageTitle == 'admin'){
     die();
    // include("admin/includes/admin-template.php");
 }else if($pageTitle == 'photos' && $photoAlbum != ''){
-    include("includes/photo-template.php");
+    if ($photoNo != '' && $photoNo != null){
+        include("includes/photo-template.php");
+    }else{
+        include("includes/photo-gallery.php");
+    }
 }else {
     include("includes/template.php");
 }
-?>

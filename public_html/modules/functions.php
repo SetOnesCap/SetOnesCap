@@ -1,6 +1,7 @@
 <?php
-include('/home/confuuaj/public_html/dbconf.php');
-//include('./dbconf.php');
+//include('/home/confuuaj/public_html/dbconf.php');
+//$protocol = $_SERVER['HTTPS'] == '' ? 'http://' : 'https://';
+include($_SERVER['DOCUMENT_ROOT'] . '/dbconf.php');
 
 function __getSingleValue($returnValue, $table, $whereCol, $whereValue){
     $db = new DataBase();
@@ -266,7 +267,8 @@ function __getPhotoAlbum($albumId){
                     echo "<p class='album-date'>" . $albumDateString . "</p>";
                     echo "<p>" . $albumDescription . "</p>";
                     echo "<p>Photos by " . $photographer . "</p>";
-                    echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum' rel='nofollow' class='button bg-setonescap-red'> Watch photos</a>";
+                    echo "<a onclick='showPhoto($albumId, $photoCount, 1)' href='#photoalbum' rel='nofollow' class='button bg-setonescap-red' title='Watch " . $albumTitle . " photos'><span class='fa fa-photo'></span> Watch photos</a>";
+                    echo "<a href='/photos/" . $albumTitleStripped . "/" . $albumDate . "/" . $photographerStripped . "/' class='button bg-setonescap-red' title='Watch " . $albumTitle . " gallery'><span class='fa fa-th'></span> Watch gallery</a>";
                 echo "</div>";
             echo "</div>";
 
