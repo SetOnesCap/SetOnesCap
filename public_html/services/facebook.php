@@ -24,7 +24,7 @@ $data = get_data("https://graph.facebook.com/" . $pageId . "/promotable_posts?ac
 
 $result = json_decode($data);
 
-$postCount = count($result->data);
+$postCount = (isset($result->data)) ? count($result->data) : 0;
 ?>
 <div class="line-through">
     <span></span>

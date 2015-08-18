@@ -5,7 +5,8 @@ $bandsintown_url = "http://api.bandsintown.com/artists/" . $id . "/events.json?a
 $events_json = file_get_contents($bandsintown_url);
 $events = json_decode($events_json);
 $dateNow = date("Y-m-d");
-
+$latest_post_text = (isset($latest_post->message) ? $latest_post->message : '');
+if (isset($events) && $events != null){
 usort($events, function ($a, $b) {
     $aName = (isset($a->name)) ? $a->name : '';
     $bName = (isset($b->name)) ? $b->name : '';
@@ -57,7 +58,7 @@ foreach ($events as $event) {
                     </div>
                     <div class='clearfix'></div>
                 </div>
-            <?php
+                <?php
             }
         }
     } else {
@@ -100,8 +101,9 @@ foreach ($events as $event) {
                 </div>
                 <div class='clearfix'></div>
             </div>
-        <?php
+            <?php
         }
+    }
     }
     ?>
 </div>
