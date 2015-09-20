@@ -44,6 +44,9 @@ button.bg-setonescap-red:hover, a.bg-setonescap-red:hover, .button.bg-setonescap
   background: none;
   box-shadow: none;
   color: #EA5124;
+  font-size: inherit;
+  opacity: inherit;
+  border-radius: inherit;
 }
 
 .button.bg-setonescap-red:focus, .button.bg-setonescap-red:hover{

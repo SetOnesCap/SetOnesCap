@@ -33,6 +33,12 @@
   height: auto;
 }
 
+.album-thumb a {
+  opacity: 1!important;
+  background-color: initial!important;
+  padding: 0!important;
+}
+
 p.fb-date, p.album-date {
   margin: 0;
   font-size: 0.8em;
@@ -94,6 +100,18 @@ p.fb-date, p.album-date {
   padding: 0;
 }
 
+.news-post a{
+  background-color: #EA5124;
+  opacity: .8;
+  color: #FFF;
+  font-size: .8em;
+  padding: 0px 4px;
+  border-radius: 4px;
+}
+
+.news-post a:hover, .news-post a:focus {
+  opacity: 1;
+}
 
 
 .trackinfo {

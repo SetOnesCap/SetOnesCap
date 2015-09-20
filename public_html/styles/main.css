@@ -175,7 +175,10 @@ button.bg-setonescap-red:hover, a.bg-setonescap-red:hover, .button.bg-setonescap
   border: none;
   background: none;
   box-shadow: none;
-  color: #EA5124; }
+  color: #EA5124;
+  font-size: inherit;
+  opacity: inherit;
+  border-radius: inherit; }
 
 .button.bg-setonescap-red:focus, .button.bg-setonescap-red:hover {
   outline: none;
@@ -359,6 +362,11 @@ div {
   width: 100%;
   height: auto; }
 
+.album-thumb > a {
+  opacity: 1 !important;
+  background-color: initial !important;
+  padding: 0 !important; }
+
 p.fb-date, p.album-date {
   margin: 0;
   font-size: 0.8em; }
@@ -406,6 +414,17 @@ p.fb-date, p.album-date {
 
 .trackinfo .col-12 {
   padding: 0; }
+
+.news-post a {
+  background-color: #EA5124;
+  opacity: .8;
+  color: #FFF;
+  font-size: .8em;
+  padding: 0px 4px;
+  border-radius: 4px; }
+
+.news-post a:hover, .news-post a:focus {
+  opacity: 1; }
 
 .trackinfo {
   /* display: inline-block;
