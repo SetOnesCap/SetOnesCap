@@ -13,7 +13,7 @@
 <div class="content">
 
     <section class="col-12 fg-black header" data-speed="1.4" data-type="background">
-  <!--  <section class="col-12 fg-black header header-<?php echo $headerNo; ?>" data-speed="1.4" data-type="background">-->
+        <!--  <section class="col-12 fg-black header header-<?php echo $headerNo; ?>" data-speed="1.4" data-type="background">-->
         <div class="header-text bg-white fg-setonescap-red">
             <h1><?php __getTitle($pageId); ?></h1>
 
@@ -156,8 +156,6 @@
         </div>
 
 
-
-
     </div>
     <footer class="bg-white fg-black">
         <div class="col-6">© 2014
@@ -173,18 +171,18 @@
 </div>
 
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         resizeDiv();
     });
 
-    window.onresize = function(event) {
+    window.onresize = function (event) {
         resizeDiv();
     }
 
     function resizeDiv() {
         var vpw = $(window).width();
         var vph = $(window).height();
-        $('.header').css({'height': vpw/2.8 + 'px'});
+        $('.header').css({'height': vpw / 2.8 + 'px'});
     }
 </script>
 <script type="text/javascript" src="/scripts/jquery.slicknav.min.js"></script>
