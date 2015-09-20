@@ -1,8 +1,11 @@
 <?php
+include("./modules/apicacher.php");
+
 $id = $bandsintownId;
 $appId = $bandsintownAppId;
 $bandsintown_url = "http://api.bandsintown.com/artists/" . $id . "/events.json?api_version=2.0&app_id=" . $appId . "&date=all";
-$events_json = file_get_contents($bandsintown_url);
+//$events_json = file_get_contents($bandsintown_url);
+$events_json = getJson($bandsintown_url);
 $events = json_decode($events_json);
 $dateNow = date("Y-m-d");
 $latest_post_text = (isset($latest_post->message) ? $latest_post->message : '');

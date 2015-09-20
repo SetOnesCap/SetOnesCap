@@ -1,12 +1,12 @@
-
-
 <?php
+include("./modules/apicacher.php");
+
 $clientid = $soundCloudClientid; // Your API Client ID
 $userid = $soundCloudUserid; // ID of the user you are fetching the information for
 
 $soundcloud_url = "http://api.soundcloud.com/users/" . $userid . "/tracks.json?client_id=" . $clientid . "";
 
-$tracks_json = file_get_contents($soundcloud_url);
+$tracks_json = getJson($soundcloud_url);
 $tracks = json_decode($tracks_json);
 
 foreach ($tracks as $track) {

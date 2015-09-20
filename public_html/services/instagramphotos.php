@@ -1,7 +1,8 @@
-<script src="../scripts/masonry.pkgd.min.js"></script>
-<script src="../scripts/imagesloaded.pkgd.min.js"></script>
+<script async src="../scripts/masonry.pkgd.min.js"></script>
+<script async src="../scripts/imagesloaded.pkgd.min.js"></script>
 
 <?php include("./service-variables.php"); ?>
+<?php include("./modules/apicacher.php"); ?>
 
 <?php
 
@@ -11,7 +12,7 @@ $userId = $instagramUserId; // ID of the user you are fetching the information f
 
 $instagram_url = "https://api.instagram.com/v1/users/" . $userId . "/media/recent?access_token=" . $accessToken . "";
 
-$images_json = file_get_contents($instagram_url);
+$images_json = getJson($instagram_url);
 $images = json_decode($images_json);
 ?>
 <div class="line-through">
@@ -25,8 +26,8 @@ $images = json_decode($images_json);
     foreach ($images->data as $image) {
         if ($image->type == "image") {
             $postDate = date("F j, Y", $image->created_time);
-
             $imageText = $image->caption->text;
+            $imageTitle = preg_replace('/(.*?[?!.](?=\s|$)).*/', '\\1', $imageText);
             $imageText = htmlspecialchars($imageText, ENT_QUOTES);
             $imageText = preg_replace('/(?<!\S)#([0-9a-zA-Z]+)/', '<a href="https://instagram.com/explore/tags/$1" target="_blank">#$1</a>', $imageText);
             $imageText = preg_replace('/(?<!\S)@([0-9a-zA-Z]+)/', '<a href="https://instagram.com/$1" target="_blank">#$1</a>', $imageText);
@@ -41,9 +42,10 @@ $images = json_decode($images_json);
 
                     <?php
                     echo "<div class='no-padding fb-thumb' style='max-height: 640px;'>";
+                    echo "<span itemprop='headline' style='display: none;'>$imageTitle</span>";
                     echo "<span itemprop='thumbnail'>";
 
-                    echo "<img src='" . $image->images->standard_resolution->url . "' alt='" . $imageAltText . "' height='640' width='640' />";
+                    echo "<img src='" . $image->images->standard_resolution->url . "' itemprop='image' alt='" . $imageAltText . "' height='640' width='640' />";
 
                     echo "</span>";
                     echo "</div>";
@@ -62,7 +64,7 @@ $images = json_decode($images_json);
     }
     ?>
 </div>
-<script>
+<script async>
     $(window).load(function () {
         var $container = $('#news-posts').masonry();
         $container.imagesLoaded(function () {
