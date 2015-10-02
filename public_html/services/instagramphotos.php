@@ -64,7 +64,7 @@ $images = json_decode($images_json);
     }
     ?>
 </div>
-<script async>
+<script>
     $(window).load(function () {
         var $container = $('#news-posts').masonry();
         $container.imagesLoaded(function () {

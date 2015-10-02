@@ -168,7 +168,7 @@ $postCount = (isset($result->data)) ? count($result->data) : 0;
     }
     echo "</div>";
     ?>
-    <script async>
+    <script>
         $(window).load(function () {
             var $container = $('#news-posts').masonry();
             $container.imagesLoaded(function () {
