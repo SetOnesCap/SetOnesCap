@@ -22,8 +22,7 @@ foreach ($videos->items as $video) {
     echo " <iframe width='560'
             height='315'
             allowfullscreen
-            name='" . $video->snippet->resourceId->videoId . "'
-            id='" . $video->snippet->resourceId->videoId . "'>
+            name='" . $video->snippet->resourceId->videoId . "'>
 
     </iframe>";
     echo "<img src='" . $video->snippet->thumbnails->high->url . "' alt='YouTube thumbnail photo of the Set Ones Cap video'/>";
