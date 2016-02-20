@@ -3,7 +3,7 @@
         <p><?php __getContent($pageId); ?></p>
     </div>
 </div>
-<form>
+<form class="inline">
     <div class="col-12 fg-black">
         <div class="line-through">
             <span></span>

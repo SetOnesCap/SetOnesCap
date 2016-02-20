@@ -26,7 +26,7 @@
 }
 
 button.bg-setonescap-red:hover, a.bg-setonescap-red:hover, .button.bg-setonescap-red.slicknav_open {
-  color: #EF5629;
+  color: $setonescap-color;
 }
 
 .button-addon {
@@ -36,14 +36,14 @@ button.bg-setonescap-red:hover, a.bg-setonescap-red:hover, .button.bg-setonescap
 }
 
 .fg-setonescap-red {
-  color: #EA5124;
+  color: $setonescap-color;
 }
 
 .button.bg-setonescap-red {
   border: none;
   background: none;
   box-shadow: none;
-  color: #EA5124;
+  color: $setonescap-color;
   font-size: inherit;
   opacity: inherit;
   border-radius: inherit;
@@ -51,14 +51,14 @@ button.bg-setonescap-red:hover, a.bg-setonescap-red:hover, .button.bg-setonescap
 
 .button.bg-setonescap-red:focus, .button.bg-setonescap-red:hover{
   outline: none;
-  background-color: #EF5629;
+  background-color: $setonescap-color;
   color: #FFF;
 }
 
 .button.bg-setonescap-red.raised {
   transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
-  background-color: #EA5124;
+  background-color: $setonescap-color;
   color: #FFF;
 }
 
@@ -69,13 +69,13 @@ button.bg-setonescap-red:hover, a.bg-setonescap-red:hover, .button.bg-setonescap
 
 
 .button.bg-setonescap-red.raised:hover, .bg-setonescap-red.slicknav_open {
-  background-color: #EA5124;
-  background: #ef5629; /* Old browsers */
-  background: -moz-linear-gradient(top,  #ef5629 0%, #e24216 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ef5629), color-stop(100%,#e24216)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #ef5629 0%,#e24216 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #ef5629 0%,#e24216 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #ef5629 0%,#e24216 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #ef5629 0%,#e24216 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5629', endColorstr='#e24216',GradientType=0 ); /* IE6-9 */
+  background-color: $setonescap-color;
+  background: $setonescap-color; /* Old browsers */
+  background: -moz-linear-gradient(top,  $setonescap-color-light 0%, $setonescap-color-dark 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$setonescap-color-light), color-stop(100%,$setonescap-color-dark)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $setonescap-color-light 0%,$setonescap-color-dark 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $setonescap-color-light 0%,$setonescap-color-dark 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $setonescap-color-light 0%,$setonescap-color-dark 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  $setonescap-color-light 0%,$setonescap-color-dark 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c72c9b', endColorstr='#b3278d',GradientType=0 ); /* IE6-9 */
 }

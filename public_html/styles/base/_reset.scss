@@ -25,12 +25,12 @@ body {
 }
 
 ::-moz-selection{
-  background:#EA5124;
+  background:$setonescap-color;
   color:#fff;text-shadow:none
 }
 
 ::selection{
-  background:#EA5124;
+  background:$setonescap-color;
   color:#fff;
   text-shadow:none
 }

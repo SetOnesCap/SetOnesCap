@@ -17,15 +17,41 @@ nav {
         -webkit-transform-style: preserve-3d;
       }
       a:hover, a.active {
-        border-bottom: 8px solid #EA5124;
+        border-bottom: 8px solid $setonescap-color;
       }
     }
   }
 }
 
+nav .logo-vertical{
+  display: none;
+}
+
 .slicknav_menu {
   display: none;
 }
+
+@media screen and (min-width: 1920px) {
+  nav.fixed img.logo-vertical{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  nav .logo-vertical{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  nav .logo-horizontal{
+    display: none;
+  }
+  nav .logo-vertical{
+    display: block;
+  }
+}
+
 
 @media screen and (max-width: 750px) {
   nav {
@@ -33,6 +59,7 @@ nav {
     padding: 5px 5px;
   }
 }
+
 
 nav.fixed {
   width: 100%;

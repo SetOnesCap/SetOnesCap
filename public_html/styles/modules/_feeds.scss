@@ -93,7 +93,7 @@ p.fb-date, p.album-date {
 }
 
 .trackinfo a:hover{
-  color:#FF4800;
+  color: $setonescap-color;
 }
 
 .trackinfo .col-12{
@@ -101,7 +101,7 @@ p.fb-date, p.album-date {
 }
 
 .news-post a{
-  background-color: #EA5124;
+  background-color: $setonescap-color;
   opacity: .8;
   color: #FFF;
   font-size: .8em;

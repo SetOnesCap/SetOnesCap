@@ -19,6 +19,7 @@
     opacity: 0.1;
     width: 90px;
     height: auto;
+    display: none;
   }
   .slicknav_menu.fixed {
     z-index: 500;
@@ -184,7 +185,7 @@
         }
         a:hover, a.active {
           border-bottom: none;
-          background-color: #EA5124;
+          background-color:$setonescap-color;
           color: #FFF;
         }
       }

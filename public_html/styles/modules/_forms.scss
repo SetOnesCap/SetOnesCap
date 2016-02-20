@@ -22,7 +22,7 @@
 }
 .input-field-group .input-field:focus{
   outline: none;
-  border-color: #EA5124;
+  border-color: $setonescap-color;
   box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3);
   background-color: #fff;
   color: #333;
