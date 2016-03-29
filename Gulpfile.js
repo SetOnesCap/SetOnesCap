@@ -7,6 +7,17 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     del = require('del');
 
+var config = require('./gulp-config.json');
+
+gulp.task('vendorscripts', function(){
+    return gulp.src(config.paths.vendorjs)
+        .pipe(concat('vendor.js'))
+        .pipe(gulp.dest('./assets/js/'))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(uglify())
+        .pipe(gulp.dest('./assets/js/'));
+});
+
 gulp.task('scripts', function() {
     return gulp.src('src/js/*.js')
         .pipe(jshint())
@@ -45,5 +56,5 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'fonts');
+    gulp.start('styles', 'scripts', 'fonts', 'vendorscripts');
 });

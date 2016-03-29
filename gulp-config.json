@@ -1,0 +1,9 @@
+{
+  "paths": {
+    "vendorjs": [
+      "bower_components/jquery/dist/jquery.min.js",
+      "bower_components/masonry/dist/masonry.pkgd.min.js",
+      "bower_components/imagesloaded/imagesloaded.pkgd.js"
+    ]
+  }
+}
