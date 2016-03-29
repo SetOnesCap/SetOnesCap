@@ -1,0 +1,30 @@
+{
+  "name": "setonescap-development",
+  "version": "1.0.0",
+  "description": "Development of new website",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SetOnesCap/development.git"
+  },
+  "author": "Benjamin Dehli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SetOnesCap/development/issues"
+  },
+  "homepage": "https://github.com/SetOnesCap/development#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.1"
+  }
+}
