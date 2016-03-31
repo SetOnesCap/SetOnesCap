@@ -88,7 +88,7 @@ imagecopy($newimg, $img, 0, 0, $b_lft, $b_top, imagesx($newimg), imagesy($newimg
 $stripped_image_url = strtok($image_url, '?'); 
 $imagename= basename($stripped_image_url);
 $image_directory = $_SERVER['DOCUMENT_ROOT'] . '/src/images/cropped/' . $imagename;
-$cropped_image_url= 'http://' . $_SERVER['SERVER_NAME'] . '/src/images/cropped/' . $imagename;
+$cropped_image_url= '/src/images/cropped/' . $imagename;
 
 imagejpeg($newimg, $image_directory);
 return $cropped_image_url;
