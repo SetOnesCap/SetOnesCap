@@ -51,7 +51,7 @@ ob_start("sanitize_output");
 <html>
 <head>
     <title>ApiTest</title>
-    <link rel="stylesheet" type="text/css" href="/assets/css/<?php echo asset_path('main.css');?>"/>
+   <!-- <link rel="stylesheet" type="text/css" href="/assets/css/<?php// echo asset_path('main.css');?>"/>  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -67,6 +67,18 @@ ob_start("sanitize_output");
         } ?>
     </div>
 </div>
+<script>
+    var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/assets/css/<?php echo asset_path('main.css');?>';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+</script>
 <script type="text/javascript" src="/assets/js/<?php echo asset_path('main.js');?>"></script>
+
 </body>
 </html>
