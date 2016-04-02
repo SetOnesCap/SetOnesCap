@@ -6,7 +6,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/services/imageCropper.php');
 function createOptimizedImage($max_width, $source_file, $destination, $image_file)
 {
     $max_height = 1000;
-    $quality = 60;
+    $quality = 50;
     $source_pic = 'http://' . $_SERVER['SERVER_NAME'] . $source_file . '';
     $src = imagecreatefromjpeg($source_pic);
     list($width, $height) = getimagesize($source_pic);
@@ -24,11 +24,7 @@ function createOptimizedImage($max_width, $source_file, $destination, $image_fil
         $tn_width = ceil($y_ratio * $width);
         $tn_height = $max_height;
     }
-
-   /* $profiles = $src->getImageProfiles("icc", true);
-    $src->stripImage();
-    if(!empty($profiles)) $src->profileImage("icc", $profiles['icc']);*/
-
+    
 
     $tmp = imagecreatetruecolor($tn_width, $tn_height);
     imagecopyresampled($tmp, $src, 0, 0, 0, 0, $tn_width, $tn_height, $width, $height);
