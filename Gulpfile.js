@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
+    rev = require('gulp-rev'),
     del = require('del');
 
 var config = require('./gulp-config.json');
@@ -33,9 +34,12 @@ gulp.task('styles', function() {
     return gulp.src('src/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./assets/css/'))
+        .pipe(rev())
         .pipe(rename({ suffix: '.min' }))
         .pipe(cssnano())
-        .pipe(gulp.dest('./assets/css/'));
+        .pipe(gulp.dest('./assets/css/'))
+        .pipe(rev.manifest())
+        .pipe(gulp.dest('./assets/'));
 });
 
 gulp.task('fonts', function() {
@@ -50,11 +54,11 @@ gulp.task('watch', function() {
 
 // Clean
 gulp.task('clean', function() {
-    return del(['assets/css', 'assets/js']);
+    return del(['./assets/css', './assets/js']);
 });
 
 
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'fonts', 'vendorscripts');
+    gulp.start('styles', 'scripts', 'vendorscripts');
 });
