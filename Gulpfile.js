@@ -20,7 +20,7 @@ gulp.task('scripts', function() {
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
         .pipe(gulp.dest('./assets/js/'))
-        .pipe(rev.manifest({merge: true}))
+        .pipe(rev.manifest({base: './assets', merge: true}))
         .pipe(gulp.dest('./assets/'));
 });
 
