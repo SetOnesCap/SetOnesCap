@@ -11,8 +11,8 @@ class Post
             cacheImage($image_source, $data_source);
 
             // Optimize image
-            $local_original_image_source = '/src/images/' . $data_source . '/' . $image_file;
-            $optimized_image_destination = '/assets/images/' . $data_source;
+            $local_original_image_source = '/cache/images/src/' . $data_source . '/' . $image_file;
+            $optimized_image_destination = '/cache/images/optimized/' . $data_source;
             $image_dimensions = optimizeImage($local_original_image_source, $optimized_image_destination, $image_file, true);
             $this->images = $image_dimensions;
         }
