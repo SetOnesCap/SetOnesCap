@@ -10,40 +10,35 @@ var gulp = require('gulp'),
 
 var config = require('./gulp-config.json');
 
-gulp.task('vendorscripts', function(){
-    return gulp.src(config.paths.vendorjs)
-        .pipe(concat('vendor.js'))
-        .pipe(gulp.dest('./assets/js/'))
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(uglify())
-        .pipe(gulp.dest('./assets/js/'));
-});
-
 gulp.task('scripts', function() {
-    return gulp.src('src/js/*.js')
+    return gulp.src(config.paths.js)
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(concat('main.js'))
         .pipe(gulp.dest('./assets/js/'))
+        .pipe(rev())
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
-        .pipe(gulp.dest('./assets/js/'));
+        .pipe(gulp.dest('./assets/js/'))
+        .pipe(rev.manifest({merge: true}))
+        .pipe(gulp.dest('./assets/'));
 });
 
 gulp.task('styles', function() {
-    return gulp.src('src/sass/**/*.scss')
+    return gulp.src(config.paths.css)
         .pipe(sass().on('error', sass.logError))
+        .pipe(concat('main.css'))
         .pipe(gulp.dest('./assets/css/'))
         .pipe(rev())
         .pipe(rename({ suffix: '.min' }))
         .pipe(cssnano())
         .pipe(gulp.dest('./assets/css/'))
-        .pipe(rev.manifest())
+        .pipe(rev.manifest({base: './assets', merge: true}))
         .pipe(gulp.dest('./assets/'));
 });
 
 gulp.task('fonts', function() {
-    return gulp.src('src/fonts/**/*.ttf')
+    return gulp.src(config.paths.fonts)
         .pipe(gulp.dest('./assets/fonts/'));
 });
 
@@ -54,11 +49,11 @@ gulp.task('watch', function() {
 
 // Clean
 gulp.task('clean', function() {
-    return del(['./assets/css', './assets/js']);
+    return del(['./assets/css', './assets/js', './assets/fonts']);
 });
 
 
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'vendorscripts');
+    gulp.start('styles', 'scripts', 'fonts');
 });
