@@ -34,6 +34,7 @@ img {
 
 .box {
 	border-radius: 2px;
+    background-color: #FFF;
 }
 
 
@@ -42,12 +43,16 @@ img {
 	padding: 10px;
 }
 
-.box.facebook{
+.box .box-header{
+  font-size: .8em;
+}
+
+.box.facebook .box-header{
 	background-color: #3b5998;
 	color: #FFF;
 }
 
-.box.instagram{
+.box.instagram .box-header{
 	background-color: #517fa4;
 	color: #FFF;
 }
