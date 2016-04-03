@@ -2035,6 +2035,8 @@ img {
   background-color: #FFF; }
   .box .content {
     padding: 10px; }
+  .box .thumbnail img {
+    border-bottom: 1px solid #ccc; }
   .box .box-header {
     font-size: .8em;
     color: #FFF; }
@@ -2042,19 +2044,29 @@ img {
       text-decoration: none; }
     .box .box-header .icon {
       color: #FFF;
-      font-family: FontAwesome; }
+      font-family: FontAwesome;
+      font-size: 1.6em;
+      line-height: 15px; }
   .box.facebook .box-header {
     background-color: #3b5998; }
     .box.facebook .box-header .icon::after {
       content: "\f230"; }
   .box.instagram .box-header {
-    background-color: #55acee; }
+    background-color: #125688; }
     .box.instagram .box-header .icon::after {
       content: "\f16d"; }
   .box.soundcloud .box-header {
     background-color: #F50; }
     .box.soundcloud .box-header .icon::after {
       content: "\f1be"; }
+  .box.twitter .box-header {
+    background-color: #55acee; }
+    .box.twitter .box-header .icon::after {
+      content: "\f099"; }
+  .box.google .box-header {
+    background-color: #db4437; }
+    .box.google .box-header .icon::after {
+      content: "\f0d5"; }
 
 .row {
   margin-left: -15px;

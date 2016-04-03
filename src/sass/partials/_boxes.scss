@@ -5,6 +5,9 @@
   .content {
     padding: 10px;
   }
+  .thumbnail img {
+    border-bottom: 1px solid #ccc;
+  }
   .box-header {
     font-size: .8em;
     color: #FFF;
@@ -28,7 +31,7 @@
   }
   &.instagram {
     .box-header {
-      background-color: #55acee;
+      background-color: #125688;
       .icon::after{
         content: "\f16d";
       }
@@ -42,4 +45,21 @@
       }
     }
   }
+  &.twitter {
+    .box-header {
+      background-color: #55acee;
+      .icon::after{
+        content: "\f099";
+      }
+    }
+  }
+  &.google {
+    .box-header {
+      background-color: #db4437;
+      .icon::after{
+        content: "\f0d5";
+      }
+    }
+  }
 }
+
