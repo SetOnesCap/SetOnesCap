@@ -8,6 +8,7 @@ function getPost($post)
                 <div class="box-header">
                     <div class="content">
                         <span><?php echo $post->created_time; ?></span>
+                        <a href="#" class="float-right"><span class="icon"></span></a>
                     </div>
                 </div>
                 <?php if (isset($post->images) && $post->images != '') {
@@ -30,7 +31,7 @@ function getPost($post)
                     </div>
                 <?php } ?>
                 <div class='content'>
-                    <p><?php echo $post->message; ?></p>
+                    <p><?php echo html_entity_decode($post->message); ?></p>
 
                 </div>
 

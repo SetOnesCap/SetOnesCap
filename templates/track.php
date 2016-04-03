@@ -2,7 +2,13 @@
 function getTrack($track){
 	ob_start();?>
 	<div class='col col-xs-12 col-sm-6 col-md-4 col-lg-3'>
-		<div class='box <?php echo $track->source ?>'>
+		<div class='box z-1 <?php echo $track->source ?>'>
+            <div class="box-header">
+                <div class="content">
+                    <span><?php echo $track->released_time; ?></span>
+                    <a href="#" class="float-right"><span class="icon"></span></a>
+                </div>
+            </div>
 			<?php if (isset($track->images) && $track->images != ''){
 				$images = $track->images;
 				?>
@@ -28,7 +34,8 @@ function getTrack($track){
 					Your browser does not support the audio element.
 				</audio>
 				<p><?php echo $track->title; ?></p>
-				<p><?php echo $track->released_time; ?></p>
+                <p><?php echo $track->like_count; ?></p>
+
 			</div>
 		</div>
 	</div>

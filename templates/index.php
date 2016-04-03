@@ -4,6 +4,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/templates/post.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/templates/track.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/helpers/api.php');
 
+
 $posts = get_api_content('posts');
 usort($posts, function ($a, $b) {
     return -1 * strcmp($a->created_time_unix, $b->created_time_unix);
@@ -55,7 +56,6 @@ ob_start("sanitize_output");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
 <div class="container">
     <div class='row'>
         <?php
