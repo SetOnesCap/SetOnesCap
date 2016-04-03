@@ -1,0 +1,45 @@
+
+.box {
+  border-radius: 2px;
+  background-color: #FFF;
+  .content {
+    padding: 10px;
+  }
+  .box-header {
+    font-size: .8em;
+    color: #FFF;
+    a{
+      text-decoration: none;
+    }
+    .icon{
+      color: #FFF;
+      font-family: FontAwesome;
+      font-size: 1.6em;
+      line-height: 15px;
+    }
+  }
+  &.facebook {
+    .box-header {
+      background-color: #3b5998;
+      .icon::after{
+        content: "\f230";
+      }
+    }
+  }
+  &.instagram {
+    .box-header {
+      background-color: #55acee;
+      .icon::after{
+        content: "\f16d";
+      }
+    }
+  }
+  &.soundcloud {
+    .box-header {
+      background-color: #F50;
+      .icon::after{
+        content: "\f1be";
+      }
+    }
+  }
+}

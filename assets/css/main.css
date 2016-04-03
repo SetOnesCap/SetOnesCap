@@ -2015,29 +2015,46 @@ img {
 .container {
   padding: 15px; }
 
-.box {
-  border-radius: 2px;
-  background-color: #FFF; }
-
-.box .content {
-  padding: 10px; }
-
-.box .box-header {
-  font-size: .8em; }
-
-.box.facebook .box-header {
-  background-color: #3b5998;
-  color: #FFF; }
-
-.box.instagram .box-header {
-  background-color: #517fa4;
-  color: #FFF; }
-
 .z-1 {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.37); }
 
 .z-2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.clearfix {
+  clear: both; }
+
+.box {
+  border-radius: 2px;
+  background-color: #FFF; }
+  .box .content {
+    padding: 10px; }
+  .box .box-header {
+    font-size: .8em;
+    color: #FFF; }
+    .box .box-header a {
+      text-decoration: none; }
+    .box .box-header .icon {
+      color: #FFF;
+      font-family: FontAwesome; }
+  .box.facebook .box-header {
+    background-color: #3b5998; }
+    .box.facebook .box-header .icon::after {
+      content: "\f230"; }
+  .box.instagram .box-header {
+    background-color: #55acee; }
+    .box.instagram .box-header .icon::after {
+      content: "\f16d"; }
+  .box.soundcloud .box-header {
+    background-color: #F50; }
+    .box.soundcloud .box-header .icon::after {
+      content: "\f1be"; }
 
 .row {
   margin-left: -15px;
@@ -2523,6 +2540,9 @@ img {
     margin-left: 91.66667%; }
   .col-lg-offset-12 {
     margin-left: 100%; } }
+
+audio {
+  width: 100%; }
 
 .navbar {
   list-style: none;
