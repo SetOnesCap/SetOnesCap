@@ -12,9 +12,15 @@ function getimg($url)
     curl_setopt($process, CURLOPT_TIMEOUT, 30);
     curl_setopt($process, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($process, CURLOPT_FOLLOWLOCATION, 1);
+
     $return = curl_exec($process);
-    curl_close($process);
-    return $return;
+    $http_code = curl_getinfo($process, CURLINFO_HTTP_CODE);
+    if ($http_code !== 404 && $http_code !== 400) {
+        curl_close($process);
+        return $return;
+    } else {
+        return false;
+    }
 }
 
 function cacheImage($image_url, $data_source)
@@ -27,6 +33,12 @@ function cacheImage($image_url, $data_source)
     }
     if (!file_exists($image_directory . $image_name)) {
         $image = getimg($image_url);
-        file_put_contents($image_directory . $image_name, $image);
+        if ($image) {
+            file_put_contents($image_directory . md5($image_name) . '.jpg', $image);
+            return md5($image_name) . '.jpg';
+        } else {
+            return false;
+        }
     }
+
 }
