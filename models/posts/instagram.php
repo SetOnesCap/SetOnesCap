@@ -13,5 +13,3 @@ class InstagramPost extends Post
 
     }
 }
-
-;
