@@ -3,7 +3,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/services/imageOptimizer.php');
 
 class Track
 {
-    function __construct($title, $released_time, $released_time_unix, $playback_count, $like_count, $image_source, $data_source, $stream_source)
+    function __construct($title, $released_time, $released_time_unix, $playback_count, $like_count, $image_source, $crop_image, $data_source, $stream_source)
     {
         if ($image_source != '') {
             $image_file = cacheImage($image_source, $data_source);
@@ -12,7 +12,7 @@ class Track
                 // Optimize image
                 $local_original_image_source = '/cache/images/src/' . $data_source . '/' . $image_file;
                 $optimized_image_destination = '/cache/images/optimized/' . $data_source;
-                $image_dimensions = optimizeImage($local_original_image_source, $optimized_image_destination, $image_file, false);
+                $image_dimensions = optimizeImage($local_original_image_source, $optimized_image_destination, $image_file, $crop_image);
                 $this->images = $image_dimensions;
             }
         }

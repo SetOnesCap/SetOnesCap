@@ -14,6 +14,7 @@ class SoundcloudTrack extends Track
 		$playback_count = $data->playback_count;
 		$like_count = $data->favoritings_count;
 		$image_source = str_replace('large.jpg', 't500x500.jpg', $data->artwork_url);
+		$crop_image = false;
 		$data_source = 'soundcloud';
 
 		$client_id = $_ENV["SOUNDCLOUD_CLIENT_ID"];
@@ -22,6 +23,6 @@ class SoundcloudTrack extends Track
     	$local_audio_file = cacheAudio($streamUrl, 'mp3');
 
 
-		parent::__construct($title, $released_time, $released_time_unix, $playback_count, $like_count, $image_source, $data_source, $local_audio_file);
+		parent::__construct($title, $released_time, $released_time_unix, $playback_count, $like_count, $image_source, $crop_image, $data_source, $local_audio_file);
 	}	
 };

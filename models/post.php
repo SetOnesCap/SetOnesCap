@@ -3,7 +3,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/services/imageOptimizer.php');
 
 class Post
 {
-    function __construct($message, $created_time, $created_time_unix, $image_source, $data_source)
+    function __construct($message, $created_time, $created_time_unix, $image_source, $crop_image, $data_source)
     {
         if ($image_source != '') {
             $image_file = cacheImage($image_source, $data_source);
@@ -12,7 +12,7 @@ class Post
                 // Optimize image
                 $local_original_image_source = '/cache/images/src/' . $data_source . '/' . $image_file;
                 $optimized_image_destination = '/cache/images/optimized/' . $data_source;
-                $image_dimensions = optimizeImage($local_original_image_source, $optimized_image_destination, $image_file, true);
+                $image_dimensions = optimizeImage($local_original_image_source, $optimized_image_destination, $image_file, $crop_image);
                 $this->images = $image_dimensions;
             }
         }

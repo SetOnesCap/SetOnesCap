@@ -17,8 +17,9 @@ class TwitterPost extends Post
         $created_time = date('M j, Y', strtotime($data->created_at));
         $created_time_unix = strtotime($data->created_at);
         $image_source = $this->getImage($data->entities);
+        $crop_image = false;
         $data_source = 'twitter';
-        parent::__construct($message, $created_time, $created_time_unix, $image_source, $data_source);
+        parent::__construct($message, $created_time, $created_time_unix, $image_source, $crop_image, $data_source);
 
     }
 }

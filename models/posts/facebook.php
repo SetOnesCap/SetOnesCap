@@ -37,8 +37,9 @@ class FacebookPost extends Post
         $created_time_unix = strtotime($data->created_time);
         $contains_image = $this->containsImage($data->type, $object_id);
         $image_source = ($contains_image) ? $this->getImage($object_id) : '';
+        $crop_image = false;
         $data_source = 'facebook';
-        parent::__construct($message, $created_time, $created_time_unix, $image_source, $data_source);
+        parent::__construct($message, $created_time, $created_time_unix, $image_source, $crop_image, $data_source);
     }
 }
 
