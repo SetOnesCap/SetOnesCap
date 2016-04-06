@@ -16,10 +16,12 @@ class TwitterPost extends Post
         $message = $data->text;
         $created_time = date('M j, Y', strtotime($data->created_at));
         $created_time_unix = strtotime($data->created_at);
+        $created_time_iso = date('c', $created_time_unix);
+        $updated_time_iso = $created_time_iso;
         $image_source = $this->getImage($data->entities);
-        $crop_image = false;
+        $crop_image = true;
         $data_source = 'twitter';
-        parent::__construct($message, $created_time, $created_time_unix, $image_source, $crop_image, $data_source);
+        parent::__construct($message, $created_time, $created_time_unix, $created_time_iso, $updated_time_iso, $image_source, $crop_image, $data_source);
 
     }
 }

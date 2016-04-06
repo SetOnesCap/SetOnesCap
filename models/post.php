@@ -3,7 +3,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/services/imageOptimizer.php');
 
 class Post
 {
-    function __construct($message, $created_time, $created_time_unix, $image_source, $crop_image, $data_source)
+    function __construct($message, $created_time, $created_time_unix, $created_time_iso, $updated_time_iso, $image_source, $crop_image, $data_source)
     {
         if ($image_source != '') {
             $image_file = cacheImage($image_source, $data_source);
@@ -24,6 +24,8 @@ class Post
         $this->source = $data_source;
         $this->created_time = $created_time;
         $this->created_time_unix = $created_time_unix;
+        $this->created_time_iso = $created_time_iso;
+        $this->updated_time_iso = $updated_time_iso;
 
     }
 }
