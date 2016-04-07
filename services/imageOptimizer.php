@@ -2,13 +2,23 @@
 require_once($_SERVER['DOCUMENT_ROOT'] . '/models/image.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/services/imageCropper.php');
 
-
+set_time_limit(300);
 function createOptimizedImage($max_width, $source_file, $destination, $image_file)
 {
     $max_height = 1000;
     $quality = 50;
     $source_pic = 'http://' . $_SERVER['SERVER_NAME'] . $source_file . '';
-    $src = imagecreatefromjpeg($source_pic);
+    $image_type = exif_imagetype($source_pic);
+    if ($image_type == 2){
+        $src = imagecreatefromjpeg($source_pic);
+    }elseif ($image_type == 3){
+        $src = imagecreatefrompng($source_pic);
+    }elseif ($image_type == 1){
+        $src = imagecreatefromgif($source_pic);
+    }else{
+        return false;
+    }
+
     list($width, $height) = getimagesize($source_pic);
 
     $x_ratio = $max_width / $width;

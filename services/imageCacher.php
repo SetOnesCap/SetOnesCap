@@ -1,4 +1,5 @@
 <?php
+set_time_limit(300);
 function getimg($url)
 {
     $headers[] = 'Accept: image/gif, image/x-bitmap, image/jpeg, image/pjpeg';
