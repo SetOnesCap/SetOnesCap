@@ -14,6 +14,12 @@ class FacebookPost extends Post
         }
     }
 
+    function getTagsFromString($message)
+    {
+        preg_match_all('/(?<!\w)#\w+/', $message, $matches);
+        return json_encode($matches);
+    }
+
     function getImage($object_id)
     {
         $image_source = '';
@@ -41,7 +47,8 @@ class FacebookPost extends Post
         $image_source = ($contains_image) ? $this->getImage($object_id) : '';
         $crop_image = false;
         $data_source = 'facebook';
-        parent::__construct($message, $created_time, $created_time_unix, $created_time_iso, $updated_time_iso, $image_source, $crop_image, $data_source);
+        $tags = $this->getTagsFromString($message);
+        parent::__construct($message, $created_time, $created_time_unix, $created_time_iso, $updated_time_iso, $image_source, $crop_image, $tags, $data_source);
     }
 }
 

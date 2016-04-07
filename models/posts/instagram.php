@@ -12,7 +12,8 @@ class InstagramPost extends Post
         $image_source = $data->images->standard_resolution->url;
         $crop_image = true;
         $data_source = 'instagram';
-        parent::__construct($message, $created_time, $created_time_unix, $created_time_iso, $updated__time_iso, $image_source, $crop_image, $data_source);
+        $tags = $data->tags;
+        parent::__construct($message, $created_time, $created_time_unix, $created_time_iso, $updated__time_iso, $image_source, $crop_image, $tags, $data_source);
 
     }
 }

@@ -11,6 +11,12 @@ class TwitterPost extends Post
         }
     }
 
+    function getTagsFromString($message)
+    {
+        preg_match_all('/(?<!\w)#\w+/', $message, $matches);
+        return json_encode($matches);
+    }
+
     function __construct($data)
     {
         $message = $data->text;
@@ -21,7 +27,8 @@ class TwitterPost extends Post
         $image_source = $this->getImage($data->entities);
         $crop_image = true;
         $data_source = 'twitter';
-        parent::__construct($message, $created_time, $created_time_unix, $created_time_iso, $updated_time_iso, $image_source, $crop_image, $data_source);
+        $tags = $this->getTagsFromString($message);
+        parent::__construct($message, $created_time, $created_time_unix, $created_time_iso, $updated_time_iso, $image_source, $crop_image, $tags, $data_source);
 
     }
 }

@@ -3,7 +3,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/services/imageOptimizer.php');
 
 class Post
 {
-    function __construct($message, $created_time, $created_time_unix, $created_time_iso, $updated_time_iso, $image_source, $crop_image, $data_source)
+    function __construct($message, $created_time, $created_time_unix, $created_time_iso, $updated_time_iso, $image_source, $crop_image, $tags, $data_source)
     {
         if ($image_source != '') {
             $image_file = cacheImage($image_source, $data_source);
@@ -17,8 +17,9 @@ class Post
             }
         }
 
-        $regex = "@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?).*$)@";
+        $regex = '@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?).*$)@';
         $message = preg_replace($regex, ' ', $message);
+
 
         $this->message = htmlentities($message);
         $this->source = $data_source;
@@ -26,6 +27,7 @@ class Post
         $this->created_time_unix = $created_time_unix;
         $this->created_time_iso = $created_time_iso;
         $this->updated_time_iso = $updated_time_iso;
+        $this->tags = $tags;
 
     }
 }
