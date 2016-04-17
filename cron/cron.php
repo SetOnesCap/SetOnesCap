@@ -64,7 +64,6 @@ if ($http_code === 200) {
         $content = new TwitterPost($post);
         array_push($postsArray, $content);
     };
-    //echo $response;
 }
 
 cacheJson(json_encode($postsArray), 'posts.json');

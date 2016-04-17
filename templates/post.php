@@ -48,12 +48,12 @@ function getPost($post)
 
                 </div>
                 <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                    <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                   <!-- <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
                         <img src="https://google.com/logo.jpg"/>
                         <meta itemprop="url" content="https://google.com/logo.jpg">
                         <meta itemprop="width" content="600">
                         <meta itemprop="height" content="60">
-                    </div>
+                    </div> -->
                     <meta itemprop="name" content="Set One's Cap">
                 </div>
                 <meta itemprop="datePublished" content="<?php echo $post->created_time_iso ?>"/>

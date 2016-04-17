@@ -43,8 +43,11 @@ class FacebookPost extends Post
         $created_time_unix = strtotime($data->created_time);
         $created_time_iso = $data->created_time;
         $updated_time_iso = $data->updated_time;
+
         $contains_image = $this->containsImage($data->type, $object_id);
         $image_source = ($contains_image) ? $this->getImage($object_id) : '';
+
+        
         $crop_image = false;
         $data_source = 'facebook';
         $tags = $this->getTagsFromString($message);
