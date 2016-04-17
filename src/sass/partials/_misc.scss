@@ -1,3 +1,21 @@
 audio {
   width: 100%;
 }
+
+pre.code-example {
+  white-space: nowrap;
+  background-color: #eee;
+  border-top: 1px solid #ddd;
+}
+
+pre.code-example span {
+  display: block;
+}
+
+pre.code-example span.indent-1 {
+  padding-left: 2em;
+}
+
+pre.code-example span.indent-2 {
+  padding-left: 4em;
+}

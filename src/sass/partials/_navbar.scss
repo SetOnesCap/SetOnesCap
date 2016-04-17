@@ -2,11 +2,19 @@
   position: fixed;
   background-color: #FFF;
   height: 55px;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  padding: 0 15px;
+  a {
+    font-size: 20pt;
+    height: 55px;
+    line-height: 55px;
+    display: inline-block;
+  }
   ul {
     list-style: none;
     padding: 0;
-    margin: 0 15px;
-    font-size: 12pt;
     li {
       display: inline-block;
       a {
@@ -23,4 +31,56 @@
       }
     }
   }
+}
+
+.left-menu {
+  height: 100%;
+  float: left;
+  width: 0;
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .2s;
+  > div {
+    background-color: #30303A;
+    color: #FFF;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: inherit;
+    overflow: hidden;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.26);
+    label {
+      display: block;
+      border-bottom: 1px solid rgba(255, 255, 255, .05);
+      border-top: 1px solid rgba(0, 0, 0, .05);
+      padding: 5px 10px;
+      width: 100%;
+      &:hover {
+        background-color: rgba(0, 0, 0, .2);
+        color: #be2791;
+      }
+    }
+    input[type=radio] {
+      display: none;
+      &:checked + label {
+        /*  background-color: #be2791;*/
+        color: #FFF;
+        border-left: 2px solid #be2791;
+      }
+    }
+  }
+}
+
+.left-menu ul {
+  padding: 0;
+}
+
+.left-menu{
+
+
+}
+
+
+body.sidebar-active .left-menu{
+  width: 200px;
 }

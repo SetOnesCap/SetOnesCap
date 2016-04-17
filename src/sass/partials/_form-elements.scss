@@ -1,0 +1,51 @@
+
+.input-group {
+  height: 66px;
+  input[type="text"] {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-left: 8px;
+    + label {
+      color: #777;
+      position: relative;
+      bottom: 32.5px;
+      left: 5px;
+      font-size: 20px;
+      -webkit-transition: all .2s; /* Safari */
+      transition: all .2s;
+    }
+    &:focus, &.is-not-empty{
+      margin-bottom: 4px;
+    }
+    &.is-not-empty + label {
+      bottom: 55px;
+      font-size: 16px;
+      &:after{
+        content: ":";
+      }
+    }
+    &:focus + label {
+      color: #be2791;
+      bottom: 55px;
+      font-size: 16px;
+      &:after{
+        content: ":";
+      }
+    }
+  }
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #eee;
+  -webkit-transition: border .2s; /* Safari */
+  transition: border .2s;
+}
+
+input:focus {
+  border: none;
+  border-bottom: 2px solid #be2791;
+  outline: none;
+}
