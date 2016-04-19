@@ -3,7 +3,7 @@
   input[type="text"] {
     width: 100%;
     font-size: 20px;
-    height: 20px;
+    height: 25px;
     margin-top: 20px;
     margin-bottom: 5px;
     padding-left: 8px;
@@ -19,20 +19,20 @@
       font-size: 20px;
       -webkit-transition: all .2s; /* Safari */
       transition: all .2s;
-      height: 24px;
+      height: 28px;
       display: inline-block;
     }
-    &:focus{
+    &:focus {
       border-bottom: 2px solid #be2791;
       outline: none;
-  }
-    &:focus, &.is-not-empty{
+    }
+    &:focus, &.is-not-empty {
       margin-bottom: 5px;
     }
     &.is-not-empty + label {
       bottom: 55px;
       font-size: 16px;
-      &:after{
+      &:after {
         content: ":";
       }
     }
@@ -40,7 +40,7 @@
       color: #be2791;
       bottom: 55px;
       font-size: 16px;
-      &:after{
+      &:after {
         content: ":";
       }
     }
