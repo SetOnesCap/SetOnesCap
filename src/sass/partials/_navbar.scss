@@ -44,20 +44,22 @@
     color: #FFF;
     padding: 0;
     position: fixed;
-    top: 0;
+    top: 55px;
     height: 100%;
     width: inherit;
     overflow: hidden;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 1px 0 3px 0 rgba(0,0,0,.37);
     label {
       display: block;
       border-bottom: 1px solid rgba(255, 255, 255, .05);
       border-top: 1px solid rgba(0, 0, 0, .05);
       padding: 5px 10px;
       width: 100%;
+      min-width: 200px;
+      border-left: 2px solid transparent;
       &:hover {
-        background-color: rgba(0, 0, 0, .2);
-        color: #be2791;
+        background-color: rgba(0, 0, 0, .1);
+        cursor: pointer;
       }
     }
     input[type=radio] {
