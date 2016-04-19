@@ -1,7 +1,8 @@
 <header>
     <nav id="menu" class="fg-black bg-white fixed">
         <div class="content">
-            <img src="/images/template/bird-nav.png" width="50" height="60" alt="Set Ones Cap logo, drawing of a bird with a hat"/>
+            <a href="http://www.setonescap.com/"><img src="/images/template/logo-horizontal.png" width="226" height="60" alt="Set Ones Cap logo, drawing of a bird with a hat" class="logo-horizontal"/></a>
+            <a href="http://www.setonescap.com/"><img src="/images/template/logo-vertical.png" width="31" height="60" alt="Set Ones Cap logo, drawing of a bird with a hat" class="logo-vertical"/></a>
             <ul class="float-right">
                 <?php
                 __getLinkList($rootURL);

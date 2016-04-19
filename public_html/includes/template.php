@@ -1,7 +1,8 @@
 <header>
     <nav id="menu" class="fg-black bg-white fixed">
         <div class="content">
-            <img src="/images/template/bird-nav.png" width="50" height="60" alt="Set Ones Cap logo, drawing of a bird with a hat"/>
+            <a href="http://www.setonescap.com/"><img src="/images/template/logo-horizontal.png" width="226" height="60" alt="Set Ones Cap logo, drawing of a bird with a hat" class="logo-horizontal"/></a>
+            <a href="http://www.setonescap.com/"><img src="/images/template/logo-vertical.png" width="31" height="60" alt="Set Ones Cap logo, drawing of a bird with a hat" class="logo-vertical"/></a>
             <ul class="float-right">
                 <?php
                 __getLinkList($rootURL);
@@ -129,7 +130,7 @@
             </div>
             <p>Phone: +47 92 29 27 19</p>
 
-            <p>E-mail: support@setonescap.com</p>
+            <p>E-mail: web@setonescap.com</p>
         </div>
         <div itemscope itemtype="http://data-vocabulary.org/Person" class="col-4">
             <h3>Management / Booking:</h3>
@@ -137,9 +138,9 @@
             <p><span itemprop="name">Jon F. Leiulfsrud</span></p>
 
             <div itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address" class="no-padding">
-                <p><span itemprop="street-address">Dokkveien 8</span></p>
+                <p><span itemprop="street-address">Smalvollveien 44</span></p>
 
-                <p><span itemprop="postal-code">3920 Porsgrunn</span></p>
+                <p><span itemprop="postal-code">0667 Oslo</span></p>
 
                 <p><span itemprop="country-name">Norway</span></p>
             </div>
