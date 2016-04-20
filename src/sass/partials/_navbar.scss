@@ -1,16 +1,41 @@
 .navbar {
   position: fixed;
   background-color: #FFF;
-  height: 55px;
+  height: 48px;
   width: 100%;
   z-index: 2;
   top: 0;
-  padding: 0 15px;
-  a {
-    font-size: 20pt;
-    height: 55px;
-    line-height: 55px;
+  .logo{
     display: inline-block;
+    padding: 2px 0;
+    vertical-align: bottom;
+    img{
+      height: 40px;
+      width: auto;
+    }
+  }
+  a:not(.logo) {
+    font-size: 20pt;
+    line-height: 48px;
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 0 15px;
+    cursor: pointer;
+    &:hover{
+      -webkit-transition: background .2s .1s;
+      transition: background .2s .1s;
+      background-color: rgba(158, 158, 158, 0.2);
+    }
+    &:active{
+      background: rgba(190,39,137,.15);
+    }
+  }
+  .menu-divider{
+    border-left: 1px solid rgba(0,0,0,0.12);
+    width: 1px;
+    height: 30px;
+    display: inline-block;
+    margin: 4px 15px;
   }
   ul {
     list-style: none;
@@ -44,11 +69,13 @@
     color: #FFF;
     padding: 0;
     position: fixed;
-    top: 55px;
     height: 100%;
     width: inherit;
     overflow: hidden;
-    box-shadow: 1px 0 3px 0 rgba(0,0,0,.37);
+    top: 0;
+    z-index: 2;
+    -webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.4);
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.4);
     label {
       display: block;
       border-bottom: 1px solid rgba(255, 255, 255, .05);
@@ -60,6 +87,18 @@
       &:hover {
         background-color: rgba(0, 0, 0, .1);
         cursor: pointer;
+      }
+    }
+    .sidenav-logo{
+      height: 48px;
+      img{
+        height: 40px;
+        width: auto;
+        margin-left: 10px;
+      }
+      .fa {
+        font-size: 20pt;
+        padding: 11px 25px 11px 5px;
       }
     }
     input[type=radio] {
@@ -81,8 +120,35 @@
 
 
 }
-
-
 body.sidebar-active .left-menu{
-  width: 200px;
+  width: 300px;
 }
+
+@media only screen and (min-width: 750px) {
+  .navbar{
+    height: 64px;
+    .menu-divider{
+      height: 50px;
+    }
+    .logo{
+      padding: 10px 0;
+    }
+    a:not(.logo) {
+      line-height: 64px;
+      padding: 0 25px;
+    }
+  }
+  .left-menu{
+    > div{
+      top: 64px;
+      box-shadow: 2px 3px 5px rgba(0,0,0,.26);
+    }
+    .sidenav-logo{
+      display: none;
+    }
+  }
+  body.sidebar-active .left-menu{
+    width: 200px;
+  }
+}
+
