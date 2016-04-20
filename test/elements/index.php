@@ -31,87 +31,25 @@ function asset_path($filename)
             margin-right: 1em;
         }
 
-        input[type="checkbox"],
-        input[type="radio"] {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            outline: none;
-            width: 18px;
-            height: 20px;
-            margin-bottom: 12px;
-            font-size: 20px;
-        }
 
-        input[type="checkbox"]:before,
-        input[type="radio"]:before {
-            font-family: FontAwesome;
-            /*font-size: 20px;*/
-        }
-
-        input[type="checkbox"] + label,
-        input[type="radio"] + label {
-            font-size: 20px;
-        }
-
-        input[type="checkbox"]:focus,
-        input[type="checkbox"]:focus + label,
-        .input-group:active input[type="checkbox"],
-        .input-group:active input[type="checkbox"] + label,
-        input[type="radio"]:focus,
-        input[type="radio"]:focus + label,
-        .input-group:active input[type="radio"],
-        .input-group:active input[type="radio"] + label {
-            color: #be2791;
-        }
-
-        input[type="checkbox"]:before {
-            content: "\f096";
-        }
-
-        input[type="checkbox"]:checked:before {
-            content: "\f046";
-        }
-
-        input[type="radio"]:before {
-            content: "\f10c";
-        }
-
-        input[type="radio"]:checked:before {
-            content: "\f192";
-        }
-
-        .button-flat {
-            cursor: pointer;
-            text-align: center;
-            text-transform: uppercase;
-            min-width: 88px;
-            border-radius: 3px;
-            font-size: 14px;
-            -webkit-transition: background .2s .1s;
-            transition: background .2s .1s;
-            color: #be2791;
-            line-height: 32px;
-            display: inline-block;
-        }
-
-        .button-flat:not([disabled]):hover {
-            background-color: rgba(158, 158, 158, 0.2);
-        }
-        .button-flat[disabled] {
-            color : rgba(0, 0, 0, 0.26);
-            background-color: transparent;
-        }
-
-        .button-flat:not([disabled]):active {
-            background: rgba(190, 39, 137, .2);
-        }
     </style>
 
 </head>
-<body class="" id="elements">
+<body id="elements">
+<nav class="navbar z-2">
+    <a class="sidenav-toggle"><i class="fa fa-bars"></i></a>
+    <a class="logo"><img src="/assets/images/logo/logo-horizontal.png"/></a>
+    <span class="menu-divider"></span>
+    {{ activePage }}
+</nav>
 <div class="left-menu no-padding">
     <div>
-        <p></p>
+        <div class="sidenav-logo">
+            <a class="sidenav-toggle">
+                <img src="/assets/images/logo/logo-horizontal.png"/>
+                <i class="fa fa-angle-left float-right"></i>
+            </a>
+        </div>
         <input type="radio" id="form-elements" value="Form elements" v-model="activePage">
         <label for="form-elements">Form elements</label>
         <input type="radio" id="Buttons" value="Buttons" v-model="activePage">
@@ -121,17 +59,8 @@ function asset_path($filename)
 <div class="clearfix"></div>
 
 <div class="main-content">
-    <nav class="navbar z-2">
-        <a id="sidenav-toggle"><i class="fa fa-bars"></i></a>
-        Set One's Cap
-        {{ activePage }}
-        <ul>
-            <li></li>
-            <!-- <li><span class="fa fa-user"></span> <a href="#">Bruker</a></li>-->
-        </ul>
-    </nav>
     <div class="container">
-        <div v-if="activePage == 'Form elements'">
+        <div v-show="activePage == 'Form elements'">
             <div class="box z-1">
                 <div class="content">
                     <h2>Text input</h2>
@@ -252,11 +181,12 @@ function asset_path($filename)
             <div class="clearfix"></div>
         </div>
 
-        <div v-if="activePage == 'Buttons'">
+        <div v-show="activePage == 'Buttons'">
             <div class="box z-1">
                 <div class="content">
                     <h2>Buttons</h2>
-                    <a class="button-flat">Button 1</a>
+                    <a class="button button-flat">Flat button</a>
+                    <a class="button button-raised">Raised button</a>
                 </div>
             </div>
         </div>
@@ -269,6 +199,7 @@ function asset_path($filename)
 <script type="text/javascript" src="/test/elements/elements.js"></script>
 <script>
     $(".input-group input").change(function () {
+        console.log("change");
         $(this).removeClass("is-not-empty");
         if ($(this).val() == "") {
 
@@ -278,13 +209,13 @@ function asset_path($filename)
             $(this).addClass("is-not-empty");
         }
     });
-    $("#sidenav-toggle").click(function () {
+    $(".sidenav-toggle").click(function () {
         if ($("body").hasClass("sidebar-active")) {
             $("body").removeClass("sidebar-active");
         } else {
             $("body").addClass("sidebar-active");
         }
-    })
+    });
 </script>
 </body>
 </html>

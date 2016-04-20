@@ -1,6 +1,6 @@
 new Vue({
     el: '#elements',
     data: {
-        activePage: 'form-elements'
+        activePage: 'Form elements'
     }
 })
