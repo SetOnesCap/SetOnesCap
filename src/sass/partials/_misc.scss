@@ -3,19 +3,25 @@ audio {
 }
 
 pre.code-example {
-  white-space: nowrap;
-  background-color: #f8f8f8;
-  border-top: 1px solid #eee;
+  display: none;
 }
 
-pre.code-example span {
-  display: block;
-}
-
-pre.code-example span.indent-1 {
-  padding-left: 2em;
-}
-
-pre.code-example span.indent-2 {
-  padding-left: 4em;
+@media only screen and (min-width: 750px) {
+  pre {
+    &.code-example {
+      display: block;
+      white-space: nowrap;
+      background-color: #f8f8f8;
+      border-top: 1px solid #eee;
+      span {
+        display: block;
+        &.indent-1 {
+          padding-left: 2em;
+        }
+        &.indent-2 {
+          padding-left: 4em;
+        }
+      }
+    }
+  }
 }
