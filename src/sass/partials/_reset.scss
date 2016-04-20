@@ -24,7 +24,10 @@ img {
 
 .container {
   margin-top: 55px;
-  padding: 25px;
+  padding: 0;
+  @media (min-width: 550px) {
+    padding: 25px;
+  }
 }
 
 .z-1 {
