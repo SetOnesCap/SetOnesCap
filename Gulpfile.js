@@ -42,6 +42,11 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest('./assets/fonts/'));
 });
 
+gulp.task('images', function () {
+    return gulp.src(config.paths.images)
+        .pipe(gulp.dest('./assets/images/'));
+});
+
 gulp.task('watch', function() {
     gulp.watch('src/sass/**/*.scss', ['styles']);
     gulp.watch('src/js/**/*.js', ['scripts']);
@@ -55,5 +60,5 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'fonts');
+    gulp.start('styles', 'scripts', 'fonts', 'images');
 });

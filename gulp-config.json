@@ -13,6 +13,9 @@
     "fonts": [
       "src/fonts/*.ttf",
       "bower_components/components-font-awesome/fonts/*.{otf,eot,svg,ttf,woff,woff2}"
+    ],
+    "images": [
+      "src/images/**/*.{png,jpg,jpeg,svg,gif}"
     ]
   }
 }
