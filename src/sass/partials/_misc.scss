@@ -25,3 +25,30 @@ pre.code-example {
     }
   }
 }
+
+@media (max-width: 549px) {
+  .hide-xsmall{
+    display: none!important;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 749px) {
+  .hide-small{
+    display: none!important;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1159px) {
+  .hide-medium{
+    display: none!important;
+  }
+}
+
+@media (min-width: 1160px) {
+  .hide-big{
+    display: none!important;
+  }
+}
+
+
+

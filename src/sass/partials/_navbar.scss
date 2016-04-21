@@ -5,11 +5,11 @@
   width: 100%;
   z-index: 2;
   top: 0;
-  .logo{
+  .logo {
     display: inline-block;
     padding: 2px 0;
     vertical-align: bottom;
-    img{
+    img {
       height: 40px;
       width: auto;
     }
@@ -21,17 +21,17 @@
     vertical-align: bottom;
     padding: 0 15px;
     cursor: pointer;
-    &:hover{
+    &:hover {
       -webkit-transition: background .2s .1s;
       transition: background .2s .1s;
       background-color: rgba(158, 158, 158, 0.2);
     }
-    &:active{
-      background: rgba(190,39,137,.15);
+    &:active {
+      background: rgba(190, 39, 137, .15);
     }
   }
-  .menu-divider{
-    border-left: 1px solid rgba(0,0,0,0.12);
+  .menu-divider {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
     width: 1px;
     height: 30px;
     display: inline-block;
@@ -65,8 +65,7 @@
   -webkit-transition: all .2s; /* Safari */
   transition: all .2s;
   > div {
-    background-color: #30303A;
-    color: #FFF;
+    background-color: #FFF;
     padding: 0;
     position: fixed;
     height: 100%;
@@ -74,8 +73,8 @@
     overflow: hidden;
     top: 0;
     z-index: 2;
-    -webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.4);
-    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
     label {
       display: block;
       border-bottom: 1px solid rgba(255, 255, 255, .05);
@@ -89,9 +88,9 @@
         cursor: pointer;
       }
     }
-    .sidenav-logo{
+    .sidenav-logo {
       height: 48px;
-      img{
+      img {
         height: 40px;
         width: auto;
         margin-left: 10px;
@@ -104,8 +103,6 @@
     input[type=radio] {
       display: none;
       &:checked + label {
-        /*  background-color: #be2791;*/
-        color: #FFF;
         border-left: 2px solid #be2791;
       }
     }
@@ -116,21 +113,21 @@
   padding: 0;
 }
 
-.left-menu{
-
+.left-menu {
 
 }
-body.sidebar-active .left-menu{
+
+body.sidebar-active .left-menu {
   width: 300px;
 }
 
 @media only screen and (min-width: 750px) {
-  .navbar{
+  .navbar {
     height: 64px;
-    .menu-divider{
+    .menu-divider {
       height: 50px;
     }
-    .logo{
+    .logo {
       padding: 10px 0;
     }
     a:not(.logo) {
@@ -138,17 +135,23 @@ body.sidebar-active .left-menu{
       padding: 0 25px;
     }
   }
-  .left-menu{
-    > div{
+  .left-menu {
+    > div {
       top: 64px;
-      box-shadow: 2px 3px 5px rgba(0,0,0,.26);
+      box-shadow: 2px 3px 5px rgba(0, 0, 0, .26);
     }
-    .sidenav-logo{
+    .sidenav-logo {
       display: none;
     }
   }
-  body.sidebar-active .left-menu{
-    width: 200px;
+  body.sidebar-active .left-menu {
+    width: 245px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .navbar {
+    padding: 0 25px;
   }
 }
 
