@@ -23,7 +23,7 @@
       display: inline-block;
     }
     &:focus {
-      border-bottom: 2px solid #be2791;
+      border-bottom: 2px solid $primary-color;
       outline: none;
     }
     &:focus, &.is-not-empty {
@@ -37,7 +37,7 @@
       }
     }
     &:focus + label {
-      color: #be2791;
+      color: $primary-color;
       bottom: 55px;
       font-size: 16px;
       &:after {

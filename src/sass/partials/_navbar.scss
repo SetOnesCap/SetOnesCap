@@ -45,13 +45,13 @@
       a {
         display: block;
         padding: 13px 16px 7px;
-        color: #be2791;
+        color: $primary-color;
         text-decoration: none;
         font-size: 17pt;
         text-transform: uppercase;
         margin: 0 -2px;
         &:hover {
-          border-bottom: 8px solid #be2791;
+          border-bottom: 8px solid $primary-color;
         }
       }
     }
@@ -103,7 +103,7 @@
     input[type=radio] {
       display: none;
       &:checked + label {
-        border-left: 2px solid #be2791;
+        border-left: 2px solid $primary-color;
       }
     }
   }
@@ -149,7 +149,7 @@ body.sidebar-active .left-menu {
   }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1160px) {
   .navbar {
     padding: 0 25px;
   }

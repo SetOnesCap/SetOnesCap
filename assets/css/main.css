@@ -2073,6 +2073,10 @@ img {
     background-color: #db4437; }
     .box.google .box-header .icon::after {
       content: "\f0d5"; }
+  .box.youtube .box-header {
+    background-color: #cc181e; }
+    .box.youtube .box-header .icon::after {
+      content: "\f167"; }
 
 .button {
   cursor: pointer;
@@ -2785,7 +2789,7 @@ body.sidebar-active .left-menu {
   body.sidebar-active .left-menu {
     width: 245px; } }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1160px) {
   .navbar {
     padding: 0 25px; } }
 
@@ -2877,7 +2881,7 @@ input[type="radio"]:checked:before {
 
 @media only screen and (min-width: 750px) {
   body.sidebar-active .main-content {
-    margin-left: 200px; } }
+    margin-left: 245px; } }
 
 .api-data {
   font-size: .8em;
