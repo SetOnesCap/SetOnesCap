@@ -1,6 +1,20 @@
 new Vue({
     el: '#elements',
     data: {
-        activePage: 'Form elements'
+        activePage: 'boxes',
+        pages:[
+            {
+                title: 'Form elements',
+                url: 'form-elements'
+            },
+            {
+                title: 'Buttons',
+                url: 'buttons'
+            },
+            {
+                title: 'Boxes',
+                url: 'boxes'
+            }
+        ]
     }
 })
