@@ -62,5 +62,13 @@
       }
     }
   }
+  &.youtube {
+    .box-header {
+      background-color: #cc181e;
+      .icon::after{
+        content: "\f167";
+      }
+    }
+  }
 }
 
