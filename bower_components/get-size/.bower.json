@@ -39,7 +39,7 @@
     "tag": "v2.0.2",
     "commit": "53ad18840e260d5eb89fd579362596dad5852c77"
   },
-  "_source": "git://github.com/desandro/get-size.git",
-  "_target": "~2.0.2",
+  "_source": "https://github.com/desandro/get-size.git",
+  "_target": "^2.0.2",
   "_originalSource": "get-size"
 }

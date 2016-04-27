@@ -37,7 +37,7 @@
     "tag": "v2.0.1",
     "commit": "e44ef17ea6d405e675a6178d24150a7037cdd55e"
   },
-  "_source": "git://github.com/metafizzy/fizzy-ui-utils.git",
-  "_target": "~2.0.0",
+  "_source": "https://github.com/metafizzy/fizzy-ui-utils.git",
+  "_target": "^2.0.0",
   "_originalSource": "fizzy-ui-utils"
 }
