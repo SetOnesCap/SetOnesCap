@@ -16,7 +16,8 @@ usort($tracks, function ($a, $b) {
 });
 
 
-function asset_path($filename) {
+function asset_path($filename)
+{
     $manifest_path = $_SERVER['DOCUMENT_ROOT'] . '/rev-manifest.json';
 
     if (file_exists($manifest_path)) {
@@ -31,7 +32,6 @@ function asset_path($filename) {
 
     return $filename;
 }
-
 
 
 function sanitize_output($buffer)
@@ -52,33 +52,79 @@ ob_start("sanitize_output");
 <html>
 <head>
     <title>ApiTest</title>
-   <!-- <link rel="stylesheet" type="text/css" href="/assets/css/<?php// echo asset_path('main.css');?>"/>  -->
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/<?php // echo asset_path('main.css');?>"/>  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="amphtml" href="http://localhost/amp-page.html">
+    <style>
+        .hidden {
+            display: none;
+            opacity: 0;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <div class='row'>
-        <?php
-        foreach ($tracks as $track) {
-            getTrack($track);
-        }
-        foreach ($posts as $post) {
-            getPost($post);
-        } ?>
+
+<nav class="navbar z-2">
+    <a class="sidenav-toggle hide-big"><i class="fa fa-bars"></i></a>
+    <a class="logo"><img src="/assets/images/logo/logo-horizontal.png"/></a>
+    <span class="menu-divider"></span>
+    <span class="hide-big">{{ activePage }}</span>
+    <div class="main-menu hide-medium hide-small hide-xsmall float-right">
+        <div class="menu-link">
+            <ul class="">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Concerts</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="left-menu no-padding">
+    <div>
+        <div class="sidenav-logo">
+            <a class="sidenav-toggle">
+                <img src="/assets/images/logo/logo-horizontal.png"/>
+                <i class="fa fa-angle-left float-right"></i>
+            </a>
+        </div>
+        <div v-for="page in pages">
+            <input type="radio" id="{{ page.url }}" value="{{ page.url }}" v-model="activePage">
+            <label for="{{ page.url }}">{{ page.title }}</label>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="main-content">
+    <div class="container">
+        <div class='row'>
+            <?php
+            foreach ($tracks as $track) {
+                getTrack($track);
+            }
+            foreach ($posts as $post) {
+                getPost($post);
+            } ?>
+        </div>
     </div>
 </div>
 <script>
-    var cb = function() {
-        var l = document.createElement('link'); l.rel = 'stylesheet';
+    var cb = function () {
+        var l = document.createElement('link');
+        l.rel = 'stylesheet';
         l.href = '/assets/css/<?php echo asset_path('main.css');?>';
-        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+        var h = document.getElementsByTagName('head')[0];
+        h.parentNode.insertBefore(l, h);
     };
     var raf = requestAnimationFrame || mozRequestAnimationFrame ||
         webkitRequestAnimationFrame || msRequestAnimationFrame;
     if (raf) raf(cb);
     else window.addEventListener('load', cb);
 </script>
-<script type="text/javascript" src="/assets/js/<?php echo asset_path('main.js');?>"></script>
+<script type="text/javascript" src="/assets/js/<?php echo asset_path('main.js'); ?>"></script>
 
 </body>
 </html>
