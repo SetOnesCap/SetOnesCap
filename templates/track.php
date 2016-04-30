@@ -28,11 +28,12 @@ function getTrack($track){
 						 sizes='(min-width: 1200px) 25vw, (min-width: 992px) 33.3vw, (min-width: 768px) 50vw, 100vw'/>
 				</div>
 			<?php } ?>
+			<audio controls preload="none">
+				<source src="<?php echo $track->stream_source ?>" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
 			<div class='content'>
-				<audio controls preload="none">
-					<source src="<?php echo $track->stream_source ?>" type="audio/mpeg">
-					Your browser does not support the audio element.
-				</audio>
+
 				<p><?php echo $track->title; ?></p>
                 <p><?php echo $track->like_count; ?></p>
 

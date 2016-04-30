@@ -4,7 +4,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/templates/post.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/templates/track.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/helpers/api.php');
 
-
 $posts = get_api_content('posts');
 usort($posts, function ($a, $b) {
     return -1 * strcmp($a->created_time_unix, $b->created_time_unix);
@@ -51,14 +50,62 @@ ob_start("sanitize_output");
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ApiTest</title>
+    <title>Set One's Cap</title>
     <!-- <link rel="stylesheet" type="text/css" href="/assets/css/<?php // echo asset_path('main.css');?>"/>  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="amphtml" href="http://localhost/amp-page.html">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: Lato,Helvetica,Arial,sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
         .hidden {
             display: none;
             opacity: 0;
+        }
+        .navbar {
+            position: fixed;
+            background-color: #be2791;
+            width: 100%;
+            z-index: 1;
+        }
+        .navbar ul {
+            margin: 0;
+        }
+        .navbar .logo img {
+            height: 40px;
+            width: auto;
+        }
+        .navbar ul li, .navbar ul li a {
+            display: inline-block;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 -2px;
+            font-size: 20px;
+            line-height: 58px;
+            border-bottom: 6px solid rgba(0, 0, 0, 0);
+            padding: 0 16px;
+        }
+        .left-menu{
+            width: 0;
+        }
+        .left-menu > div{
+            overflow: hidden;
+        }
+        .float-right {
+            float: right;
+        }
+        @media only screen and (min-width: 1160px) {
+            .navbar {
+                padding: 0 25px;
+            }
         }
     </style>
 </head>
@@ -66,19 +113,19 @@ ob_start("sanitize_output");
 
 <nav class="navbar z-2">
     <a class="sidenav-toggle hide-big"><i class="fa fa-bars"></i></a>
-    <a class="logo"><img src="/assets/images/logo/logo-horizontal.png"/></a>
-    <span class="menu-divider"></span>
-    <span class="hide-big">{{ activePage }}</span>
+    <a class="logo"><img src="/assets/images/logo/logo-white.svg"/></a>
+    <span class="menu-divider hide-xsmall"></span>
+    <span class="hide-big hide-xsmall"></span>
     <div class="main-menu hide-medium hide-small hide-xsmall float-right">
         <div class="menu-link">
             <ul class="">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Concerts</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Photos</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="?page=index">Home</a></li>
+                <li><a href="?page=news">News</a></li>
+                <li><a href="?page=concerts">Concerts</a></li>
+                <li><a href="?page=music">Music</a></li>
+                <li><a href="?page=photos">Photos</a></li>
+                <li><a href="?page=videos">Videos</a></li>
+                <li><a href="?page=about">About</a></li>
             </ul>
         </div>
     </div>
@@ -99,32 +146,3 @@ ob_start("sanitize_output");
 </div>
 <div class="clearfix"></div>
 <div class="main-content">
-    <div class="container">
-        <div class='row'>
-            <?php
-            foreach ($tracks as $track) {
-                getTrack($track);
-            }
-            foreach ($posts as $post) {
-                getPost($post);
-            } ?>
-        </div>
-    </div>
-</div>
-<script>
-    var cb = function () {
-        var l = document.createElement('link');
-        l.rel = 'stylesheet';
-        l.href = '/assets/css/<?php echo asset_path('main.css');?>';
-        var h = document.getElementsByTagName('head')[0];
-        h.parentNode.insertBefore(l, h);
-    };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-        webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(cb);
-    else window.addEventListener('load', cb);
-</script>
-<script type="text/javascript" src="/assets/js/<?php echo asset_path('main.js'); ?>"></script>
-
-</body>
-</html>
