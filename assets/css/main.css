@@ -2104,6 +2104,17 @@ img {
   width: 100%;
   height: auto; }
 
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  border: none; }
+
+button:active, button:focus {
+  box-shadow: none;
+  outline: none; }
+
 .container {
   padding: 0; }
   @media (min-width: 550px) {
@@ -2132,6 +2143,101 @@ img {
 
 .z-2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
+
+.action-button {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  bottom: 16px;
+  right: 16px;
+  background-color: #be2791;
+  color: #FFF;
+  z-index: 20;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
+  .action-button::after {
+    content: "\f129";
+    font-family: FontAwesome;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-size: 28pt;
+    line-height: 56px; }
+  .action-button.active {
+    bottom: 0;
+    box-shadow: none; }
+    .action-button.active::after {
+      content: "\f00d"; }
+
+.action-menu {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 58px;
+  background-color: #be2791;
+  color: #FFF;
+  height: 60px;
+  bottom: 0px;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
+  .action-menu .toggle-action-button,
+  .action-menu .toggle-action-button.active {
+    color: transparent;
+    background-color: transparent;
+    padding: 0;
+    margin-right: -3px; }
+    .action-menu .toggle-action-button .icon,
+    .action-menu .toggle-action-button.active .icon {
+      font-size: 28pt;
+      line-height: 60px;
+      width: 60px; }
+  .action-menu.active {
+    width: 100%;
+    right: 0; }
+    .action-menu.active .toggle-action-button .icon::after {
+      color: #FFF;
+      opacity: .8;
+      -webkit-transition: all .2s;
+      transition: all .2s; }
+    .action-menu.active .toggle-action-button:hover, .action-menu.active .toggle-action-button.active {
+      opacity: 1; }
+
+@media (min-width: 768px) {
+  .action-button {
+    bottom: 32px;
+    right: 32px; } }
+
+.toggle-action-button.facebook .icon::after {
+  content: "\f230"; }
+
+.action-menu.active .toggle-action-button.active.facebook {
+  background-color: #3b5998; }
+
+.toggle-action-button.twitter .icon::after {
+  content: "\f099"; }
+
+.action-menu.active .toggle-action-button.active.twitter {
+  background-color: #55acee; }
+
+.toggle-action-button.instagram .icon::after {
+  content: "\f16d"; }
+
+.action-menu.active .toggle-action-button.active.instagram {
+  background-color: #125688; }
+
+.toggle-action-button.google .icon::after {
+  content: "\f0d5"; }
+
+.action-menu.active .toggle-action-button.active.google {
+  background-color: #db4437; }
 
 .float-right {
   float: right; }
@@ -2871,17 +2977,6 @@ pre.code-example {
     z-index: 2;
     -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4); }
-    .left-menu > div label {
-      display: block;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      border-top: 1px solid rgba(0, 0, 0, 0.05);
-      padding: 5px 10px;
-      width: 100%;
-      min-width: 200px;
-      border-left: 2px solid transparent; }
-      .left-menu > div label:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-        cursor: pointer; }
     .left-menu > div .sidenav-logo {
       height: 48px; }
       .left-menu > div .sidenav-logo img {
@@ -2891,6 +2986,23 @@ pre.code-example {
       .left-menu > div .sidenav-logo .fa {
         font-size: 20pt;
         padding: 11px 25px 11px 5px; }
+    .left-menu > div ul {
+      list-style: none; }
+      .left-menu > div ul li a {
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        color: #212121;
+        text-decoration: none;
+        padding: 5px 10px;
+        width: 100%;
+        min-width: 200px;
+        border-left: 2px solid transparent; }
+        .left-menu > div ul li a:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+          cursor: pointer; }
+        .left-menu > div ul li a.active {
+          border-left: 2px solid #BE2791; }
     .left-menu > div input[type=radio] {
       display: none; }
       .left-menu > div input[type=radio]:checked + label {
