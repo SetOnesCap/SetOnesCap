@@ -58,31 +58,39 @@ ob_start("sanitize_output");
         * {
             box-sizing: border-box;
         }
-        body{
+
+        body {
             margin: 0;
-            font-family: Lato,Helvetica,Arial,sans-serif;
+            font-family: Lato, Helvetica, Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
+            font-size: 12pt;
         }
+
         .hidden {
             display: none;
             opacity: 0;
         }
+
         .navbar {
             position: fixed;
             background-color: #be2791;
             width: 100%;
             z-index: 1;
         }
+
         .navbar ul {
             margin: 0;
         }
+
         .navbar .logo img {
             height: 40px;
             width: auto;
         }
+
         .navbar ul li, .navbar ul li a {
             display: inline-block;
         }
+
         .navbar ul li a {
             color: #fff;
             text-decoration: none;
@@ -93,19 +101,134 @@ ob_start("sanitize_output");
             border-bottom: 6px solid rgba(0, 0, 0, 0);
             padding: 0 16px;
         }
-        .left-menu{
+
+        .left-menu {
             width: 0;
         }
-        .left-menu > div{
+
+        .left-menu > div {
             overflow: hidden;
         }
+
         .float-right {
             float: right;
         }
+
+        .z-2 {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+        }
+
         @media only screen and (min-width: 1160px) {
             .navbar {
                 padding: 0 25px;
             }
+        }
+
+        .action-button {
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            position: fixed;
+            width: 56px;
+            height: 56px;
+            bottom: 16px;
+            right: 16px;
+            background-color: #be2791;
+            z-index: 20;
+        }
+
+        .action-menu {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            right: 58px;
+            background-color: #be2791;
+            color: #FFF;
+            height: 60px;
+            bottom: 30px;
+            -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+            width: 0;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+        }
+
+        .action-menu.active{
+            width: 100%;
+            right: 0;
+        }
+
+        .action-menu .toggle-action-button,
+        .action-menu .toggle-action-button.active{
+            color: transparent;
+            background-color: transparent;
+        }
+
+        @media (min-width: 768px) {
+            .action-button {
+                bottom: 32px;
+                right: 32px;
+            }
+        }
+
+        button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: none;
+            border: none;
+        }
+
+        button:active, button:focus {
+            box-shadow: none;
+            outline: none;
+        }
+        .toggle-action-button{
+            padding: 0;
+            margin-right: -3px;
+        }
+        .toggle-action-button .icon{
+            font-size: 28pt;
+            line-height: 60px;
+            width: 60px;
+        }
+        .action-menu.active .toggle-action-button .icon::after {
+            color: #FFF;
+            opacity: .8;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+        }
+
+        .action-menu.active .toggle-action-button:hover .icon::after,
+        .action-menu.active .toggle-action-button.active .icon::after{
+            opacity: 1;
+        }
+
+        .toggle-action-button.facebook .icon::after {
+            content: "\f230";
+        }
+        .action-menu.active .toggle-action-button.active.facebook {
+            background-color: #3b5998;
+        }
+        .toggle-action-button.twitter .icon::after {
+            content: "\f099";
+        }
+        .action-menu.active .toggle-action-button.active.twitter{
+            background-color: #55acee;
+        }
+        .toggle-action-button.instagram .icon::after {
+            content: "\f16d";
+        }
+        .action-menu.active .toggle-action-button.active.instagram{
+            background-color: #125688;
+        }
+        .toggle-action-button.google .icon::after {
+            content: "\f0d5";
+        }
+        .action-menu.active .toggle-action-button.active.google{
+            background-color: #db4437;
         }
     </style>
 </head>
@@ -138,10 +261,15 @@ ob_start("sanitize_output");
                 <i class="fa fa-angle-left float-right"></i>
             </a>
         </div>
-        <div v-for="page in pages">
-            <input type="radio" id="{{ page.url }}" value="{{ page.url }}" v-model="activePage">
-            <label for="{{ page.url }}">{{ page.title }}</label>
-        </div>
+        <ul class="">
+            <li><a href="?page=index">Home</a></li>
+            <li><a href="?page=news">News</a></li>
+            <li><a href="?page=concerts">Concerts</a></li>
+            <li><a href="?page=music">Music</a></li>
+            <li><a href="?page=photos">Photos</a></li>
+            <li><a href="?page=videos">Videos</a></li>
+            <li><a href="?page=about">About</a></li>
+        </ul>
     </div>
 </div>
 <div class="clearfix"></div>
