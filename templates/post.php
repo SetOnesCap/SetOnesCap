@@ -3,7 +3,7 @@ function getPost($post)
 {
     if (isset($post->message) && $post->message != '') {
         ob_start(); ?>
-        <div class='col col-xs-12 col-sm-6 col-md-4 col-lg-3'>
+        <div class='col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item'>
             <div itemscope itemtype="http://schema.org/NewsArticle"
                  class='box z-1 <?php echo $post->source ?>'>
                 <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="http://www.setonescap.com/news"/>
