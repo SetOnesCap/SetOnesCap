@@ -1,8 +1,16 @@
+
+
 function updateMasonry() {
-    var $container = $('.row').masonry();
-    $container.imagesLoaded(function () {
-        $container.masonry();
+    var container = $('.masonry-row').masonry({
+        itemSelector : '.masonry-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
     });
+    container.imagesLoaded(function () {
+        container.masonry();
+    });
+    container.masonry('reloadItems');
+    container.masonry('layout');
 }
 $(window).load(function () {
     updateMasonry();
@@ -24,3 +32,5 @@ $(".sidenav-toggle").click(function () {
     }
     window.setTimeout(updateMasonry, 300);
 });
+
+
