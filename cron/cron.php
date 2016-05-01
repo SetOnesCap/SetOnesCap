@@ -66,7 +66,7 @@ if ($http_code === 200) {
     };
 }
 
-cacheJson(json_encode($postsArray), 'posts.json');
+cacheJson(json_encode($postsArray), 'json', 'posts.json');
 
 
 
@@ -81,9 +81,9 @@ foreach ($tracks as $track) {
     array_push($tracksArray, $content);
 };
 
-cacheJson(json_encode($tracksArray), 'tracks.json');
+cacheJson(json_encode($tracksArray), 'json', 'tracks.json');
 
 
 
 /* --Get pages:-- */
-cacheJsonFromUrl($_ENV["ROOT_URL"] . '/templates/index.php', 'index.html');
+cacheHtmlFromUrl($_ENV["ROOT_URL"] . '/templates/index.php', 'index.html');
