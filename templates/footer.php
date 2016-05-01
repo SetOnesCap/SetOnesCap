@@ -60,44 +60,5 @@
     else window.addEventListener('load', cb);
 </script>
 <script type="text/javascript" src="/assets/js/<?php echo asset_path('main.js'); ?>"></script>
-<script>
-    function toggleActionButton(post_type, selected) {
-        var toggle_action_button = $(".toggle-action-button." + post_type);
-        (selected) ? toggle_action_button.addClass('active') : toggle_action_button.removeClass('active');
-    }
-    ;
-
-    function togglePostType(post_type, selected) {
-        var box_containers = $(".box." + post_type).parent('div');
-        (selected) ? box_containers.show() : box_containers.hide();
-        updateMasonry();
-    }
-    ;
-
-    var post_types = (localStorage.getItem("post_types") === null) ? {} : JSON.parse(localStorage.getItem("post_types"));
-    console.log(post_types);
-    $(document).ready(function () {
-        $.each(post_types, function (post_type, selected) {
-            toggleActionButton(post_type, selected);
-            togglePostType(post_type, selected);
-        });
-
-        $(".toggle-action-button").click(function () {
-            var post_type = $(this).val();
-            var selected = (post_types[post_type]) ? false : true;
-            post_types[post_type] = selected;
-            console.log(post_type);
-            console.log(selected);
-            toggleActionButton(post_type, selected);
-            togglePostType(post_type, selected);
-            localStorage.setItem("post_types", JSON.stringify(post_types));
-        });
-    });
-
-
-    $(".action-button").click(function () {
-        $(".action-menu").toggleClass('active');
-    });
-</script>
 </body>
 </html>
