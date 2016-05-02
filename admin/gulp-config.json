@@ -1,0 +1,20 @@
+{
+  "paths": {
+    "js": [
+      "bower_components/jquery/dist/jquery.min.js",
+      "bower_components/vue/dist/vue.min.js",
+      "src/js/*.js"
+    ],
+    "css": [
+      "bower_components/components-font-awesome/css/font-awesome.min.css",
+      "src/sass/**/*.scss"
+    ],
+    "fonts": [
+      "src/fonts/*.ttf",
+      "bower_components/components-font-awesome/fonts/*.{otf,eot,svg,ttf,woff,woff2}"
+    ],
+    "images": [
+      "src/images/**/*.{png,jpg,jpeg,svg,gif}"
+    ]
+  }
+}
