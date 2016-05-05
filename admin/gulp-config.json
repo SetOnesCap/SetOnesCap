@@ -1,12 +1,10 @@
 {
   "paths": {
     "js": [
-      "bower_components/jquery/dist/jquery.min.js",
       "bower_components/vue/dist/vue.min.js",
       "src/js/*.js"
     ],
     "css": [
-      "bower_components/components-font-awesome/css/font-awesome.min.css",
       "src/sass/**/*.scss"
     ],
     "fonts": [

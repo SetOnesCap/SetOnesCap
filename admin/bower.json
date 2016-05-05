@@ -16,7 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "vue": "^1.0.21",
-    "jquery": "^2.2.3"
+    "vue": "^1.0.21"
   }
 }
