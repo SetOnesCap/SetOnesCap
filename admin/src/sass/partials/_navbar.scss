@@ -2,3 +2,20 @@
   background-color: #30303A;
   color: #FFF;
 }
+
+.left-menu {
+  .menu-item {
+    input[type=checkbox] + label, input[type=radio] + label {
+      border-left: 2px solid transparent;
+    }
+  }
+}
+
+@media (min-width: 1160px) {
+  .left-menu {
+    width: 245px;
+    > div {
+      box-shadow: 2px 3px 5px rgba(0, 0, 0, .26);
+    }
+  }
+}
