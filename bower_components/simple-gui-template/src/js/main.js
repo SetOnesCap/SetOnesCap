@@ -1,16 +1,3 @@
-function updateMasonry() {
-    var container = $('.masonry-row').masonry({
-        itemSelector: '.masonry-item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true
-    });
-    container.imagesLoaded(function () {
-        container.masonry();
-    });
-    container.masonry('reloadItems');
-    container.masonry('layout');
-}
-
 var active_elements = {};
 
 
@@ -28,7 +15,6 @@ function toggleActionButton(element_class, active) {
 function toggleElements(element_class, active) {
     var element = $("." + element_class);
     (active) ? element.show() : element.hide();
-    updateMasonry();
 }
 
 function resetToggle() {
@@ -70,7 +56,7 @@ $(document).ready(function () {
         } else {
             $("body").addClass("sidebar-active");
         }
-        window.setTimeout(updateMasonry, 300);
+       // window.setTimeout(updateMasonry, 300);
     });
 
     $(".input-group input").each(function () {
@@ -121,10 +107,3 @@ $(document).ready(function () {
         $("body").removeClass("modal-active");
     });
 });
-
-$(window).on('load', function (e) {
-    updateMasonry();
-});
-
-
-

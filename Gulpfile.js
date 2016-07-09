@@ -54,7 +54,7 @@ gulp.task('watch', function() {
 
 // Clean
 gulp.task('clean', function() {
-    return del(['./assets/css', './assets/js', './assets/fonts']);
+    return del(['./assets/css', './assets/js', './assets/fonts', './assets/images']);
 });
 
 

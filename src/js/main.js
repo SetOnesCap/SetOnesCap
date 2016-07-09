@@ -1,5 +1,3 @@
-
-
 function updateMasonry() {
     var container = $('.masonry-row').masonry({
         itemSelector : '.masonry-item',
@@ -17,9 +15,8 @@ $(window).load(function () {
 });
 
 $(".input-group input").change(function () {
-    console.log("change");
     $(this).removeClass("is-not-empty");
-    if ($(this).val() == "") {
+    if ($(this).val() === "") {
     } else {
         $(this).addClass("is-not-empty");
     }

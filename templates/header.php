@@ -128,9 +128,11 @@ ob_start("sanitize_output");
 </head>
 <body>
 
-<nav class="navbar z-2">
-    <a class="sidenav-toggle hide-big"><i class="fa fa-bars"></i></a>
-    <a class="logo"><img src="/assets/images/logo/logo-white.svg"/></a>
+<nav class="navbar navbar-primary z-2">
+    <a class="sidenav-toggle hide-big"><i class="sidenav-toggle-logo fa fa-bars"></i></a>
+    <a class="logo">
+        <img src="/assets/images/logo/svg/logo-horizontal-white.svg"/>
+    </a>
     <span class="menu-divider hide-xsmall"></span>
     <span class="hide-big hide-xsmall"></span>
     <div class="main-menu hide-medium hide-small hide-xsmall float-right">
@@ -142,6 +144,7 @@ ob_start("sanitize_output");
                 <li><a href="?page=music">Music</a></li>
                 <li><a href="?page=photos">Photos</a></li>
                 <li><a href="?page=videos">Videos</a></li>
+                <li><a href="?page=shop">Shop</a></li>
                 <li><a href="?page=about">About</a></li>
             </ul>
         </div>
@@ -151,7 +154,7 @@ ob_start("sanitize_output");
     <div>
         <div class="sidenav-logo">
             <a class="sidenav-toggle">
-                <img src="/assets/images/logo/logo-horizontal.png"/>
+                <img src="/assets/images/logo/svg/logo-horizontal-purple.svg"/>
                 <i class="fa fa-angle-left float-right"></i>
             </a>
         </div>
@@ -162,9 +165,12 @@ ob_start("sanitize_output");
             <li><a href="?page=music">Music</a></li>
             <li><a href="?page=photos">Photos</a></li>
             <li><a href="?page=videos">Videos</a></li>
+            <li><a href="?page=shop">Shop</a></li>
             <li><a href="?page=about">About</a></li>
         </ul>
     </div>
 </div>
-<div class="clearfix"></div>
 <div class="main-content">
+    <div class="container">
+        <img src="/assets/images/header/w1200/home.jpg" style="margin-bottom: -100px"/>
+   

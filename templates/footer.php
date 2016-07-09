@@ -1,5 +1,5 @@
 <div class="clearfix"></div>
-<div class="container" style="background-color: #30303a; color: #FFF;">
+<footer class="bg-white fg-black">
     <div class="row">
         <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <h3>Web:</h3>
@@ -35,16 +35,19 @@
         </div>
 
     </div>
-    <div class="clearfix"></div>
-</div>
-<footer class="bg-white fg-black">
+
+    <div class="row">
     <div class="col-xs-12 col-sm-6">© 2014
         <a href="https://plus.google.com/+Setonescap" target="_blank" rel="publisher">Set One's Cap</a></div>
     <div class="col-xs-12 col-sm-6 text-right">
         Website by:
         <a href="https://plus.google.com/+BenjaminDehli1/" target="_blank" rel="author">Benjamin Dehli</a>
     </div>
+    </div>
+
+    <div class="clearfix"></div>
 </footer>
+</div>
 </div>
 <script>
     var cb = function () {
