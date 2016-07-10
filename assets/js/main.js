@@ -611,7 +611,7 @@ return ImagesLoaded;
 
 function updateMasonry() {
     var container = $('.masonry-row').masonry({
-        itemSelector : '.masonry-item',
+        itemSelector: '.masonry-item',
         columnWidth: '.grid-sizer',
         percentPosition: true
     });
@@ -621,7 +621,7 @@ function updateMasonry() {
     container.masonry('reloadItems');
     container.masonry('layout');
 }
-$(window).load(function () {
+$(window).on('load', function () {
     updateMasonry();
 });
 
