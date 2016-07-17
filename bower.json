@@ -17,7 +17,6 @@
     "tests"
   ],
   "devDependencies": {
-    "jquery": "^2.2.2",
     "masonry": "^4.0.0",
     "imagesloaded": "^4.1.0",
     "simple-gui-template": "^0.1.65"
