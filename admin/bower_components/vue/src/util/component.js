@@ -1,6 +1,6 @@
 import { warn } from './debug'
 import { resolveAsset } from './options'
-import { getAttr, getBindAttr } from './dom'
+import { getBindAttr } from './dom'
 
 export const commonTagRE = /^(div|p|span|img|a|b|i|br|ul|ol|li|h1|h2|h3|h4|h5|h6|code|pre|table|th|td|tr|form|label|input|select|option|nav|article|section|header|footer)$/i
 export const reservedTagRE = /^(slot|partial|component)$/i
@@ -19,7 +19,8 @@ if (process.env.NODE_ENV !== 'production') {
         /HTMLUnknownElement/.test(el.toString()) &&
         // Chrome returns unknown for several HTML5 elements.
         // https://code.google.com/p/chromium/issues/detail?id=540526
-        !/^(data|time|rtc|rb)$/.test(tag)
+        // Firefox returns unknown for some "Interactive elements."
+        !/^(data|time|rtc|rb|details|dialog|summary)$/.test(tag)
       )
     }
   }
@@ -41,7 +42,7 @@ export function checkComponentAttr (el, options) {
     if (resolveAsset(options, 'components', tag)) {
       return { id: tag }
     } else {
-      var is = hasAttrs && getIsBinding(el)
+      var is = hasAttrs && getIsBinding(el, options)
       if (is) {
         return is
       } else if (process.env.NODE_ENV !== 'production') {
@@ -64,7 +65,7 @@ export function checkComponentAttr (el, options) {
       }
     }
   } else if (hasAttrs) {
-    return getIsBinding(el)
+    return getIsBinding(el, options)
   }
 }
 
@@ -72,14 +73,18 @@ export function checkComponentAttr (el, options) {
  * Get "is" binding from an element.
  *
  * @param {Element} el
+ * @param {Object} options
  * @return {Object|undefined}
  */
 
-function getIsBinding (el) {
+function getIsBinding (el, options) {
   // dynamic syntax
-  var exp = getAttr(el, 'is')
+  var exp = el.getAttribute('is')
   if (exp != null) {
-    return { id: exp }
+    if (resolveAsset(options, 'components', exp)) {
+      el.removeAttribute('is')
+      return { id: exp }
+    }
   } else {
     exp = getBindAttr(el, 'is')
     if (exp != null) {

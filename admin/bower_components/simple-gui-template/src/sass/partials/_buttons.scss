@@ -1,0 +1,101 @@
+.button {
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 88px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: $primary-color;
+  line-height: 32px;
+  display: inline-block;
+  margin: 0 8px;
+  padding: 0 6px;
+  &.button-icon {
+    min-width: 38px;
+  }
+}
+
+.button-flat {
+  -webkit-transition: background .2s .1s;
+  transition: background .2s .1s;
+  &:not([disabled]):hover {
+    @include bright-gray($dark-color);
+  }
+  &:not([disabled]):active {
+    @include bright-color($primary-color);
+  }
+  &[disabled] {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+  &.button-icon {
+    min-width: 42px;
+    margin: 0;
+    .fa {
+      line-height: 32px;
+    }
+  }
+}
+
+.button-raised {
+  &:not([disabled]) {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+    transition: box-shadow .4s cubic-bezier(.25, .8, .25, 1), background-color .4s cubic-bezier(.25, .8, .25, 1);
+  }
+  &:not([disabled]):active {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
+    @include bright-color($primary-color);
+  }
+  &[disabled] {
+    color: rgba(0, 0, 0, 0.26);
+  }
+}
+
+.button-default {
+  background-color: #f9fafb;
+  border: 1px solid #e5e6e7;
+}
+
+.button-primary {
+  background-color: $primary-color;
+  color: #FFFFFF !important;
+  -webkit-transition: background .2s .1s;
+  transition: background .2s .1s;
+  &:not([disabled]):hover {
+    @include hover-color($primary-color);
+  }
+  &:not([disabled]):active {
+    @include active-color($primary-color);
+  }
+  &.button-flat {
+    &:not([disabled]):active {
+      @include active-color($primary-color);
+    }
+  }
+}
+
+.button-success {
+  background-color: $success-color;
+  color: #FFFFFF !important;
+  -webkit-transition: background .2s .1s;
+  transition: background .2s .1s;
+  &:not([disabled]):hover {
+    @include hover-color($success-color);
+  }
+  &:not([disabled]):active {
+    @include active-color($success-color);
+  }
+  &.button-flat {
+    &:not([disabled]):active {
+      @include active-color($success-color);
+    }
+  }
+}
+
+li .modal-hover-add-button {
+  display: inline-block;
+  &:before {
+    font-family: FontAwesome;
+    content: "\f067";
+  }
+}

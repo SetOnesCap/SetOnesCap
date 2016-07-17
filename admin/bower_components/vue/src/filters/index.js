@@ -19,7 +19,7 @@ export default {
     read: function (value, indent) {
       return typeof value === 'string'
         ? value
-        : JSON.stringify(value, null, Number(indent) || 2)
+        : JSON.stringify(value, null, arguments.length > 1 ? indent : 2)
     },
     write: function (value) {
       try {
@@ -64,19 +64,25 @@ export default {
    * 12345 => $12,345.00
    *
    * @param {String} sign
+   * @param {Number} decimals Decimal places
    */
 
-  currency (value, currency) {
+  currency (value, currency, decimals) {
     value = parseFloat(value)
     if (!isFinite(value) || (!value && value !== 0)) return ''
     currency = currency != null ? currency : '$'
-    var stringified = Math.abs(value).toFixed(2)
-    var _int = stringified.slice(0, -3)
+    decimals = decimals != null ? decimals : 2
+    var stringified = Math.abs(value).toFixed(decimals)
+    var _int = decimals
+      ? stringified.slice(0, -1 - decimals)
+      : stringified
     var i = _int.length % 3
     var head = i > 0
       ? (_int.slice(0, i) + (_int.length > 3 ? ',' : ''))
       : ''
-    var _float = stringified.slice(-3)
+    var _float = decimals
+      ? stringified.slice(-1 - decimals)
+      : ''
     var sign = value < 0 ? '-' : ''
     return sign + currency + head +
       _int.slice(i).replace(digitsRE, '$1,') +
@@ -98,9 +104,13 @@ export default {
 
   pluralize (value) {
     var args = toArray(arguments, 1)
-    return args.length > 1
-      ? (args[value % 10 - 1] || args[args.length - 1])
-      : (args[0] + (value === 1 ? '' : 's'))
+    var length = args.length
+    if (length > 1) {
+      var index = value % 10 - 1
+      return index in args ? args[index] : args[length - 1]
+    } else {
+      return args[0] + (value === 1 ? '' : 's')
+    }
   },
 
   /**

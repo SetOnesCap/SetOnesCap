@@ -163,6 +163,7 @@ function makePropsLinkFn (props) {
   return function propsLinkFn (vm, scope) {
     // store resolved props info
     vm._props = {}
+    var inlineProps = vm.$options.propsData
     var i = props.length
     var prop, path, options, value, raw
     while (i--) {
@@ -171,7 +172,9 @@ function makePropsLinkFn (props) {
       path = prop.path
       options = prop.options
       vm._props[path] = prop
-      if (raw === null) {
+      if (inlineProps && hasOwn(inlineProps, path)) {
+        initProp(vm, prop, inlineProps[path])
+      } if (raw === null) {
         // initialize absent prop
         initProp(vm, prop, undefined)
       } else if (prop.dynamic) {
@@ -233,7 +236,7 @@ function processPropValue (vm, prop, rawValue, fn) {
   if (value === undefined) {
     value = getPropDefaultValue(vm, prop)
   }
-  value = coerceProp(prop, value)
+  value = coerceProp(prop, value, vm)
   const coerced = value !== rawValue
   if (!assertProp(prop, value, vm)) {
     value = undefined
@@ -331,7 +334,7 @@ function assertProp (prop, value, vm) {
   var expectedTypes = []
   if (type) {
     if (!isArray(type)) {
-      type = [ type ]
+      type = [type]
     }
     for (var i = 0; i < type.length && !valid; i++) {
       var assertedType = assertType(value, type[i])
@@ -371,13 +374,20 @@ function assertProp (prop, value, vm) {
  * @return {*}
  */
 
-function coerceProp (prop, value) {
+function coerceProp (prop, value, vm) {
   var coerce = prop.options.coerce
   if (!coerce) {
     return value
   }
-  // coerce is a function
-  return coerce(value)
+  if (typeof coerce === 'function') {
+    return coerce(value)
+  } else {
+    process.env.NODE_ENV !== 'production' && warn(
+      'Invalid coerce for prop "' + prop.name + '": expected function, got ' + typeof coerce + '.',
+      vm
+    )
+    return value
+  }
 }
 
 /**

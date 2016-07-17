@@ -13,8 +13,15 @@ export const devtools = inBrowser && window.__VUE_DEVTOOLS_GLOBAL_HOOK__
 
 // UA sniffing for working around browser-specific quirks
 const UA = inBrowser && window.navigator.userAgent.toLowerCase()
+export const isIE = UA && UA.indexOf('trident') > 0
 export const isIE9 = UA && UA.indexOf('msie 9.0') > 0
 export const isAndroid = UA && UA.indexOf('android') > 0
+export const isIos = UA && /(iphone|ipad|ipod|ios)/i.test(UA)
+export const iosVersionMatch = isIos && UA.match(/os ([\d_]+)/)
+export const iosVersion = iosVersionMatch && iosVersionMatch[1].split('_')
+
+// detecting iOS UIWebView by indexedDB
+export const hasMutationObserverBug = iosVersion && Number(iosVersion[0]) >= 9 && Number(iosVersion[1]) >= 3 && !window.indexedDB
 
 let transitionProp
 let transitionEndEvent
@@ -74,7 +81,7 @@ export const nextTick = (function () {
   }
 
   /* istanbul ignore if */
-  if (typeof MutationObserver !== 'undefined') {
+  if (typeof MutationObserver !== 'undefined' && !hasMutationObserverBug) {
     var counter = 1
     var observer = new MutationObserver(nextTickHandler)
     var textNode = document.createTextNode(counter)
@@ -104,3 +111,26 @@ export const nextTick = (function () {
     timerFunc(nextTickHandler, 0)
   }
 })()
+
+let _Set
+/* istanbul ignore if */
+if (typeof Set !== 'undefined' && Set.toString().match(/native code/)) {
+  // use native Set when available.
+  _Set = Set
+} else {
+  // a non-standard Set polyfill that only works with primitive keys.
+  _Set = function () {
+    this.set = Object.create(null)
+  }
+  _Set.prototype.has = function (key) {
+    return this.set[key] !== undefined
+  }
+  _Set.prototype.add = function (key) {
+    this.set[key] = 1
+  }
+  _Set.prototype.clear = function () {
+    this.set = Object.create(null)
+  }
+}
+
+export { _Set }

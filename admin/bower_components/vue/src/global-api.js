@@ -1,17 +1,3 @@
-import {
-  set,
-  del,
-  nextTick,
-  mergeOptions,
-  classify,
-  toArray,
-  commonTagRE,
-  reservedTagRE,
-  warn,
-  isPlainObject,
-  extend
-} from './util/index'
-
 import config from './config'
 import directives from './directives/public/index'
 import elementDirectives from './directives/element/index'
@@ -26,6 +12,20 @@ import * as expression from './parsers/expression'
 import * as transition from './transition/index'
 import FragmentFactory from './fragment/factory'
 import internalDirectives from './directives/internal/index'
+
+import {
+  set,
+  del,
+  nextTick,
+  mergeOptions,
+  classify,
+  toArray,
+  commonTagRE,
+  reservedTagRE,
+  warn,
+  isPlainObject,
+  extend
+} from './util/index'
 
 export default function (Vue) {
   /**
@@ -210,7 +210,9 @@ export default function (Vue) {
           type === 'component' &&
           isPlainObject(definition)
         ) {
-          definition.name = id
+          if (!definition.name) {
+            definition.name = id
+          }
           definition = Vue.extend(definition)
         }
         this.options[type + 's'][id] = definition
