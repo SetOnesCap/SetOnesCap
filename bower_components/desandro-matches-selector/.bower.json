@@ -36,7 +36,7 @@
     "tag": "v2.0.1",
     "commit": "96bc8d60f8e67026fd467a0d55742663ca9b7c30"
   },
-  "_source": "git://github.com/desandro/matches-selector.git",
+  "_source": "https://github.com/desandro/matches-selector.git",
   "_target": "~2.0.0",
   "_originalSource": "desandro-matches-selector"
 }
