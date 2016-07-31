@@ -16,7 +16,7 @@
     "tests"
   ],
   "devDependencies": {
-    "simple-gui-template": "^0.1.67",
+    "simple-gui-template": "^0.1.75",
     "masonry": "^4.1.0",
     "imagesloaded": "^4.1.0",
     "vue": "^1.0.21"
