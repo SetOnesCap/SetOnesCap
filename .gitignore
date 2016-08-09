@@ -36,3 +36,5 @@ node_modules
 /.htaccess
 /environment.php
 /data
+/rev-manifest.json
+/admin/rev-manifest.json
