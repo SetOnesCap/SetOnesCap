@@ -11,7 +11,7 @@
   right: 16px;
   background-color: $primary-color;
   color: #FFF;
-  z-index: 3;
+  z-index: 4;
   -webkit-transition: all .2s;
   transition: all .2s;
   &.active {
@@ -48,7 +48,7 @@
   width: 0;
   -webkit-transition: all .2s;
   transition: all .2s;
-  z-index: 2;
+  z-index: 3;
   .toggle-action-button {
     display: none;
   }
@@ -131,104 +131,8 @@
   background-color: #db4437;
 }
 
-.actionbar-modal {
-  position: fixed;
-  padding-top: 48px;
-  padding-bottom: 60px;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  z-index: 1;
-  display: none;
-  background-color: #FFFFFF;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
-  .modal-header {
-    font-size: 18pt;
-    font-weight: bold;
-    line-height: 18pt;
-    padding: 8px;
-  }
-  .modal-content {
-    background: #FFF;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    padding: 12px 6px;
-  }
-}
-
-body.action-menu-active .main-content {
-  padding-bottom: 60px;
-}
-
-@media only screen and (min-width: 750px) {
-  .actionbar-modal {
-    padding-top: 64px;
-  }
-}
-
-@media (min-width: 1160px) {
-  .action-button {
-    display: none;
-  }
-  .action-menu,
-  .action-menu.active {
-    width: 60px;
-    height: 100%;
-    top: 64px;
-    z-index: 2;
-    left: 0;
-    float: left;
-    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
-    .toggle-action-button {
-      display: inline-block;
-      &:hover {
-        .icon {
-          &:before, &:after {
-            opacity: 1;
-          }
-        }
-      }
-      &.active {
-        background-color: #fff;
-        .icon {
-          @include active-color($primary-color);
-          &:before, &:after {
-            opacity: 1;
-          }
-        }
-      }
-      .icon {
-        &:before, &:after {
-          color: #FFFFFF;
-          opacity: .8;
-          transition: all .2s;
-        }
-      }
-    }
-  }
-  .actionbar-modal {
-    height: 100%;
-    top: 64px;
-    padding-top: 0;
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.26);
-    z-index: 2;
-    width: 0;
-    -webkit-transition: all .2s;
-    transition: all .2s .4s;
-    left: -40%;
-  }
-  body.modal-active {
-    .actionbar-modal {
-      width: 40%;
-      left: 60px;
-      -webkit-transition: all .2s;
-      transition: all .2s .4s;
-    }
-    .main-content {
-      margin-left: 40%;
-      padding-left: 60px;
-    }
+body.action-menu-active {
+  .main-content, .modal {
+    padding-bottom: 60px;
   }
 }
